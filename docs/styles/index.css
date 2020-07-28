@@ -1,0 +1,41 @@
+.top-banner {
+  position: relative;
+  width: 100%;
+  max-height: 0;
+  padding-top: 35.15%;
+  background-color: #f9f9f9;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url(../assets/img/banner.png);
+  background-repeat: no-repeat;
+  margin: 0 auto 14px; }
+
+.tizers_block .item {
+  text-align: center;
+  margin-bottom: 12px; }
+  .tizers_block .item .title {
+    width: auto;
+    font-size: 16px;
+    font-family: "Gilroy";
+    color: #e6007d;
+    font-weight: bold;
+    margin: 0; }
+    .tizers_block .item .title.mod-blue {
+      color: #009cb4; }
+
+.wrap_tizer .wrap_outer {
+  background: #0cadc0; }
+  .wrap_tizer .wrap_outer .inner_text {
+    font-family: "Myriad Pro";
+    font-size: 16px;
+    color: #fff;
+    font-style: normal;
+    background: #0cadc0; }
+  .wrap_tizer .wrap_outer .outer_text {
+    background: #0cadc0; }
+
+.wrap_tizer .wrapper_inner_tizer {
+  padding: 0 20px 0 20px; }
+
+.colored #header .catalog_menu ul.menu > li {
+  background: #0cadc0; }
