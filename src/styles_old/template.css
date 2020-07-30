@@ -413,6 +413,201 @@ body .menu_top_block li.full .dropdown>li>a.section1 {
 .bg_image_site  {
     background-repeat: initial;
 }
+
+.vita-block *{
+  box-sizing: border-box;
+}
+.vita-block{
+  display: flex;
+}
+.vita-block form{
+  width: 100%;
+  display: flex;
+}
+.vita-block .order{
+  width: 50%;
+}
+.vita-block .order .tabs-head input[type=checkbox]{
+  display: none;
+}
+.vita-block .basket{
+  width: 50%;
+}
+.vita-block .map{
+  position: relative;
+  margin-bottom: 15px;
+}
+.vita-block .address{
+  padding-top: 15px;
+}
+#loading_screen{
+  position:fixed;
+  z-index: 1150;
+  left:50%;
+  top:50%;
+  margin-left: -32px;
+  margin-top: -32px;
+  width:64px;
+  height:64px;
+}
+.vita-block .search-pharmacy{
+  position: absolute;
+  z-index: 9999;
+  width: 220px;
+  background-color: #fff;
+  padding: 3px;
+}
+
+.vita-block .search-pharmacy .open{
+  cursor: pointer;
+}
+
+.vita-block .search-pharmacy .search-list{
+  display: none;
+  background-color: #fff;
+}
+
+.vita-block .search-pharmacy .search-list.show{
+  display: block;
+}
+.vita-block .number{
+
+}
+.vita-block .number .minus,
+.vita-block .number .plus{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.vita-block .number input{
+  width: 50px;
+  text-align: center;
+}
+.vita-block #select_store{
+  display: block;
+}
+.vita-block .map .on-list{
+  display: none;
+}
+.vita-block .basket{
+  margin-left: 15px;
+}
+
+.vita-block #basket-items li:before{
+  content: none;
+}
+.vita-block #basket-items li{
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  margin-left: 5px;
+}
+.vita-block #basket-items .next{
+  font-weight: 700;
+  font-size: 17px;
+  color: #000;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  margin-left: 0;
+}
+
+.vita-block #basket-items li .name,
+.vita-block #basket-items li .price{
+  font-weight: 700;
+  font-size: 15px;
+  color: #000;
+}
+.vita-block #basket-items li .name{
+  max-width: 60%;
+}
+.vita-block .btn-default{
+  color: #fff;
+  padding: 10px;
+  font-size: 15px;
+}
+.vita-block .errors li:before{
+  content: none;
+}
+
+.vita-block .errors{
+  margin-top: 15px;
+  font-size: 14px;
+  color: red;
+}
+.vita-block label.all{
+  padding-left: 5px;
+}
+.vita-block #select_store{
+  font-size: 15px;
+  color: #000;
+  text-decoration: underline;
+}
+.vita-block p.empty{
+  margin: 0;
+  color: #000;
+}
+.vita-block .props{
+  margin-top: 15px;
+}
+
+.vita-block .legend{
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.vita-block .legend .item{
+  position: relative;
+  color: black;
+  font-size: 14px;
+  padding-left: 15px;
+}
+.vita-block .legend .item:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 25px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.vita-block .legend .item.full:before{
+  background-color: #54b309;
+}
+.vita-block .legend .item.part:before{
+  background-color: #ffd700;
+}
+.vita-block .legend .item.empty-order:before{
+  background-color: #c83238;
+}
+.vita-block div.payment{
+  color: #000;
+  font-size: 15px;
+}
+.vita-block h2{
+  margin: 0 0 15px;
+}
+.vita-block .basket .total{
+  justify-content: flex-end;
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.party-items {
+  width: 100%;
+}
+.party-items li div {
+  padding: 0 10px;
+  width: 100%;
+}
 /* End */
 /* ../bitrix/templates/aspro_optimus/css/jquery.fancybox.min.css?15898055533213 */
 /* ../bitrix/templates/aspro_optimus/css/styles.min.css?1589805553110420 */
