@@ -6,10 +6,12 @@
     .checkout {
       flex-direction: column; } }
   .checkout-content {
+    width: calc(100% - 385px);
     max-width: calc(100% - 385px);
     flex: 1 1 auto; }
     @media screen and (max-width: 1140px) {
       .checkout-content {
+        width: 100%;
         max-width: 100%; } }
   .checkout-aside {
     flex: 0 0 auto;
@@ -466,7 +468,8 @@
         font-family: "HelveticaNeueCyr";
         color: #383838;
         line-height: 1;
-        text-align: center; }
+        text-align: center;
+        width: 100%; }
   .checkout-buyer-row {
     display: flex;
     flex-direction: row;
@@ -520,6 +523,8 @@
       -moz-appearance: none;
       appearance: none;
       cursor: pointer; }
+      .checkout-buyer__input select::-ms-expand {
+        display: none; }
       @media screen and (-webkit-min-device-pixel-ratio: 0) {
         .checkout-buyer__input select {
           padding-right: 18px; } }

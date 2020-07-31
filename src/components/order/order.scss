@@ -6,9 +6,11 @@
         flex-direction: column;
     }
     &-content{
+        width: calc(100% - 385px);
         max-width: calc(100% - 385px);
         flex: 1 1 auto;
         @media screen and (max-width: 1140px){
+            width: 100%;
             max-width: 100%;
         }
     }
@@ -576,6 +578,7 @@
                 color: #383838;
                 line-height: 1;
                 text-align: center;
+                width: 100%;
             }
         }
     }
@@ -637,6 +640,9 @@
                 -moz-appearance:none;
                 appearance:none;
                 cursor: pointer;
+                &::-ms-expand {
+                    display: none;
+                }
                 @media screen and (-webkit-min-device-pixel-ratio:0) {
                     padding-right: 18px;
                 }
