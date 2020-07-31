@@ -101,22 +101,22 @@ $(document).ready(function() {
 
     $(document).on('click','.js-delivery-tab-link', function(e){
         e.preventDefault();
-        $('.js-delivery-tab-link').removeClass('active');
+        $(this).parents('.js-delivery-tab-content').find('.js-delivery-tab-link').removeClass('active');
         $(this).addClass('active');
         let tab = $(this).attr('href')
-        $('.js-delivery-tab-link-content').removeClass('active');
+        $(this).parents('.js-delivery-tab-content').find('.js-delivery-tab-link-content').removeClass('active');
         $(tab).addClass('active');
     });
 
     $(document).on('click','.js-city', function(e){
         e.preventDefault();
-        $('.js-city').removeClass('active');
+        $(this).parents('.js-delivery-tab-content').find('.js-city').removeClass('active');
         $(this).addClass('active');
     });
 
     $(document).on('click','.js-address', function(e){
         e.preventDefault();
-        $('.js-address').removeClass('active');
+        $(this).parents('.js-delivery-tab-content').find('.js-address').removeClass('active');
         $(this).addClass('active');
     });
 
