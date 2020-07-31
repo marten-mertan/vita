@@ -276,7 +276,10 @@
             s.parentNode.insertBefore(ba, s);
             })();
 		</script>
-
+		
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+		</script>
+		<script type="text/javascript" src="scripts/vendor/baron.js"></script>
 		<script type="text/javascript" src="scripts/bundle.js"></script>
 
 		<!--[if gte IE 9]>
@@ -3635,8 +3638,11 @@
 									<div class="checkout-snegiri-input">
 										<input type="text" placeholder="Введите номер карты Снегири">
 									</div>
-									<a href="/" class="checkout-btn js-order-next">Применить карту</a>
-									<a href="/" class="checkout-btn mod-gray js-order-next">Продолжить без карты</a>
+									<div class="checkout-snegiri-buttons">
+										<a href="/" class="checkout-btn js-order-next">Применить карту</a>
+										<a href="/" class="checkout-btn mod-gray js-order-next">Продолжить без карты</a>
+									
+									</div>
 								</div>
 							</div>
 						</div>
@@ -3693,7 +3699,15 @@
 									<div class="tab-map">
 										<div id="on_map" class="checkout-tab-delivery js-delivery-tab-link-content active">
 											<div id="map-pickup" style="width: 100%; height: 400px;">
-
+												<script type="text/javascript">
+													ymaps.ready(init);
+													function init(){
+														var myMap = new ymaps.Map("map-pickup", {
+															center: [55.76, 37.64],
+															zoom: 7
+														});
+													}
+												</script>
 											</div>
 										</div>
 										<div id="on_list" class="checkout-tab-delivery js-delivery-tab-link-content">
@@ -3707,19 +3721,105 @@
 												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
 												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
 											</div>
-											<div class="checkout-delivery-addresses">
-												<a href="/" class="checkout-delivery-addresses__item js-address active">Архангельск, Воскресенская улица, 103</a>
-												<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+											<div class="checkout-delivery-addresses js-custom-scroll-checkout">
+												<div class="checkout-delivery-addresses baron-checkout__scroller">
+													<a href="/" class="checkout-delivery-addresses__item js-address active">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+												</div>
+												<div class="baron-checkout__track">
+													<div class="baron-checkout__bar"></div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
 								<div id="delivery_courier" class="checkout-tab-delivery js-delivery-tab-content">
+									<div class="checkout-delivery-row">
+										<div class="checkout-delivery__search">
+											<form action="">
+												<input type="text" placeholder="Введите улицу" maxlength="50" autocomplete="off" class="checkout-delivery-input" value="">
+												<button type="submit" class="checkout-delivery__search-button"></button>
+											</form>
+										</div>
+										<div class="checkout-delivery-tabs mod-width-auto">
+											<a href="#on_map_courier" class="checkout-delivery-tabs-link js-delivery-tab-link active">
+												На карте
+											</a>
+											<a href="#on_list_courier" class="checkout-delivery-tabs-link js-delivery-tab-link">
+												Списком
+											</a>
+										</div>
+									</div>
+									<div class="tab-map">
+										<div id="on_map_courier" class="checkout-tab-delivery js-delivery-tab-link-content active">
+											<div id="map-pickup-courier" style="width: 100%; height: 400px;">
+												<script type="text/javascript">
+													ymaps.ready(init);
+													function init(){
+														var myMap = new ymaps.Map("map-pickup-courier", {
+															center: [55.76, 37.64],
+															zoom: 7
+														});
+													}
+												</script>
+											</div>
+										</div>
+										<div id="on_list_courier" class="checkout-tab-delivery js-delivery-tab-link-content">
+											<div class="checkout-delivery-cities">
+												<a href="/" class="checkout-delivery-cities__item js-city active">Архангельск</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Северодвинск</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Архангельск</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
+												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
+											</div>
+											<div class="checkout-delivery-addresses js-custom-scroll-courier">
+												<div class="checkout-delivery-addresses baron-checkout__scroller">
+													<a href="/" class="checkout-delivery-addresses__item js-address active">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
+												</div>
+												<div class="baron-checkout__track">
+													<div class="baron-checkout__bar"></div>
+												</div>
+											</div>
+										</div>
+									</div>
 
 								</div>
 								<div class="checkout-categories-item-bottom">
