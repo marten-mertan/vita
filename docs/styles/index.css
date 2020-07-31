@@ -77,10 +77,16 @@
         width: 100%; }
       .checkout-categories-item-head-complete {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
         width: 100%;
         display: none; }
+      .checkout-categories-item-head-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%; }
+        .checkout-categories-item-head-row:not(:first-child) {
+          margin-top: 20px; }
       .checkout-categories-item-head__title {
         font-size: 16px;
         font-family: "Gilroy";
@@ -93,7 +99,7 @@
           font-size: 14px;
           font-family: "HelveticaNeueCyr";
           color: #383838;
-          line-height: 1;
+          line-height: 1.2;
           margin-left: 8px; }
     .checkout-categories-item-body {
       padding: 20px;
