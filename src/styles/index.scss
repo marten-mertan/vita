@@ -499,5 +499,9 @@ h1{
         padding: 8px 18px 10px;
         border-radius: 4px;
         margin-top: 10px;
+        &:hover{
+            background: #3ea6b6;
+            color: #fff;
+        }
     }
 }
