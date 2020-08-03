@@ -552,8 +552,6 @@
 									</div>
 									<div class="header-phone">
 										<a class="header-phone__number" href="tel:+78001007272" rel="nofollow">8 800 100 72 72</a>
-										<a class="header-phone__number" href="tel:88182202138" rel="nofollow">20 22 12</a>
-										<a class="header-phone__number" href="tel:88182271416" rel="nofollow">27 14 16</a>
 									</div>
 
 								</div>
@@ -642,15 +640,91 @@
 								</form>
 							</div>
 						</div>
-						<div id="map-auth" class="auth-content-map">
+						<div id="map-pickup" class="auth-content-map">
 							<script type="text/javascript">
-								ymaps.ready(init);
-								function init(){
-									var myMap = new ymaps.Map("map-auth", {
-										center: [55.76, 37.64],
-										zoom: 7
-									});
+								ymaps.ready(function () {
+								var myMap = new ymaps.Map('map-pickup', {
+										center: [55.831191833807, 37.446191310883],
+										zoom: 5,
+										scroll: false,
+										behaviors: ['default', 'scrollZoom']
+									}, {
+										searchControlProvider: 'yandex#search'
+									}),
+										clusterer = new ymaps.Clusterer({
+										preset: 'islands#invertedVioletClusterIcons',
+										groupByCoordinates: false,
+										clusterDisableClickZoom: true,
+										clusterHideIconOnBalloonOpen: false,
+										geoObjectHideIconOnBalloonOpen: false
+									}),
+										getPointData = function (index, image, address, phone, phoneText, time) {
+										return {
+											balloonContentBody: '<div class="card-map"><div class="card-map-img" style="background-image: url('+image+')"></div><div class="card-map-info"><div class="card-map-address">'+address+'</div><a class="card-map-phone" href=tel:"'+phoneText+'">'+phone+'</a><div class="card-map-time">'+time+'</div><a href="/" class="card-map-btn">Выбрать</a></div></div>',
+											clusterCaption: 'метка <strong>' + index + '</strong>'
+										};
+									},
+										getPointOptions = function () {
+										return {
+											iconLayout: 'default#imageWithContent',
+											iconImageSize: [30, 40],
+											iconImageOffset: [-15, -42],
+											balloonMaxWidth: 480,
+											balloonOffset: [0, -42]
+										};
+									},
+									points = [
+										{
+											coord: [57.993839153398,56.256786546],
+											address: 'ул. Серафимовича, дом 14',
+											image: 'assets/img/grid-6.png',
+											phone: '+7 (495) 665-01-00',
+											phoneText: '+74956650100',
+											time: 'Режим работы: </br> Пн-Пт: 8:00-20:00 </br> Сб: 8:00-18:00 </br> Вс: Выходной'
+										},
+										{
+											coord: [57.983839153398,56.26064468],
+											address: 'ул. Серафимовича, дом 14',
+											image: 'assets/img/grid-6.png',
+											phone: '+7 (495) 665-01-00',
+											phoneText: '+74956650100',
+											time: 'Режим работы: </br> Пн-Пт: 8:00-20:00 </br> Сб: 8:00-18:00 </br> Вс: Выходной'
+										},
+										{
+											coord: [57.9838391548684,56.26696318468],
+											address: 'ул. Серафимовича, дом 14',
+											image: 'assets/img/grid-6.png',
+											phone: '+7 (495) 665-01-00',
+											phoneText: '+74956650100',
+											time: 'Режим работы: </br> Пн-Пт: 8:00-20:00 </br> Сб: 8:00-18:00 </br> Вс: Выходной'
+										},
+										{
+											coord: [57.993839184948,56.2769648646],
+											address: 'ул. Серафимовича, дом 14',
+											image: 'assets/img/grid-6.png',
+											phone: '+7 (495) 665-01-00',
+											phoneText: '+74956650100',
+											time: 'Режим работы: </br> Пн-Пт: 8:00-20:00 </br> Сб: 8:00-18:00 </br> Вс: Выходной'
+										}
+										],
+									geoObjects = [];
+								for(var i = 0, len = points.length; i < len; i++) {
+									geoObjects[i] = new ymaps.Placemark(points[i].coord, getPointData(i, points[i].image, points[i].address, points[i].phone, points[i].phoneText, points[i].time), getPointOptions());
 								}
+
+								clusterer.options.set({
+									gridSize: 80,
+									clusterDisableClickZoom: false
+								});
+
+								clusterer.add(geoObjects);
+								myMap.geoObjects.add(clusterer);
+
+								myMap.behaviors.disable('scrollZoom');
+								myMap.setBounds(clusterer.getBounds(), {
+									checkZoomRange: true
+								});
+							});
 							</script>
 						</div>
 					</div>
