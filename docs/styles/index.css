@@ -913,7 +913,7 @@ h1 {
       margin: 4px 12px 0 0; } }
   @media screen and (max-width: 540px) {
     .header-logo {
-      margin-right: 4px; } }
+      margin-right: 0; } }
   .header-logo img {
     display: block;
     width: 156px;
@@ -1009,7 +1009,7 @@ h1 {
   @media screen and (max-width: 720px) {
     .auth-steps {
       flex-direction: column;
-      margin: 20px 0 0; } }
+      margin: 0; } }
   .auth-steps-item {
     display: flex;
     flex-direction: row; }
