@@ -1,0 +1,71 @@
+#footer .mod-vert-align{
+    .copyright{
+        padding-top: 12px;
+        @media screen and (max-width: 870px){
+            display: none;
+        }
+    }
+}
+
+#footer .footer_bottom_inner .links.rows_block{
+    max-width: none;
+    min-width: auto;
+}
+
+.footer-decor{
+    background-size: contain;
+    background-position: 50% 50%;
+    background-image: url(../assets/img/footer-decor.png);
+    background-repeat: repeat;
+    height: 57px;
+    width: 100%;
+}
+
+#footer .footer_bottom_inner{
+    padding-bottom: 10px; 
+}
+
+#footer .footer_bottom_inner .phone_block{
+    text-align: right;
+    padding: 0;
+    @media screen and (max-width: 600px){
+        text-align: center;
+    }
+}
+
+.footer_bottom_inner .rows_block .menus .rows_block, .footer_bottom_inner .rows_block .menus .submenu{
+    @media screen and (max-width: 600px){
+        display: block;
+    }
+
+}
+
+#footer .footer_bottom_inner .phones .phone_wrap a{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Gilroy";
+    color: #383838;
+    font-weight: bold;
+    text-align: right;
+}
+
+#footer .footer_bottom_inner .phones .icons.fa-phone{
+    font-size: 26px;
+}
+
+#footer .footer_inner .submenu_top .menu_item a{
+    font-size: 16px;
+    line-height: 26px;
+    font-family: "Gilroy";
+    color: #383838;
+    font-weight: bold;
+    text-transform: none;
+    margin-bottom: 12px;
+
+}
+
+#footer .footer_inner .menu_item a{
+    font-size: 13px;
+    font-family: "HelveticaNeueCyr";
+    line-height: 21px;
+}

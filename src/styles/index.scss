@@ -108,7 +108,7 @@ h1{
         flex-wrap: nowrap;
         align-items: center;
         margin-left: auto;
-        @media screen and (max-width: 1040px){
+        @media screen and (max-width: 1140px){
             flex-direction: column;
         }
         @media screen and (max-width: 920px){
@@ -150,7 +150,7 @@ h1{
         &__text{
             font-family: "Gilroy";
             font-size: 18px;
-            line-height: 23px;
+            line-height: 25px;
             color: #e6007d;
             font-weight: bold;
             &:not(:first-child){
@@ -174,7 +174,7 @@ h1{
             display: block;
             font-family: "Gilroy";
             font-size: 18px;
-            line-height: 23px;
+            line-height: 25px;
             color: #323232;
             font-weight: bold;
         }

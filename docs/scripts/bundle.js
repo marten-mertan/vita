@@ -220,6 +220,45 @@ $(document).ready(function() {
         $(tab).addClass('active');
     });
 
+    function initScrolling(){
+        $('.js-header-wrap').css({'min-height': $('.js-header').height()});
+        var _isScrolling = false;
+        $(window).scroll(function(){
+            if(!_isScrolling) {
+                _isScrolling = true;
+
+                if($(window).scrollTop() > 150){
+                    $('.js-header').addClass('header-sticky');
+                    _isScrolling = false;
+                }
+                else{
+                    var headerHeight =  0;
+                    $('.js-header').removeClass('header-sticky');
+                    $('.js-header-wrap').css({'padding-top': 0 + 'px'});
+                    _isScrolling = false;
+                }
+            }
+        });
+        $(window).resize(function(){
+            $('.js-header-wrap').css({'min-height': $('.js-header').height()});
+            if(!_isScrolling) {
+                _isScrolling = true;
+
+                if($(window).scrollTop() > 100){
+                    $('.js-header').addClass('header-sticky');
+                    _isScrolling = false;
+                }
+                else{
+                    var headerHeight =  0;
+                    $('.js-header').removeClass('header-sticky');
+                    $('.js-header-wrap').css({'padding-top': 0 + 'px'});
+                    _isScrolling = false;
+                }
+            }
+        });
+    }
+    initScrolling();
+
 });
 
 /***/ })
