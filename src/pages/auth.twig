@@ -291,7 +291,7 @@
 		<meta property="og:url" content="http://vita.leeft.ru:80/"/>
 		<meta property="og:description" content="Оптимальный интернет-магазин"/>
 
-		<script type="text/javascript" src="scripts_old/template_1bf93ed8bb4dbd88bdee9ffeb67e01b3_v1.js"></script>
+		<script type="text/javascript" src="scripts_old/template_925d5d05ef786805bbbbd5687dda744a_v1.js"></script>
 		<script type="text/javascript">
 			var _ba = _ba || [];
             _ba.push(["aid", "10999ccbd3c3943a492e1304aeeb8161"]);
@@ -634,12 +634,23 @@
 				<div class="auth-content">
 					<div id="delivery_myself" class="auth-tab-content js-auth-tab-content active">
 						<div class="auth-content-row">
-							<div class="auth-content-search">
-								<form action="">
-									<input type="text" placeholder="Введите город, улицу или дом" maxlength="50" autocomplete="off" class="auth-content-input" value="">
-									<button type="submit" class="checkout-delivery__search-button"></button>
-								</form>
-							</div>
+                            <label class="auth-content-select">
+								<select placeholder="Выберите город">
+									<option value="Архангельск">Архангельск</option>
+									<option value="Северодвинск">Северодвинск</option>
+									<option value="Новодвинск">Новодвинск</option>
+									<option value="Коряжма">Коряжма</option>
+								</select>
+								<div class="arrow">&gt;</div>
+							</label>
+                            <label class="auth-content-select mod-width-auto">
+                                <select placeholder="Выберите улицу">
+                                    <option value="Гагарина">Гагарина</option>
+                                    <option value="Комсомольская">Комсомольская</option>
+                                    <option value="Василькова">Василькова</option>
+                                </select>
+                                <div class="arrow">&gt;</div>
+                            </label>
 						</div>
 						<div id="map-pickup" class="auth-content-map">
 							<script type="text/javascript">
