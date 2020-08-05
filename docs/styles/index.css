@@ -812,7 +812,7 @@ header .mobile_menu {
     margin-bottom: 10px; }
     .checkout-delivery__search input[type=text] {
       background-color: #faf9fc;
-      padding: 11px 14px;
+      padding: 11px 34px 11px 14px;
       font-size: 14px;
       font-family: "HelveticaNeueCyr";
       color: #383838;
@@ -1050,7 +1050,7 @@ header .mobile_menu {
       font-size: 16px;
       margin: 0;
       padding: 0;
-      padding: 20px 12px 12px;
+      padding: 20px 32px 12px 12px;
       outline: none;
       font-weight: normal;
       width: 100%;
@@ -1547,7 +1547,7 @@ h1 {
     width: 100%; }
     .auth-content-search input[type=text] {
       background-color: #faf9fc;
-      padding: 11px 14px;
+      padding: 11px 34px 11px 14px;
       font-size: 14px;
       font-family: "HelveticaNeueCyr";
       color: #383838;
