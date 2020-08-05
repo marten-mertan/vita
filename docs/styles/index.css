@@ -184,6 +184,10 @@ header .wrap_menu {
     text-transform: none; }
 
 .header_wrap #header .catalog_menu ul.menu > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   font-family: "HelveticaNeueCyr";
   font-weight: normal; }
