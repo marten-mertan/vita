@@ -259,6 +259,11 @@ $(document).ready(function() {
     }
     initScrolling();
 
+    $(document).on('click','.js-search-mobile', function(e){
+        e.preventDefault();
+        $('.mobile_menu-search').toggleClass('opened');
+    });
+
 });
 
 /***/ })
