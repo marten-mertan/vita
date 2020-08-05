@@ -49,11 +49,6 @@
         }
 
     }
-    .mod-desktop{
-        @media screen and (max-width: 780px){
-            display: none;
-        }
-    }
     .header-slogan__text:not(:first-child){
         padding: 0;
     }
@@ -61,6 +56,11 @@
         @media screen and (max-width: 540px){
             padding-left: 6px;
         }
+    }
+}
+.mod-desktop{
+    @media screen and (max-width: 780px){
+        display: none;
     }
 }
 

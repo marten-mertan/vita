@@ -103,6 +103,7 @@ h1{
         }
     }
     &-right{
+        flex: 0 0 auto;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -140,7 +141,7 @@ h1{
         }
     }
     &-slogan{
-        margin-right: 76px;
+        margin-right: 32px;
         @media screen and (max-width: 920px){
             margin-right: 12px;
         }
