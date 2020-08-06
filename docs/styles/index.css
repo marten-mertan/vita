@@ -440,6 +440,10 @@ header .mobile_menu {
     flex-direction: column;
     margin: 0 10px 22px;
     width: calc(33.33% - 20px); }
+    @media screen and (max-width: 720px) {
+      .lk-card {
+        flex: 1 1 auto;
+        width: calc(50% - 20px); } }
     .lk-card-wrapper {
       display: flex;
       flex-direction: column;
@@ -449,6 +453,9 @@ header .mobile_menu {
       padding: 32px 12px;
       height: 100%;
       transition: all .2s ease; }
+      @media screen and (max-width: 720px) {
+        .lk-card-wrapper {
+          padding: 17px 12px; } }
       .lk-card-wrapper:hover {
         background: #00a1b4; }
         .lk-card-wrapper:hover svg {
@@ -458,6 +465,10 @@ header .mobile_menu {
     .lk-card__icon {
       height: 50px;
       margin-bottom: 23px; }
+      @media screen and (max-width: 720px) {
+        .lk-card__icon {
+          height: 25px;
+          margin-bottom: 10px; } }
     .lk-card__text {
       font-size: 17px;
       font-family: "HelveticaNeueCyr";
@@ -466,12 +477,59 @@ header .mobile_menu {
       text-align: center;
       font-weight: 500;
       transition: all .2s ease; }
+      @media screen and (max-width: 720px) {
+        .lk-card__text {
+          font-size: 12px; } }
 
 .icon-heart {
   width: 56px;
   height: 47px;
   fill: #0ba0b2;
   transition: all .2s ease; }
+  @media screen and (max-width: 720px) {
+    .icon-heart {
+      width: 29px;
+      height: 25px; } }
+
+.icon-profile {
+  width: 50px;
+  height: 50px;
+  fill: #0ba0b2;
+  transition: all .2s ease; }
+  @media screen and (max-width: 720px) {
+    .icon-profile {
+      width: 25px;
+      height: 25px; } }
+
+.icon-list {
+  width: 50px;
+  height: 50px;
+  fill: #0ba0b2;
+  transition: all .2s ease; }
+  @media screen and (max-width: 720px) {
+    .icon-list {
+      width: 25px;
+      height: 25px; } }
+
+.icon-card {
+  width: 50px;
+  height: 41px;
+  fill: #0ba0b2;
+  transition: all .2s ease; }
+  @media screen and (max-width: 720px) {
+    .icon-card {
+      width: 25px;
+      height: 20px; } }
+
+.icon-logout {
+  width: 50px;
+  height: 50px;
+  fill: #0ba0b2;
+  transition: all .2s ease; }
+  @media screen and (max-width: 720px) {
+    .icon-logout {
+      width: 25px;
+      height: 25px; } }
 
 .order-after {
   position: relative;
