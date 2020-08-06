@@ -429,16 +429,49 @@ header .mobile_menu {
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2); } }
 
 .lk {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   margin: 0 -10px; }
   .lk-card {
-    margin: 0 10px;
-    width: 33.33%; }
+    display: flex;
+    justify-content: stretch;
+    align-items: stretch;
+    flex-direction: column;
+    margin: 0 10px 22px;
+    width: calc(33.33% - 20px); }
     .lk-card-wrapper {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center;
+      background: #faf9fc;
+      border: 1px solid #f3f3f3;
+      padding: 32px 12px;
+      height: 100%;
+      transition: all .2s ease; }
+      .lk-card-wrapper:hover {
+        background: #00a1b4; }
+        .lk-card-wrapper:hover svg {
+          fill: #fff; }
+        .lk-card-wrapper:hover .lk-card__text {
+          color: #fff; }
     .lk-card__icon {
-      width: 50px;
-      height: 50px; }
+      height: 50px;
+      margin-bottom: 23px; }
+    .lk-card__text {
+      font-size: 17px;
+      font-family: "HelveticaNeueCyr";
+      color: #383838;
+      line-height: 1;
+      text-align: center;
+      font-weight: 500;
+      transition: all .2s ease; }
+
+.icon-heart {
+  width: 56px;
+  height: 47px;
+  fill: #0ba0b2;
+  transition: all .2s ease; }
 
 .order-after {
   position: relative;
@@ -866,13 +899,15 @@ header .mobile_menu {
     flex-wrap: wrap;
     margin-bottom: 20px; }
     .checkout-delivery-addresses__item {
+      position: relative;
       display: block;
       width: calc(50% - 6px);
       font-size: 13px;
       font-family: "HelveticaNeueCyr";
       line-height: 1;
       color: #383838;
-      margin-bottom: 8px; }
+      margin-bottom: 8px;
+      padding-left: 16px; }
       .checkout-delivery-addresses__item:nth-child(2n) {
         margin-left: 12px; }
       .checkout-delivery-addresses__item:hover {
@@ -881,6 +916,17 @@ header .mobile_menu {
       .checkout-delivery-addresses__item.active {
         color: #00a1b4;
         text-decoration: underline !important; }
+      .checkout-delivery-addresses__item:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-radius: 25px;
+        left: 0;
+        top: 6px;
+        transform: translateY(-50%);
+        background-color: #c83238; }
   .checkout-tab-delivery {
     display: none;
     margin-bottom: 20px; }
