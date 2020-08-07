@@ -187,10 +187,11 @@
     width: 100%; }
 
 .colored #header .catalog_menu ul.menu > li {
-  border-radius: 4px;
-  overflow: hidden; }
+  border-radius: 4px; }
   .colored #header .catalog_menu ul.menu > li:not(:last-child) {
     margin-right: 24px; }
+  .colored #header .catalog_menu ul.menu > li > a {
+    border-radius: 4px; }
 
 body #header .catalog_menu ul.menu > li:not(.current):not(.stretch):hover {
   border-radius: 4px; }
@@ -199,7 +200,11 @@ body #header .catalog_menu ul.menu > li:not(.current):not(.stretch):hover {
   margin-left: 24px; }
 
 header .wrap_menu {
-  background: transparent; }
+  background: transparent;
+  width: 100%; }
+
+header .menu-adaptive-new {
+  overflow: visible; }
 
 .header-menu {
   position: relative;
@@ -221,7 +226,8 @@ header .wrap_menu {
         .header-menu-list__item-text {
           display: none; } }
   .header-menu ul.menu > li:not(.current):hover > a {
-    background: #0dbace; }
+    background: #0dbace;
+    border-radius: 4px; }
   .header-menu .fa {
     margin-right: 12px; }
     @media screen and (max-width: 1120px) {

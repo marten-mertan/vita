@@ -158,9 +158,12 @@
 
 .colored #header .catalog_menu ul.menu > li{
     border-radius: 4px;
-    overflow: hidden;
     &:not(:last-child){
         margin-right: 24px;
+
+    }
+    & > a{
+        border-radius: 4px;
 
     }
 }
@@ -176,6 +179,11 @@ body #header .catalog_menu ul.menu>li:not(.current):not(.stretch):hover{
 
 header .wrap_menu{
     background: transparent;
+    width: 100%;
+}
+
+header .menu-adaptive-new{
+    overflow: visible;
 }
 
 .header-menu{
@@ -205,6 +213,7 @@ header .wrap_menu{
     }
     ul.menu>li:not(.current):hover>a{
         background: #0dbace;
+        border-radius: 4px;
     }
     .fa{
         margin-right: 12px;
