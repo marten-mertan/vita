@@ -63,9 +63,15 @@
       white-space: normal;
       overflow-x: auto; } }
   .header-address-wrap {
+    width: calc(100% - 212px);
     max-height: 20px;
     margin-bottom: 10px;
-    overflow: hidden; }
+    overflow: hidden;
+    margin-left: auto; }
+    @media screen and (max-width: 920px) {
+      .header-address-wrap {
+        width: 100%;
+        margin-left: 0; } }
     @media screen and (max-width: 767px) {
       .header-address-wrap {
         max-height: none;
@@ -89,6 +95,8 @@
     .header-wrapper {
       flex-direction: column; } }
   .header-wrapper .header-left {
+    position: relative;
+    top: -10px;
     align-items: flex-start;
     margin-bottom: 0; }
     @media screen and (max-width: 1140px) {
@@ -100,6 +108,8 @@
         width: 100%;
         justify-content: space-between;
         align-items: flex-start; } }
+  .header-wrapper .header-right {
+    margin-top: 4px; }
   .header-wrapper .header-slogan {
     margin-right: 40px; }
     @media screen and (max-width: 920px) {
@@ -110,9 +120,11 @@
         font-size: 12px;
         line-height: 18px; } }
   .header-wrapper .header-logo {
+    top: -38px;
     margin-bottom: 0; }
     @media screen and (max-width: 920px) {
       .header-wrapper .header-logo {
+        top: 0;
         margin: 4px 12px 0 0; } }
     @media screen and (max-width: 540px) {
       .header-wrapper .header-logo img {
@@ -121,10 +133,18 @@
   @media screen and (max-width: 1140px) {
     .header-wrapper .header-right {
       display: none; } }
-  .header-wrapper .header-slogan__text:not(:first-child) {
-    padding: 0; }
+  @media screen and (max-width: 540px) {
+    .header-wrapper .header-slogan__text:not(:first-child) {
+      padding: 0; } }
+  @media screen and (max-width: 1140px) {
+    .header-wrapper .header-phone {
+      margin-top: 20px; } }
+  @media screen and (max-width: 920px) {
+    .header-wrapper .header-phone {
+      margin-top: 0; } }
   @media screen and (max-width: 540px) {
     .header-wrapper .header-phone {
+      margin-top: 0;
       padding-left: 6px; } }
 
 @media screen and (max-width: 780px) {
@@ -148,7 +168,7 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  width: calc(100% - 198px);
+  width: 100%;
   float: right;
   min-height: 70px;
   top: -64px; }
@@ -1460,18 +1480,26 @@ h1 {
       justify-content: space-between; } }
 
 .header-logo {
-  margin-right: 34px;
-  margin-bottom: -10px; }
+  position: relative;
+  top: -60px;
+  margin-right: 20px;
+  margin-bottom: -80px; }
   @media screen and (max-width: 920px) {
     .header-logo {
+      top: 0;
+      margin-bottom: -10px;
       margin: 4px 12px 0 0; } }
   @media screen and (max-width: 540px) {
     .header-logo {
       margin-right: 0; } }
   .header-logo img {
     display: block;
-    width: 156px;
-    height: 92px; }
+    width: 192px;
+    height: 113px; }
+    @media screen and (max-width: 920px) {
+      .header-logo img {
+        width: 156px;
+        height: 92px; } }
     @media screen and (max-width: 540px) {
       .header-logo img {
         width: 110px;
@@ -1485,6 +1513,16 @@ h1 {
   @media screen and (max-width: 540px) {
     .header-slogan {
       margin-right: 0; } }
+  .header-slogan.mod-desktop {
+    display: block; }
+    @media screen and (max-width: 920px) {
+      .header-slogan.mod-desktop {
+        display: none; } }
+  .header-slogan.mod-mobile {
+    display: none; }
+    @media screen and (max-width: 920px) {
+      .header-slogan.mod-mobile {
+        display: block; } }
   .header-slogan__text {
     font-family: "Gilroy";
     font-size: 18px;
@@ -1493,6 +1531,11 @@ h1 {
     font-weight: bold; }
     .header-slogan__text:not(:first-child) {
       padding-left: 8px; }
+    .header-slogan__text.mod-cyr {
+      font-family: "CyrillicOld";
+      font-size: 56px;
+      color: #e30413;
+      line-height: 1; }
 
 .header-phone {
   display: flex;
@@ -1557,6 +1600,17 @@ h1 {
     color: #383838;
     line-height: 19px;
     padding-top: 4px; }
+
+.header-decor {
+  background-size: contain;
+  background-position: 50% 50%;
+  background-image: url(../assets/img/header-decor.png);
+  background-repeat: repeat;
+  height: 41px;
+  width: 100%; }
+  @media screen and (max-width: 920px) {
+    .header-decor {
+      display: none; } }
 
 .auth-steps {
   display: flex;

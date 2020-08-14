@@ -6,9 +6,15 @@
         overflow-x: auto;
     }
     &-wrap{
+        width: calc(100% - 212px);
         max-height: 20px;
         margin-bottom: 10px;
         overflow: hidden;
+        margin-left: auto;
+        @media screen and (max-width: 920px){
+            width: 100%;
+            margin-left: 0;
+        }
         @media screen and (max-width: 767px){
             max-height: none;
             overflow: visible;
@@ -37,6 +43,8 @@
         flex-direction: column;
     }
     .header-left{
+        position: relative;
+        top: -10px;
         align-items: flex-start;
         margin-bottom: 0;
         @media screen and (max-width: 1140px){
@@ -51,6 +59,9 @@
             }
         }
     }
+    .header-right{
+        margin-top: 4px;
+    }
     .header-slogan{
         margin-right: 40px;
         @media screen and (max-width: 920px){
@@ -64,8 +75,11 @@
         }
     }
     .header-logo{
+        top: -38px;
         margin-bottom: 0;
         @media screen and (max-width: 920px){
+            top: 0;
+
             margin: 4px 12px 0 0;
         }
         img{
@@ -82,10 +96,19 @@
 
     }
     .header-slogan__text:not(:first-child){
-        padding: 0;
+        @media screen and (max-width: 540px){
+            padding: 0;
+        }
     }
     .header-phone{
+        @media screen and (max-width: 1140px){
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 920px){
+            margin-top: 0;
+        }
         @media screen and (max-width: 540px){
+            margin-top: 0;
             padding-left: 6px;
         }
     }
@@ -115,7 +138,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    width: calc(100% - 198px);
+    width: 100%;
     float: right;
     min-height: 70px;
     top: -64px;
