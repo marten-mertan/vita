@@ -1535,7 +1535,8 @@ h1 {
       font-family: "CyrillicOld";
       font-size: 56px;
       color: #e30413;
-      line-height: 1; }
+      line-height: 1;
+      font-weight: normal; }
 
 .header-phone {
   display: flex;
