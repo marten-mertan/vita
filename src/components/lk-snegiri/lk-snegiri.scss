@@ -1,0 +1,149 @@
+.lk-snegiri{
+    width: 100%;
+    &-wrap{
+        display: flex;
+        flex-direction: row;
+        padding: 36px 56px 0 56px;
+        background: #fafafa;
+        border: 1px solid #f3f3f3;
+        width: 100%;
+        box-sizing: border-box;
+        @media screen and (max-width: 1140px){
+            flex-direction: column;
+        }
+        @media screen and (max-width: 768px){
+            padding: 20px 20px 0;
+        }
+    }
+    &__img{
+        flex: 0 0 auto;
+        align-self: flex-end;
+        width: 227px;
+        height: 371px;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-image: url(../assets/img/card.png);
+        background-repeat: no-repeat;
+        margin-right: 70px;
+        @media screen and (max-width: 1140px){
+            order: 2;
+        }
+        @media screen and (max-width: 768px){
+            width: 171px;
+            height: 278px;
+        }
+        @media screen and (max-width: 480px){
+            align-self: center;
+            margin: 0;
+        }
+    }
+    &-info{
+        flex: 1 1 auto;
+        max-width: 480px;
+        margin-bottom: 20px;
+        @media screen and (max-width: 1140px){
+            order: 1;
+            max-width: none;
+        }
+        &__title{
+            font-size: 18px;
+            font-family: "Ubuntu";
+            line-height: 1;
+            color: #232833;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 10px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 17px;
+            font-family: "HelveticaNeueCyr";
+            color: #232833;
+            margin-bottom: 20px;
+        }
+    }
+    &-row{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 24px;
+    }
+    &-input{
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 auto;
+        background-color: white;
+        border: 1px solid #eaebec;
+        border-radius: 2px;
+        overflow: hidden;
+        @media screen and (max-width: 480px){
+            flex-direction: column;
+            align-items: flex-end;
+            background-color: transparent;
+            border: none;
+        }
+        input{
+            background-color: white;
+            border: none;
+            padding: 7px 13px 8px;
+            font-size: 14px;
+            line-height: 1;
+            font-family: "HelveticaNeueCyr";
+            @media screen and (max-width: 480px){
+                border: 1px solid #eaebec;
+                padding: 12px 20px;
+                border-radius: 2px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__text{
+            font-size: 13px;
+            line-height: 1;
+            font-family: "HelveticaNeueCyr";
+            color: #888888;
+            margin-bottom: 6px;
+        }
+        &__btn{
+            display: inline-block;
+            flex: 0 0 auto;
+            font-size: 14px;
+            font-weight: 300;
+            font-family: "HelveticaNeueCyr";
+            line-height: 1;
+            padding: 12px;
+            background: #00a1b4;
+            border: 1px solid #00a1b4;
+            color: #fff;
+            margin-left: 20px;
+            max-width: 215px;
+            text-align: center;
+            margin: 2px;
+            @media screen and (max-width: 480px){
+                max-width: none;
+                width: 100%;
+            }
+            &:hover {
+                background: #3ea6b6;
+                color: #fff;
+            }
+        }
+    }
+    &-list{
+        &__item{
+            font-size: 14px;
+            font-family: "Ubuntu";
+            color: #232833;
+            line-height: 1.5;
+            font-weight: 300;
+            margin-bottom: 8px;
+            &:before{
+                display: inline-block;
+                height: 4px;
+                content: "";
+                border-top: 1px solid #232833;
+                width: 26px;
+                margin-right: 11px;
+            }
+        }
+    }
+}
