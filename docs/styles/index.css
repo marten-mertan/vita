@@ -563,6 +563,9 @@ header .mobile_menu {
     margin-bottom: -48px;
     box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.2); } }
 
+.header_wrap #header > .wrapper_inner {
+  z-index: 4; }
+
 .lk-snegiri {
   width: 100%; }
   .lk-snegiri-wrap {
