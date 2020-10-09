@@ -264,6 +264,10 @@ $(document).ready(function() {
         $('.mobile_menu-search').toggleClass('opened');
     });
 
+    $(document).on('click','.js-show-more', function(e){
+        e.preventDefault();
+        $('.js-catalog-section').toggleClass('opened');
+    });
 });
 
 /***/ })
