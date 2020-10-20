@@ -268,6 +268,11 @@ $(document).ready(function() {
         e.preventDefault();
         $('.js-catalog-section').toggleClass('opened');
     });
+
+    //левое меню делим на три колонки
+    $('.menu_top_block.catalog_block .dropdown>li.full>.dropdown, .menu_top_block.catalogfirst li.full>.dropdown').masonry({
+        itemSelector: '.menu_top_block.catalog_block .dropdown>li.full>.dropdown>li, header .menu.top.catalogfirst li.full>.dropdown>li'
+    });
 });
 
 /***/ })
