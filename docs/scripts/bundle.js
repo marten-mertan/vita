@@ -270,8 +270,8 @@ $(document).ready(function() {
     });
 
     //левое меню делим на три колонки
-    var $leftMenu = $('.menu_top_block.catalog_block .dropdown>li.full>.dropdown').masonry({
-        itemSelector: '.menu_top_block.catalog_block .dropdown>li.full>.dropdown>li',
+    var $leftMenu = $('.menu_top_block.catalog_block .dropdown>li.full>.dropdown, .menu_top_block.catalogfirst li.full>.dropdown').masonry({
+        itemSelector: '.menu_top_block.catalog_block .dropdown>li.full>.dropdown>li, .menu_top_block.catalogfirst li.full>.dropdown>li',
         transitionDuration: 0
     });
 
