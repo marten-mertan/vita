@@ -561,13 +561,11 @@ h1{
 
 //правки левого меню
 .menu_top_block.catalog_block .dropdown>li.full>.dropdown, .menu_top_block.catalogfirst li.full>.dropdown{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     padding: 6px 0 8px;
     position: absolute !important;
 }
 .menu_top_block.catalog_block .dropdown>li.full>.dropdown>li, header .menu.top.catalogfirst li.full>.dropdown>li{
+    flex: 0 0 auto;
     width: 33%;
     float: none;
     padding: 8px 26px 9px;
@@ -584,12 +582,4 @@ h1{
 }
 body .menu_top_block li.full .dropdown>li>a.section1{
     margin-bottom: 6px;
-}
-.menu_top_block li.full:not(.v_bottom):hover>.dropdown{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding: 6px 0 8px;
-    position: absolute !important;
-
 }

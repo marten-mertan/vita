@@ -270,9 +270,14 @@ $(document).ready(function() {
     });
 
     //левое меню делим на три колонки
-    $('.menu_top_block.catalog_block .dropdown>li.full>.dropdown, .menu_top_block.catalogfirst li.full>.dropdown').masonry({
-        itemSelector: '.menu_top_block.catalog_block .dropdown>li.full>.dropdown>li, header .menu.top.catalogfirst li.full>.dropdown>li'
+    var $leftMenu = $('.menu_top_block.catalog_block .dropdown>li.full>.dropdown').masonry({
+        itemSelector: '.menu_top_block.catalog_block .dropdown>li.full>.dropdown>li',
+        transitionDuration: 0
     });
+
+    $(document).on('mouseenter','.menu_top_block li.full:not(.v_bottom)', function(e){
+        $leftMenu.masonry();
+      });
 });
 
 /***/ })
