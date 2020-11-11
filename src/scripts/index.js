@@ -78,11 +78,13 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).parents('.js-order-section').addClass('closed complete');
         var nextEl = $('.js-order-section').not('.complete').first();
-        nextEl.removeClass('closed');
-        var menuHeight = 0,
-            top = nextEl.offset().top,
-            topIndent = top - menuHeight;
-        $('html').animate({scrollTop: topIndent}, 300);
+        if (nextEl.length){
+            nextEl.removeClass('closed');
+            var menuHeight = 0,
+                top = nextEl.offset().top,
+                topIndent = top - menuHeight;
+            $('html').animate({scrollTop: topIndent}, 300);
+        }
     });
 
     $(document).on('click','.js-order-back', function(e){

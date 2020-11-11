@@ -827,6 +827,32 @@
             }
         }
     }
+    &-attention{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        &__icon{
+            flex: 0 0 auto;
+            margin-right: 10px;
+            align-self: flex-start;
+            height: 27px;
+
+        }
+        &__text{
+            flex: 1 1 auto;
+            font-size: 14px;
+            line-height: 17px;
+            font-family: Ubuntu,Arial,Helvetica,sans-serif;
+            color: #383838;
+            font-weight: normal;
+
+            .mod-red{
+                color: #e6007d;
+            }   
+        }
+    }
 }
 
 .icon-check{

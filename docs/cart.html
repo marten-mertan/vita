@@ -15,6 +15,8 @@
 		<link href="styles_old/ui.font.opensans.min.css" type="text/css" rel="stylesheet"/>
 		<link href="styles_old/main.popup.bundle.min.css" type="text/css" rel="stylesheet"/>
 		<link href="styles_old/popup.min.css" type="text/css" rel="stylesheet"/>
+		<link href="styles_old/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+
 		<link href="styles_old/template.css" type="text/css" data-template-style="true" rel="stylesheet"/>
 
 		<link href="fonts/gilroy/gilroy.css" type="text/css" data-template-style="true" rel="stylesheet"/>
@@ -3632,17 +3634,21 @@
 								<span class="separator">-</span>
 								<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
 									<span itemprop="item">
-										<span itemprop="name">Оформление заказа</span><meta itemprop="position" content="2"></span>
+										<span itemprop="name">Корзина</span><meta itemprop="position" content="2"></span>
 								</span>
 							</div>
 							<!--title_content-->
-							<h1 id="pagetitle">Оформление заказа</h1>
+							<h1 id="pagetitle">Корзина</h1>
 							<!--end-title_content-->
+
+                            <!--print_content-->
+                            <span class="basket_sort"><span class="basket_print button grey_br transparent">Распечатать</span></span>
+							<!--end-print_content-->
 
 							<div class="vita-block">
 	<form action="" method="POST" enctype="multipart/form-data">
-        <section class="checkout">
-			<div class="checkout-content js-content">
+        <section class="cart">
+			<div class="cart-content js-content">
 				<div class="checkout-categories">
 					<div class="checkout-categories-item js-order-section">
 						<div class="checkout-categories-item-head">
@@ -3679,692 +3685,206 @@
 							</div>
 						</div>
 					</div>
-					<div class="checkout-categories-item js-order-section closed">
-						<div class="checkout-categories-item-head">
-							<div class="checkout-categories-item-head-progress">
-								<span class="checkout-categories-item-head__title">Доставка:</span>
-							</div>
-							<div class="checkout-categories-item-head-complete">
-								<div class="checkout-categories-item-head-row">
-									<span class="checkout-categories-item-head__title mod-complete">Доставка:</span>
-									<span class="checkout-categories-item-head__title-text">доставка курьером</span>
-									<svg class="icon-check"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink"
-										width="32px" height="23px">
-										<path fill-rule="evenodd"  fill="rgb(0, 161, 180)"
-										d="M0.652,10.660 L8.754,22.814 L31.036,0.532 L8.754,14.711 L0.652,10.660 Z"/>
-									</svg>
-								</div>
-								<div class="checkout-categories-item-head-row">
-									<span class="checkout-categories-item-head__title mod-complete">Аптека:</span>
-									<span class="checkout-categories-item-head__title-text">Гагарина 12, строение 5</span>
-								</div>
-							</div>
-						</div>
-						<div class="checkout-categories-item-body">
-							<div class="checkout-delivery">
-								<div class="checkout-delivery-row">
-									<div class="checkout-delivery-tabs">
-										<a href="#delivery_myself" class="checkout-delivery-tabs-btn js-delivery-tab active">
-											Самовывоз
-										</a>
-										<a href="#delivery_courier"  class="checkout-delivery-tabs-btn js-delivery-tab">
-											Доставка курьером
-										</a>
-									</div>
-									<div class="checkout-delivery__text">
-										* Это обязательное действие, и от него зависит наличие товара и стоимость доставки
-									</div>
-								</div>
-								<div id="delivery_myself" class="checkout-tab-delivery js-delivery-tab-content active">
-									<div class="checkout-delivery-row">
-                                        <label class="checkout-delivery__input">
-                                            <select placeholder="Выберите город">
-												<option value="Архангельск">Архангельск</option>
-												<option value="Северодвинск">Северодвинск</option>
-												<option value="Новодвинск">Новодвинск</option>
-												<option value="Коряжма">Коряжма</option>
-											</select>
-											<div class="arrow">></div>
-                                        </label>
-										<div class="checkout-delivery__search">
-											<form action="">
-												<input type="text" placeholder="Введите улицу" maxlength="50" autocomplete="off" class="checkout-delivery-input" value="">
-												<button type="submit" class="checkout-delivery__search-button"></button>
-											</form>
-										</div>
-										<div class="checkout-delivery-tabs mod-width-auto">
-											<a href="#on_map" class="checkout-delivery-tabs-link js-delivery-tab-link active">
-												На карте
-											</a>
-											<a href="#on_list" class="checkout-delivery-tabs-link js-delivery-tab-link">
-												Списком
-											</a>
-										</div>
-									</div>
-									<div class="tab-map">
-										<div id="on_map" class="checkout-tab-delivery js-delivery-tab-link-content active">
-											<div id="map-pickup" style="width: 100%; height: 400px;">
-												<script type="text/javascript">
-													ymaps.ready(init);
-													function init(){
-														var myMap = new ymaps.Map("map-pickup", {
-															center: [55.76, 37.64],
-															zoom: 7
-														});
-													}
-												</script>
-											</div>
-										</div>
-										<div id="on_list" class="checkout-tab-delivery js-delivery-tab-link-content">
-											<div class="checkout-delivery-cities">
-												<a href="/" class="checkout-delivery-cities__item js-city active">Архангельск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Северодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Архангельск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
-											</div>
-											<div class="checkout-delivery-addresses js-custom-scroll-checkout">
-												<div class="checkout-delivery-addresses baron-checkout__scroller">
-													<a href="/" class="checkout-delivery-addresses__item js-address active">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												</div>
-												<div class="baron-checkout__track">
-													<div class="baron-checkout__bar"></div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div id="delivery_courier" class="checkout-tab-delivery js-delivery-tab-content">
-									<div class="checkout-delivery-row">
-										<div class="checkout-delivery__search">
-											<form action="">
-												<input type="text" placeholder="Введите улицу" maxlength="50" autocomplete="off" class="checkout-delivery-input" value="">
-												<button type="submit" class="checkout-delivery__search-button"></button>
-											</form>
-										</div>
-										<div class="checkout-delivery-tabs mod-width-auto">
-											<a href="#on_map_courier" class="checkout-delivery-tabs-link js-delivery-tab-link active">
-												На карте
-											</a>
-											<a href="#on_list_courier" class="checkout-delivery-tabs-link js-delivery-tab-link">
-												Списком
-											</a>
-										</div>
-									</div>
-									<div class="tab-map">
-										<div id="on_map_courier" class="checkout-tab-delivery js-delivery-tab-link-content active">
-											<div id="map-pickup-courier" style="width: 100%; height: 400px;">
-												<script type="text/javascript">
-													ymaps.ready(init);
-													function init(){
-														var myMap = new ymaps.Map("map-pickup-courier", {
-															center: [55.76, 37.64],
-															zoom: 7
-														});
-													}
-												</script>
-											</div>
-										</div>
-										<div id="on_list_courier" class="checkout-tab-delivery js-delivery-tab-link-content">
-											<div class="checkout-delivery-cities">
-												<a href="/" class="checkout-delivery-cities__item js-city active">Архангельск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Северодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Архангельск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Новодвинск</a>
-												<a href="/" class="checkout-delivery-cities__item js-city">Коряжма</a>
-											</div>
-											<div class="checkout-delivery-addresses js-custom-scroll-courier">
-												<div class="checkout-delivery-addresses baron-checkout__scroller">
-													<a href="/" class="checkout-delivery-addresses__item js-address active">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-													<a href="/" class="checkout-delivery-addresses__item js-address">Архангельск, Воскресенская улица, 103</a>
-												</div>
-												<div class="baron-checkout__track">
-													<div class="baron-checkout__bar"></div>
-												</div>
-											</div>
-										</div>
-									</div>
+                    <div id="basket-root" class="bx-basket bx-blue bx-step-opacity" style="opacity: 1;">
+                        <div class="row">
+                            <div class="col-xs-12" data-entity="basket-total-block" style="">
+                                <div class="basket-checkout-container visible" data-entity="basket-checkout-aligner" style="">
+                                    <div class="basket-checkout-section">
+                                        <div class="basket-checkout-section-inner">
+                                            <div class="basket-checkout-block basket-checkout-block-total">
+                                                <div class="basket-checkout-block-total-inner">
+                                                    <div class="basket-checkout-block-total-title">Итого:</div>
+                                                    <div class="basket-checkout-block-total-description">
+                                                        Сумма НДС: 122.97 руб.
+                                                    </div>
+                                                </div>
+                                            </div>
 
-								</div>
-								<div class="checkout-categories-item-bottom">
-									<div class="legend"><div class="item empty-order">В 83 аптеках недоступно к заказу</div></div>
-									<div class="checkout-categories-item-bottom-buttons">
-										<a class="checkout-categories-item-bottom-buttons__btn mod-gray js-order-back">
-											Назад
-										</a>
-										<a class="checkout-categories-item-bottom-buttons__btn js-order-next">
-											Далее
-										</a>
+                                            <div class="basket-checkout-block basket-checkout-block-total-price">
+                                                <div class="basket-checkout-block-total-price-inner">
 
-									</div>
-								</div>
-								
-							</div>
-						</div>
-					</div>
-					<div class="checkout-categories-item js-order-section closed">
-						<div class="checkout-categories-item-head">
-							<div class="checkout-categories-item-head-progress">
-								<span class="checkout-categories-item-head__title">Проверьте товары в заказе:</span>
-							</div>
-							<div class="checkout-categories-item-head-complete">
-								<div class="checkout-categories-item-head-row">
-									<span class="checkout-categories-item-head__title mod-complete">Товаров в корзине:</span>
-									<span class="checkout-categories-item-head__title-text">23</span>
-									<svg class="icon-check"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink"
-										width="32px" height="23px">
-										<path fill-rule="evenodd"  fill="rgb(0, 161, 180)"
-										d="M0.652,10.660 L8.754,22.814 L31.036,0.532 L8.754,14.711 L0.652,10.660 Z"/>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="checkout-categories-item-body">
-							<div class="checkout-goods">
-								<div class="checkout-goods-row">
-									<div class="checkout-goods__title">В наличии:</div>
-								</div>
-								<div class="checkout-goods-row">
-									<div class="checkout-goods-item">
-										<div class="name checkout-goods-item__name">Минирин 0,1мг таб.№30  НВС</div>
-										<div class="number"><span class="minus">-</span><input type="text" name="basket_count_395" value="2"><span class="plus">+</span></div>
-										<div class="price checkout-goods-item__price">967 руб. / 1&nbsp;934 руб.</div>
-									</div>
-								</div>
-								<div class="checkout-goods-row">
-									<div class="checkout-goods-item">
-										<div class="name checkout-goods-item__name">Спазматон таб.№20 (В) </div>
-										<div class="number"><span class="minus">-</span><input type="text" name="basket_count_395" value="2"><span class="plus">+</span></div>
-										<div class="price checkout-goods-item__price">967 руб. / 1&nbsp;934 руб.</div>
-									</div>
-								</div>
-								<div class="checkout-goods-row">
-									<div class="checkout-goods-item">
-										<div class="name checkout-goods-item__name">Черника форте с вит, цинком  таб.№100 БАД</div>
-										<div class="number"><span class="minus">-</span><input type="text" name="basket_count_395" value="2"><span class="plus">+</span></div>
-										<div class="price checkout-goods-item__price">967 руб. / 1&nbsp;934 руб.</div>
-									</div>
-								</div>
-								<div class="checkout-goods-row">
-									<div class="checkout-goods-item">
-										<div class="name checkout-goods-item__name">Минирин 0,1мг таб.№30  НВС</div>
-										<div class="number"><span class="minus">-</span><input type="text" name="basket_count_395" value="2"><span class="plus">+</span></div>
-										<div class="price checkout-goods-item__price">967 руб. / 1&nbsp;934 руб.</div>
-									</div>
-								</div>
-								<div class="checkout-goods-row">
-									<div class="checkout-goods__title">Под заказ:</div>
-								</div>
-								<div class="checkout-goods-row">
-									<div class="checkout-goods-item">
-										<div class="name checkout-goods-item__name">Рецепт #43535353</div>
-										<div class="number"><span class="minus">-</span><input type="text" name="basket_count_395" value="2"><span class="plus">+</span></div>
-										<div class="price checkout-goods-item__price">967 руб. / 1&nbsp;934 руб.</div>
-									</div>
-								</div>
-							</div>
-							<div class="checkout-categories-item-bottom">
-								<div class="checkout-categories-item-bottom-buttons">
-									<a class="checkout-categories-item-bottom-buttons__btn mod-gray js-order-back">
-										Назад
-									</a>
-									<a class="checkout-categories-item-bottom-buttons__btn js-order-next">
-										Далее
-									</a>
-								</div>
-							</div>
-						</div>
-					
-					</div>
-					<div class="checkout-categories-item js-order-section closed">
-						<div class="checkout-categories-item-head">
-							<div class="checkout-categories-item-head-progress">
-								<span class="checkout-categories-item-head__title">Оплата:</span>
-							</div>
-							<div class="checkout-categories-item-head-complete">
-								<div class="checkout-categories-item-head-row">
-									<span class="checkout-categories-item-head__title mod-complete">Оплата:</span>
-									<span class="checkout-categories-item-head__title-text">картой при получении</span>
-									<svg class="icon-check"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink"
-										width="32px" height="23px">
-										<path fill-rule="evenodd"  fill="rgb(0, 161, 180)"
-										d="M0.652,10.660 L8.754,22.814 L31.036,0.532 L8.754,14.711 L0.652,10.660 Z"/>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="checkout-categories-item-body">
-							<div class="checkout-payment">
-								<div class="checkout-payment-row">
-									<label class="checkout-payment-item js-payment-item">
-                                        <input name="payment" type="radio" value="0">
-                                            <div class="checkout-payment-item-wrapper">
-                                                <div class="checkout-payment-item__icon">
-                                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 487 487" style="enable-background:new 0 0 487 487;" xml:space="preserve">
-                                                    <path d="M133.4,222.2c0,64,51.9,115.8,115.8,115.8S365,286.1,365,222.2s-51.9-115.8-115.8-115.8
-                                                        C185.3,106.4,133.4,158.2,133.4,222.2z M249.2,122.3c55.2,0,99.9,44.7,99.9,99.9S304.3,322,249.2,322s-99.9-44.7-99.9-99.9
-                                                        C149.4,167,194.1,122.4,249.2,122.3z"></path>
-                                                    <path d="M404.4,357.7l-62.6,29.6c-8.6-16.1-25.2-26.3-43.5-26.8l-57.8-1.6c-9.1-0.3-18.1-2.6-26.3-6.8l-5.9-3
-                                                        c-30.1-15.7-66-15.6-96,0.1l0.4-13.3c0.1-4.4-3.4-8.1-7.8-8.2l-63.3-1.7c-4.4-0.1-8.1,3.4-8.2,7.8l-3.8,139
-                                                        c-0.1,4.4,3.4,8.1,7.8,8.2l63.3,1.7h0.2c4.3,0,7.9-3.4,8-7.8l0.2-6.7l16.5-8.8c6.5-3.5,14-4.3,21.1-2.3l98.3,27.6
-                                                        c0.2,0.1,0.3,0.1,0.5,0.1c7.1,1.5,14.3,2.2,21.6,2.2c15.4,0,30.6-3.3,44.5-9.7c0.3-0.2,0.7-0.3,1-0.5l142.5-92.2
-                                                        c3.5-2.3,4.7-7,2.6-10.6C447.1,355.2,423.7,348,404.4,357.7z M45.9,465.1l3.4-123l47.4,1.3l-3.4,123L45.9,465.1z M304.4,463
-                                                        c-17.4,7.8-36.7,10-55.4,6.2l-98-27.5c-11-3.1-22.8-1.8-32.9,3.6l-8.4,4.5l2.3-81.8c26.6-17.7,60.8-19.5,89.2-4.8l5.9,3
-                                                        c10.3,5.3,21.6,8.2,33.2,8.6l57.8,1.6c16.2,0.5,30,12,33.3,27.9l-86-2.4c-4.4-0.1-8.1,3.4-8.2,7.8c-0.1,4.4,3.4,8.1,7.8,8.2l95,2.6
-                                                        h0.2c4.3,0,7.9-3.4,8-7.8c0.1-3.5-0.2-6.9-0.8-10.4l64.2-30.3c0.1,0,0.1-0.1,0.2-0.1c9.1-4.6,20.1-3.1,27.6,3.9L304.4,463z"></path>
-                                                    <path d="M257.2,83.9V8c0-4.4-3.6-8-8-8s-8,3.6-8,8v75.9c0,4.4,3.6,8,8,8S257.2,88.3,257.2,83.9z"></path>
-                                                    <path d="M317.1,83.9V47.9c0-4.4-3.6-8-8-8c-4.4,0-8,3.6-8,8v35.9c0,4.4,3.6,8,8,8C313.5,91.9,317.1,88.3,317.1,83.9z"></path>
-                                                    <path d="M197.3,83.9V47.9c0-4.4-3.6-8-8-8s-8,3.6-8,8v35.9c0,4.4,3.6,8,8,8S197.3,88.3,197.3,83.9z"></path>
-                                                    <g>
-                                                        <g>
-                                                            <path d="M202.1,264.7h20v17.1c0,0.8,0.3,1.5,0.8,2.1c0.5,0.5,1.2,0.8,2.1,0.8h14.9c0.8,0,1.4-0.3,2-0.8c0.6-0.5,0.8-1.2,0.8-2.1
-                                                                v-17.1h45.1c0.8,0,1.5-0.3,2.1-0.8c0.5-0.5,0.8-1.2,0.8-2.1v-11.4c0-0.8-0.3-1.5-0.8-2.1c-0.5-0.5-1.2-0.8-2.1-0.8h-45.1V237h30.4
-                                                                c11.9,0,21.6-3.6,29.1-10.9c7.5-7.3,11.3-16.6,11.3-28.1c0-11.5-3.8-20.9-11.3-28.1c-7.5-7.3-17.2-10.9-29.1-10.9H225
-                                                                c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.5-0.8,1.2-0.8,2.1V218h-20c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.6-0.8,1.2-0.8,2v13.3
-                                                                c0,0.8,0.3,1.5,0.8,2.1c0.5,0.5,1.2,0.8,2.1,0.8h20v10.5h-20c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.5-0.8,1.2-0.8,2.1v11.4
-                                                                c0,0.8,0.3,1.5,0.8,2.1C200.6,264.4,201.3,264.7,202.1,264.7z M242.7,178h28.6c6.3,0,11.4,1.8,15.3,5.5c3.9,3.7,5.8,8.5,5.8,14.5
-                                                                c0,6-1.9,10.8-5.8,14.5c-3.9,3.7-9,5.5-15.3,5.5h-28.6V178z"></path>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__icon-hover">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471 471" style="enable-background:new 0 0 471 471;" xml:space="preserve">
-														<path d="M403.9,370.1c-0.1,0-0.1,0.1-0.2,0.1l-64.9,30.7c0.7,3.6,1,7.2,0.9,10.9c-0.1,3.8-3.2,6.8-7,6.8c-0.1,0-0.1,0-0.2,0l-95-2.6
-															c-3.9-0.1-6.9-3.3-6.8-7.2c0.1-3.9,3.3-6.9,7.2-6.8l87.3,2.4c-2.9-16.9-17.3-29.4-34.5-29.9l-57.8-1.6c-11.4-0.3-22.6-3.2-32.7-8.5
-															l-5.9-3c-28.9-15-63.6-13.1-90.6,5.1l-2.3,84l9.9-5.3c9.9-5.3,21.4-6.6,32.2-3.5l98,27.5c18.9,3.9,38.5,1.7,56.1-6.3L433.5,375
-															C425.8,367.1,413.8,365.1,403.9,370.1z"></path>
-														<path d="M37.7,465.1l3.4-125l49.4,1.4l-3.4,125L37.7,465.1z"></path>
-														<path d="M248.6,82.9V7c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v75.9c0,3.9,3.1,7,7,7C245.4,89.9,248.6,86.7,248.6,82.9z"></path>
-														<path d="M308.5,82.9V46.9c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v35.9c0,3.9,3.1,7,7,7C305.3,89.9,308.5,86.7,308.5,82.9z"></path>
-														<path d="M188.7,82.9V46.9c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v35.9c0,3.9,3.1,7,7,7C185.5,89.9,188.7,86.7,188.7,82.9z"></path>
-														<g>
-															<path d="M263.6,177.1h-28.7v40.2h28.7c6.3,0,11.5-1.9,15.3-5.6c3.9-3.7,5.8-8.6,5.8-14.5c0-6-1.9-10.8-5.8-14.5
-																C275,179,269.9,177.1,263.6,177.1z"></path>
-															<path d="M242,120.3c-55.7,0.1-100.8,45.2-100.9,100.9c0,55.7,45.2,100.9,100.9,100.9s100.9-45.2,100.9-100.9
-																C342.9,165.5,297.7,120.3,242,120.3z M294.7,225.5c-7.6,7.3-17.3,10.9-29.3,10.9h-30.5V247h45.3c0.8,0,1.5,0.3,2.1,0.8
-																c0.5,0.5,0.8,1.2,0.8,2.1v11.5c0,0.8-0.3,1.5-0.8,2.1c-0.5,0.5-1.2,0.8-2.1,0.8h-45.3v17.2c0,0.8-0.3,1.5-0.9,2.1
-																c-0.6,0.5-1.2,0.8-2,0.8h-15c-0.8,0-1.5-0.3-2.1-0.8c-0.5-0.5-0.8-1.2-0.8-2.1v-17.2H194c-0.8,0-1.5-0.3-2.1-0.8
-																c-0.5-0.5-0.8-1.2-0.8-2.1v-11.5c0-0.8,0.3-1.5,0.8-2.1c0.5-0.5,1.2-0.8,2.1-0.8h20.1v-10.6H194c-0.8,0-1.5-0.3-2.1-0.8
-																c-0.5-0.5-0.8-1.2-0.8-2.1v-13.4c0-0.8,0.3-1.5,0.8-2c0.5-0.6,1.2-0.9,2.1-0.9h20.1v-56.5c0-0.8,0.3-1.5,0.8-2.1
-																c0.5-0.5,1.2-0.8,2.1-0.8h48.4c12,0,21.7,3.7,29.3,10.9c7.6,7.3,11.4,16.7,11.4,28.3C306,208.8,302.2,218.2,294.7,225.5z"></path>
-														</g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__text">
-                                                    Оплата наличными при&nbsp;получении
+                                                    <div class="basket-coupon-block-total-price-current" data-entity="basket-total-price">737.85 руб.</div>
+
                                                 </div>
                                             </div>
-                                        </label>
-									<label class="checkout-payment-item js-payment-item">
-                                        <input name="payment" type="radio" value="0">
-                                            <div class="checkout-payment-item-wrapper">
-                                                <div class="checkout-payment-item__icon">
-													<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <g>
-                                                                <path d="M469.334,170.671h-5.926l-73.272-127.99c-5.677-9.896-14.844-16.969-25.813-19.906
-                                                                    c-4.078-1.089-8.225-1.558-12.331-1.422c-6.885,0.229-13.652,2.161-19.773,5.724L21.157,208.171
-                                                                    C7.546,216.092-0.063,230.539,0,245.339c0.03,7.152,1.865,14.387,5.656,21.009L64,368.257v79.747
-                                                                    c0,23.531,19.135,42.667,42.667,42.667h362.667c23.531,0,42.667-19.135,42.667-42.667V213.337
-                                                                    C512,189.806,492.865,170.671,469.334,170.671z M64,325.302l-8.147-14.232L64,306.327V325.302z M64,281.643l-18.747,10.914
-                                                                    l-10.531-18.396L64,257.117V281.643z M64,213.337v19.096l-39.858,23.203c-5.762-10.172-2.306-23.173,7.743-29.029l32.698-19.035
-                                                                    C64.323,209.477,64,211.363,64,213.337z M438.817,170.671H296.998l106.366-61.928L438.817,170.671z M392.765,90.229
-                                                                    l-138.163,80.441h-42.124l169.758-98.833L392.765,90.229z M342.959,45.514c4.833-2.813,10.458-3.594,15.844-2.135
-                                                                    c5.448,1.458,9.99,4.979,12.813,9.906l0.022,0.039L170.081,170.671h-42.109L342.959,45.514z M490.667,448.004
-                                                                    c0,11.76-9.573,21.333-21.333,21.333H106.667c-11.76,0-21.333-9.573-21.333-21.333V213.337c0-11.76,9.573-21.333,21.333-21.333
-                                                                    h362.667c11.76,0,21.333,9.573,21.333,21.333V448.004z"></path>
-                                                                <path d="M404,341.337c-7,0-13.802,1.625-20,4.75c-6.198-3.125-13-4.75-20-4.75c-24.26,0-44,19.135-44,42.667
-                                                                    s19.74,42.667,44,42.667c7,0,13.802-1.625,20-4.75c6.198,3.125,13,4.75,20,4.75c24.26,0,44-19.135,44-42.667
-                                                                    S428.261,341.337,404,341.337z M404,405.337c-4.927,0-9.667-1.563-13.74-4.51c-1.865-1.354-4.063-2.031-6.26-2.031
-                                                                    c-2.198,0-4.396,0.677-6.26,2.031c-4.073,2.948-8.813,4.51-13.74,4.51c-12.5,0-22.667-9.573-22.667-21.333
-                                                                    S351.5,362.671,364,362.671c4.927,0,9.667,1.563,13.74,4.51c3.729,2.708,8.792,2.708,12.521,0c4.073-2.948,8.813-4.51,13.74-4.51
-                                                                    c12.5,0,22.667,9.573,22.667,21.333S416.5,405.337,404,405.337z"></path>
-                                                                <path d="M138.667,362.671h106.667c5.896,0,10.667-4.771,10.667-10.667s-4.771-10.667-10.667-10.667H138.667
-                                                                    c-5.896,0-10.667,4.771-10.667,10.667S132.771,362.671,138.667,362.671z"></path>
-                                                                <path d="M288,405.337H138.667c-5.896,0-10.667,4.771-10.667,10.667s4.771,10.667,10.667,10.667H288
-                                                                    c5.896,0,10.667-4.771,10.667-10.667S293.896,405.337,288,405.337z"></path>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__icon-hover">
-                                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                                                    <g>
-                                                        <g>
-                                                            <path d="M469.331,170.67h-5.91l-73.277-127.99c-5.677-9.896-14.845-16.969-25.814-19.906c-10.917-2.917-22.335-1.385-32.106,4.302
-                                                                L21.141,208.17C0.953,219.92-5.996,246.025,5.64,266.347l5.278,9.219l0.004,0.01l8.82,15.398L64,368.256v79.747
-                                                                c0,23.531,19.137,42.667,42.669,42.667h362.661c23.533,0,42.669-19.135,42.669-42.667V213.337
-                                                                C512,189.806,492.863,170.67,469.331,170.67z M64.002,325.302l-8.147-14.232l8.147-4.743V325.302z M64.002,213.337v19.096
-                                                                l-39.859,23.203c-5.762-10.172-2.306-23.173,7.744-29.029l32.699-19.035C64.325,209.476,64.002,211.363,64.002,213.337z
-                                                                M403.376,108.742l35.454,61.928H297.007L403.376,108.742z M342.969,45.514c4.833-2.813,10.459-3.594,15.844-2.135
-                                                                c5.448,1.458,9.99,4.979,12.813,9.906l0.022,0.039L170.086,170.67h-42.111L342.969,45.514z M256.008,352.004
-                                                                c0,5.896-4.771,10.667-10.667,10.667h-106.67c-5.896,0-10.667-4.771-10.667-10.667s4.771-10.667,10.667-10.667h106.67
-                                                                C251.237,341.337,256.008,346.108,256.008,352.004z M288.009,426.67H138.671c-5.896,0-10.667-4.771-10.667-10.667
-                                                                s4.771-10.667,10.667-10.667h149.338c5.896,0,10.667,4.771,10.667,10.667S293.905,426.67,288.009,426.67z M404.013,426.67
-                                                                c-7,0-13.802-1.625-20.001-4.75c-6.198,3.125-13,4.75-20.001,4.75c-24.261,0-44.001-19.135-44.001-42.667
-                                                                s19.74-42.667,44.001-42.667c7,0,13.803,1.625,20.001,4.75c6.198-3.125,13-4.75,20.001-4.75c24.261,0,44.001,19.135,44.001,42.667
-                                                                S428.274,426.67,404.013,426.67z"></path>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__text">
-                                                    Оплата картой при&nbsp;получении
+
+                                            <div class="basket-checkout-block basket-checkout-block-btn">
+                                                <button class="btn btn-lg btn-default basket-btn-checkout" data-entity="basket-checkout-button" style="display: none;">
+                                                    Оформить заказ
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="alert alert-warning alert-dismissable" id="basket-warning" style="">
+                                    <span class="close" data-entity="basket-items-warning-notification-close">×</span>
+                                    <div data-entity="basket-general-warnings" style="display: none;"></div>
+                                    <div data-entity="basket-item-warnings">
+                                        В вашей корзине
+                                        <a href="javascript:void(0)" data-entity="basket-items-warning-count">1 товар</a>
+                                        требует внимания.
+                                    </div>
+
+                                    <div id="not-avail-warnings">У вас отсутствуют все товары</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="basket-items-list-wrapper basket-items-list-wrapper-height-fixed" id="basket-items-list-wrapper" style="">
+                                    <div class="basket-items-list-header" data-entity="basket-items-list-header" style="">
+                                        <div class="basket-items-search-field" data-entity="basket-filter" style="display: none">
+                                            <div class="form has-feedback">
+                                                <input type="text" class="form-control" placeholder="Фильтр" data-entity="basket-filter-input">
+                                                <span class="form-control-feedback basket-clear" data-entity="basket-filter-clear-btn"></span>
+                                            </div>
+                                        </div>
+                                        <div class="basket-items-list-header-filter">
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="all" style="">В корзине 2 товара</a>
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="similar" style="display: none;"></a>
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="warning" style="">1 c ошибками</a>
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="delayed" style="display: none;"></a>
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="not-available" style="display: none;"></a>
+                                            <div class="top_control basket_sort">
+                                                <span style="opacity:1;" class="delete_all button grey_br transparent remove_all_basket">Очистить</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="basket-items-list-container" id="basket-items-list-container">
+                                        <div class="basket-items-list-overlay" id="basket-items-list-overlay" style="display: none;"></div>
+                                        <div class="basket-items-list" id="basket-item-list">
+                                            <div class="basket-search-not-found" id="basket-item-list-empty-result" style="display: none;">
+                                                <div class="basket-search-not-found-icon"></div>
+                                                <div class="basket-search-not-found-text">
+                                                    По данному запросу товаров не найдено
                                                 </div>
                                             </div>
-                                        </label>
-									<label class="checkout-payment-item js-payment-item">
-                                        <input name="payment" type="radio" value="0">
-                                            <div class="checkout-payment-item-wrapper">
-                                                <div class="checkout-payment-item__icon">
-                                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 487 487" style="enable-background:new 0 0 487 487;" xml:space="preserve">
-                                                    <path d="M133.4,222.2c0,64,51.9,115.8,115.8,115.8S365,286.1,365,222.2s-51.9-115.8-115.8-115.8
-                                                        C185.3,106.4,133.4,158.2,133.4,222.2z M249.2,122.3c55.2,0,99.9,44.7,99.9,99.9S304.3,322,249.2,322s-99.9-44.7-99.9-99.9
-                                                        C149.4,167,194.1,122.4,249.2,122.3z"></path>
-                                                    <path d="M404.4,357.7l-62.6,29.6c-8.6-16.1-25.2-26.3-43.5-26.8l-57.8-1.6c-9.1-0.3-18.1-2.6-26.3-6.8l-5.9-3
-                                                        c-30.1-15.7-66-15.6-96,0.1l0.4-13.3c0.1-4.4-3.4-8.1-7.8-8.2l-63.3-1.7c-4.4-0.1-8.1,3.4-8.2,7.8l-3.8,139
-                                                        c-0.1,4.4,3.4,8.1,7.8,8.2l63.3,1.7h0.2c4.3,0,7.9-3.4,8-7.8l0.2-6.7l16.5-8.8c6.5-3.5,14-4.3,21.1-2.3l98.3,27.6
-                                                        c0.2,0.1,0.3,0.1,0.5,0.1c7.1,1.5,14.3,2.2,21.6,2.2c15.4,0,30.6-3.3,44.5-9.7c0.3-0.2,0.7-0.3,1-0.5l142.5-92.2
-                                                        c3.5-2.3,4.7-7,2.6-10.6C447.1,355.2,423.7,348,404.4,357.7z M45.9,465.1l3.4-123l47.4,1.3l-3.4,123L45.9,465.1z M304.4,463
-                                                        c-17.4,7.8-36.7,10-55.4,6.2l-98-27.5c-11-3.1-22.8-1.8-32.9,3.6l-8.4,4.5l2.3-81.8c26.6-17.7,60.8-19.5,89.2-4.8l5.9,3
-                                                        c10.3,5.3,21.6,8.2,33.2,8.6l57.8,1.6c16.2,0.5,30,12,33.3,27.9l-86-2.4c-4.4-0.1-8.1,3.4-8.2,7.8c-0.1,4.4,3.4,8.1,7.8,8.2l95,2.6
-                                                        h0.2c4.3,0,7.9-3.4,8-7.8c0.1-3.5-0.2-6.9-0.8-10.4l64.2-30.3c0.1,0,0.1-0.1,0.2-0.1c9.1-4.6,20.1-3.1,27.6,3.9L304.4,463z"></path>
-                                                    <path d="M257.2,83.9V8c0-4.4-3.6-8-8-8s-8,3.6-8,8v75.9c0,4.4,3.6,8,8,8S257.2,88.3,257.2,83.9z"></path>
-                                                    <path d="M317.1,83.9V47.9c0-4.4-3.6-8-8-8c-4.4,0-8,3.6-8,8v35.9c0,4.4,3.6,8,8,8C313.5,91.9,317.1,88.3,317.1,83.9z"></path>
-                                                    <path d="M197.3,83.9V47.9c0-4.4-3.6-8-8-8s-8,3.6-8,8v35.9c0,4.4,3.6,8,8,8S197.3,88.3,197.3,83.9z"></path>
-                                                    <g>
-                                                        <g>
-                                                            <path d="M202.1,264.7h20v17.1c0,0.8,0.3,1.5,0.8,2.1c0.5,0.5,1.2,0.8,2.1,0.8h14.9c0.8,0,1.4-0.3,2-0.8c0.6-0.5,0.8-1.2,0.8-2.1
-                                                                v-17.1h45.1c0.8,0,1.5-0.3,2.1-0.8c0.5-0.5,0.8-1.2,0.8-2.1v-11.4c0-0.8-0.3-1.5-0.8-2.1c-0.5-0.5-1.2-0.8-2.1-0.8h-45.1V237h30.4
-                                                                c11.9,0,21.6-3.6,29.1-10.9c7.5-7.3,11.3-16.6,11.3-28.1c0-11.5-3.8-20.9-11.3-28.1c-7.5-7.3-17.2-10.9-29.1-10.9H225
-                                                                c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.5-0.8,1.2-0.8,2.1V218h-20c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.6-0.8,1.2-0.8,2v13.3
-                                                                c0,0.8,0.3,1.5,0.8,2.1c0.5,0.5,1.2,0.8,2.1,0.8h20v10.5h-20c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.5-0.8,1.2-0.8,2.1v11.4
-                                                                c0,0.8,0.3,1.5,0.8,2.1C200.6,264.4,201.3,264.7,202.1,264.7z M242.7,178h28.6c6.3,0,11.4,1.8,15.3,5.5c3.9,3.7,5.8,8.5,5.8,14.5
-                                                                c0,6-1.9,10.8-5.8,14.5c-3.9,3.7-9,5.5-15.3,5.5h-28.6V178z"></path>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__icon-hover">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471 471" style="enable-background:new 0 0 471 471;" xml:space="preserve">
-														<path d="M403.9,370.1c-0.1,0-0.1,0.1-0.2,0.1l-64.9,30.7c0.7,3.6,1,7.2,0.9,10.9c-0.1,3.8-3.2,6.8-7,6.8c-0.1,0-0.1,0-0.2,0l-95-2.6
-															c-3.9-0.1-6.9-3.3-6.8-7.2c0.1-3.9,3.3-6.9,7.2-6.8l87.3,2.4c-2.9-16.9-17.3-29.4-34.5-29.9l-57.8-1.6c-11.4-0.3-22.6-3.2-32.7-8.5
-															l-5.9-3c-28.9-15-63.6-13.1-90.6,5.1l-2.3,84l9.9-5.3c9.9-5.3,21.4-6.6,32.2-3.5l98,27.5c18.9,3.9,38.5,1.7,56.1-6.3L433.5,375
-															C425.8,367.1,413.8,365.1,403.9,370.1z"></path>
-														<path d="M37.7,465.1l3.4-125l49.4,1.4l-3.4,125L37.7,465.1z"></path>
-														<path d="M248.6,82.9V7c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v75.9c0,3.9,3.1,7,7,7C245.4,89.9,248.6,86.7,248.6,82.9z"></path>
-														<path d="M308.5,82.9V46.9c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v35.9c0,3.9,3.1,7,7,7C305.3,89.9,308.5,86.7,308.5,82.9z"></path>
-														<path d="M188.7,82.9V46.9c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v35.9c0,3.9,3.1,7,7,7C185.5,89.9,188.7,86.7,188.7,82.9z"></path>
-														<g>
-															<path d="M263.6,177.1h-28.7v40.2h28.7c6.3,0,11.5-1.9,15.3-5.6c3.9-3.7,5.8-8.6,5.8-14.5c0-6-1.9-10.8-5.8-14.5
-																C275,179,269.9,177.1,263.6,177.1z"></path>
-															<path d="M242,120.3c-55.7,0.1-100.8,45.2-100.9,100.9c0,55.7,45.2,100.9,100.9,100.9s100.9-45.2,100.9-100.9
-																C342.9,165.5,297.7,120.3,242,120.3z M294.7,225.5c-7.6,7.3-17.3,10.9-29.3,10.9h-30.5V247h45.3c0.8,0,1.5,0.3,2.1,0.8
-																c0.5,0.5,0.8,1.2,0.8,2.1v11.5c0,0.8-0.3,1.5-0.8,2.1c-0.5,0.5-1.2,0.8-2.1,0.8h-45.3v17.2c0,0.8-0.3,1.5-0.9,2.1
-																c-0.6,0.5-1.2,0.8-2,0.8h-15c-0.8,0-1.5-0.3-2.1-0.8c-0.5-0.5-0.8-1.2-0.8-2.1v-17.2H194c-0.8,0-1.5-0.3-2.1-0.8
-																c-0.5-0.5-0.8-1.2-0.8-2.1v-11.5c0-0.8,0.3-1.5,0.8-2.1c0.5-0.5,1.2-0.8,2.1-0.8h20.1v-10.6H194c-0.8,0-1.5-0.3-2.1-0.8
-																c-0.5-0.5-0.8-1.2-0.8-2.1v-13.4c0-0.8,0.3-1.5,0.8-2c0.5-0.6,1.2-0.9,2.1-0.9h20.1v-56.5c0-0.8,0.3-1.5,0.8-2.1
-																c0.5-0.5,1.2-0.8,2.1-0.8h48.4c12,0,21.7,3.7,29.3,10.9c7.6,7.3,11.4,16.7,11.4,28.3C306,208.8,302.2,218.2,294.7,225.5z"></path>
-														</g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__text">
-                                                    Оплата наличными при&nbsp;получении
-                                                </div>
-                                            </div>
-                                        </label>
-									<label class="checkout-payment-item js-payment-item">
-                                        <input name="payment" type="radio" value="0">
-                                            <div class="checkout-payment-item-wrapper">
-                                                <div class="checkout-payment-item__icon">
-                                                    <svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 487 487" style="enable-background:new 0 0 487 487;" xml:space="preserve">
-                                                    <path d="M133.4,222.2c0,64,51.9,115.8,115.8,115.8S365,286.1,365,222.2s-51.9-115.8-115.8-115.8
-                                                        C185.3,106.4,133.4,158.2,133.4,222.2z M249.2,122.3c55.2,0,99.9,44.7,99.9,99.9S304.3,322,249.2,322s-99.9-44.7-99.9-99.9
-                                                        C149.4,167,194.1,122.4,249.2,122.3z"></path>
-                                                    <path d="M404.4,357.7l-62.6,29.6c-8.6-16.1-25.2-26.3-43.5-26.8l-57.8-1.6c-9.1-0.3-18.1-2.6-26.3-6.8l-5.9-3
-                                                        c-30.1-15.7-66-15.6-96,0.1l0.4-13.3c0.1-4.4-3.4-8.1-7.8-8.2l-63.3-1.7c-4.4-0.1-8.1,3.4-8.2,7.8l-3.8,139
-                                                        c-0.1,4.4,3.4,8.1,7.8,8.2l63.3,1.7h0.2c4.3,0,7.9-3.4,8-7.8l0.2-6.7l16.5-8.8c6.5-3.5,14-4.3,21.1-2.3l98.3,27.6
-                                                        c0.2,0.1,0.3,0.1,0.5,0.1c7.1,1.5,14.3,2.2,21.6,2.2c15.4,0,30.6-3.3,44.5-9.7c0.3-0.2,0.7-0.3,1-0.5l142.5-92.2
-                                                        c3.5-2.3,4.7-7,2.6-10.6C447.1,355.2,423.7,348,404.4,357.7z M45.9,465.1l3.4-123l47.4,1.3l-3.4,123L45.9,465.1z M304.4,463
-                                                        c-17.4,7.8-36.7,10-55.4,6.2l-98-27.5c-11-3.1-22.8-1.8-32.9,3.6l-8.4,4.5l2.3-81.8c26.6-17.7,60.8-19.5,89.2-4.8l5.9,3
-                                                        c10.3,5.3,21.6,8.2,33.2,8.6l57.8,1.6c16.2,0.5,30,12,33.3,27.9l-86-2.4c-4.4-0.1-8.1,3.4-8.2,7.8c-0.1,4.4,3.4,8.1,7.8,8.2l95,2.6
-                                                        h0.2c4.3,0,7.9-3.4,8-7.8c0.1-3.5-0.2-6.9-0.8-10.4l64.2-30.3c0.1,0,0.1-0.1,0.2-0.1c9.1-4.6,20.1-3.1,27.6,3.9L304.4,463z"></path>
-                                                    <path d="M257.2,83.9V8c0-4.4-3.6-8-8-8s-8,3.6-8,8v75.9c0,4.4,3.6,8,8,8S257.2,88.3,257.2,83.9z"></path>
-                                                    <path d="M317.1,83.9V47.9c0-4.4-3.6-8-8-8c-4.4,0-8,3.6-8,8v35.9c0,4.4,3.6,8,8,8C313.5,91.9,317.1,88.3,317.1,83.9z"></path>
-                                                    <path d="M197.3,83.9V47.9c0-4.4-3.6-8-8-8s-8,3.6-8,8v35.9c0,4.4,3.6,8,8,8S197.3,88.3,197.3,83.9z"></path>
-                                                    <g>
-                                                        <g>
-                                                            <path d="M202.1,264.7h20v17.1c0,0.8,0.3,1.5,0.8,2.1c0.5,0.5,1.2,0.8,2.1,0.8h14.9c0.8,0,1.4-0.3,2-0.8c0.6-0.5,0.8-1.2,0.8-2.1
-                                                                v-17.1h45.1c0.8,0,1.5-0.3,2.1-0.8c0.5-0.5,0.8-1.2,0.8-2.1v-11.4c0-0.8-0.3-1.5-0.8-2.1c-0.5-0.5-1.2-0.8-2.1-0.8h-45.1V237h30.4
-                                                                c11.9,0,21.6-3.6,29.1-10.9c7.5-7.3,11.3-16.6,11.3-28.1c0-11.5-3.8-20.9-11.3-28.1c-7.5-7.3-17.2-10.9-29.1-10.9H225
-                                                                c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.5-0.8,1.2-0.8,2.1V218h-20c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.6-0.8,1.2-0.8,2v13.3
-                                                                c0,0.8,0.3,1.5,0.8,2.1c0.5,0.5,1.2,0.8,2.1,0.8h20v10.5h-20c-0.8,0-1.5,0.3-2.1,0.8c-0.5,0.5-0.8,1.2-0.8,2.1v11.4
-                                                                c0,0.8,0.3,1.5,0.8,2.1C200.6,264.4,201.3,264.7,202.1,264.7z M242.7,178h28.6c6.3,0,11.4,1.8,15.3,5.5c3.9,3.7,5.8,8.5,5.8,14.5
-                                                                c0,6-1.9,10.8-5.8,14.5c-3.9,3.7-9,5.5-15.3,5.5h-28.6V178z"></path>
-                                                        </g>
-                                                    </g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__icon-hover">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 471 471" style="enable-background:new 0 0 471 471;" xml:space="preserve">
-														<path d="M403.9,370.1c-0.1,0-0.1,0.1-0.2,0.1l-64.9,30.7c0.7,3.6,1,7.2,0.9,10.9c-0.1,3.8-3.2,6.8-7,6.8c-0.1,0-0.1,0-0.2,0l-95-2.6
-															c-3.9-0.1-6.9-3.3-6.8-7.2c0.1-3.9,3.3-6.9,7.2-6.8l87.3,2.4c-2.9-16.9-17.3-29.4-34.5-29.9l-57.8-1.6c-11.4-0.3-22.6-3.2-32.7-8.5
-															l-5.9-3c-28.9-15-63.6-13.1-90.6,5.1l-2.3,84l9.9-5.3c9.9-5.3,21.4-6.6,32.2-3.5l98,27.5c18.9,3.9,38.5,1.7,56.1-6.3L433.5,375
-															C425.8,367.1,413.8,365.1,403.9,370.1z"></path>
-														<path d="M37.7,465.1l3.4-125l49.4,1.4l-3.4,125L37.7,465.1z"></path>
-														<path d="M248.6,82.9V7c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v75.9c0,3.9,3.1,7,7,7C245.4,89.9,248.6,86.7,248.6,82.9z"></path>
-														<path d="M308.5,82.9V46.9c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v35.9c0,3.9,3.1,7,7,7C305.3,89.9,308.5,86.7,308.5,82.9z"></path>
-														<path d="M188.7,82.9V46.9c0-3.9-3.1-7-7-7c-3.9,0-7,3.1-7,7v35.9c0,3.9,3.1,7,7,7C185.5,89.9,188.7,86.7,188.7,82.9z"></path>
-														<g>
-															<path d="M263.6,177.1h-28.7v40.2h28.7c6.3,0,11.5-1.9,15.3-5.6c3.9-3.7,5.8-8.6,5.8-14.5c0-6-1.9-10.8-5.8-14.5
-																C275,179,269.9,177.1,263.6,177.1z"></path>
-															<path d="M242,120.3c-55.7,0.1-100.8,45.2-100.9,100.9c0,55.7,45.2,100.9,100.9,100.9s100.9-45.2,100.9-100.9
-																C342.9,165.5,297.7,120.3,242,120.3z M294.7,225.5c-7.6,7.3-17.3,10.9-29.3,10.9h-30.5V247h45.3c0.8,0,1.5,0.3,2.1,0.8
-																c0.5,0.5,0.8,1.2,0.8,2.1v11.5c0,0.8-0.3,1.5-0.8,2.1c-0.5,0.5-1.2,0.8-2.1,0.8h-45.3v17.2c0,0.8-0.3,1.5-0.9,2.1
-																c-0.6,0.5-1.2,0.8-2,0.8h-15c-0.8,0-1.5-0.3-2.1-0.8c-0.5-0.5-0.8-1.2-0.8-2.1v-17.2H194c-0.8,0-1.5-0.3-2.1-0.8
-																c-0.5-0.5-0.8-1.2-0.8-2.1v-11.5c0-0.8,0.3-1.5,0.8-2.1c0.5-0.5,1.2-0.8,2.1-0.8h20.1v-10.6H194c-0.8,0-1.5-0.3-2.1-0.8
-																c-0.5-0.5-0.8-1.2-0.8-2.1v-13.4c0-0.8,0.3-1.5,0.8-2c0.5-0.6,1.2-0.9,2.1-0.9h20.1v-56.5c0-0.8,0.3-1.5,0.8-2.1
-																c0.5-0.5,1.2-0.8,2.1-0.8h48.4c12,0,21.7,3.7,29.3,10.9c7.6,7.3,11.4,16.7,11.4,28.3C306,208.8,302.2,218.2,294.7,225.5z"></path>
-														</g>
-                                                    </svg>
-                                                </div>
-                                                <div class="checkout-payment-item__text">
-                                                    Оплата наличными при&nbsp;получении
-                                                </div>
-                                            </div>
-                                        </label>
-								</div>
-							</div>
-							<div class="checkout-categories-item-bottom">
-								<div class="checkout-categories-item-bottom-buttons">
-									<a class="checkout-categories-item-bottom-buttons__btn mod-gray js-order-back">
-										Назад
-									</a>
-									<a class="checkout-categories-item-bottom-buttons__btn js-order-next">
-										Далее
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="checkout-categories-item js-order-section closed">
-						<div class="checkout-categories-item-head">
-							<div class="checkout-categories-item-head-progress">
-								<span class="checkout-categories-item-head__title">Покупатель:</span>
-							</div>
-							<div class="checkout-categories-item-head-complete">
-								<div class="checkout-categories-item-head-row">
-									<span class="checkout-categories-item-head__title mod-complete">Покупатель:</span>
-									<span class="checkout-categories-item-head__title-text">Аристов Евгений Николаевич</span>
-									<svg class="icon-check"
-										xmlns="http://www.w3.org/2000/svg"
-										xmlns:xlink="http://www.w3.org/1999/xlink"
-										width="32px" height="23px">
-										<path fill-rule="evenodd"  fill="rgb(0, 161, 180)"
-										d="M0.652,10.660 L8.754,22.814 L31.036,0.532 L8.754,14.711 L0.652,10.660 Z"/>
-									</svg>
-								</div>
-							</div>
-						</div>
-						<div class="checkout-categories-item-body">
-							<div class="checkout-buyer">
-								<div class="checkout-buyer-row">
-									<label class="checkout-buyer__input">
-										<input class="inp" type="text" name="profile-fio" autocomplete="off" placeholder=" ">
-										<span>Ф.И.О.</span>
-									</label>
-								</div>
-                                    <div class="checkout-buyer-row">
-                                        <label class="checkout-buyer__input">
-                                            <input class="inp" type="text" name="profile-phone" autocomplete="off" placeholder=" ">
-                                            <span>Телефон</span>
-                                        </label>
-                                        <label class="checkout-buyer__input">
-                                            <input class="inp" type="text" name="profile-email" autocomplete="off" placeholder=" ">
-                                            <span>Email</span>
-                                        </label>
+                                            <table class="basket-items-list-table" id="basket-item-table">
+                                                <tbody></tbody>
+                                                <tbody></tbody>
+                                                <tbody></tbody>
+                                                <tbody></tbody>
+                                                <tbody>
+                                                    <tr class="basket-items-list-item-container basket-items-list-item-container-expend" id="basket-item-713" data-entity="basket-item" data-id="713">
+                                                        <td class="basket-items-list-item-notification" colspan="5">
+                                                            <div class="basket-items-list-item-notification-inner basket-items-list-item-notification-removed" id="basket-item-height-aligner-713">
+                                                                <div class="basket-items-list-item-overlay"></div>
+                                                                <div class="basket-items-list-item-removed-container">
+                                                                    <div>
+                                                                        Товар
+                                                                        <strong>Алкозинер капс.№12 БАД</strong>
+                                                                        был удален из корзины.
+                                                                    </div>
+                                                                    <div class="basket-items-list-item-removed-block">
+                                                                        <a href="javascript:void(0)" data-entity="basket-item-restore-button">
+                                                                            Восстановить
+                                                                        </a>
+                                                                        <span class="basket-items-list-item-clear-btn" data-entity="basket-item-close-restore-button"></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="basket-items-list-item-container" id="basket-item-714" data-entity="basket-item" data-id="714">
+                                                        <td class="basket-items-list-item-descriptions">
+                                                            <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-714">
+                                                                <div class="basket-item-block-image">
+                                                                    <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-image-link">
+
+                                                                        <img class="basket-item-image" alt="Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД" src="/bitrix/templates/aspro_optimus/components/bitrix/sale.basket.basket/basket/images/no_photo.png">
+
+
+                                                                    </a>
+                                                                </div>
+                                                                <div class="basket-item-block-info">
+                                                                    <span class="basket-item-actions-remove visible-xs" data-entity="basket-item-delete"></span>
+                                                                    <h2 class="basket-item-info-name">
+                                                                        <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-info-name-link">
+
+                                                                            <span data-entity="basket-item-name">Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД</span>
+
+                                                                        </a>
+                                                                    </h2>
+                                                                    <div class="basket-items-list-item-warning-container">
+                                                                        <div class="alert alert-warning alert-dismissable" data-entity="basket-item-warning-node">
+                                                                            <span class="close" data-entity="basket-item-warning-close">×</span>
+                                                                            <div data-entity="basket-item-warning-text">Извините, заказанное вами количество товара недоступно.
+                                                                                <br>
+                                                                                Установите доступное для заказа количество.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="basket-item-block-properties">
+                                                                        <div class="basket-item-property-custom basket-item-property-custom-text
+                                                                                                                                    " data-entity="basket-item-property">
+                                                                            <div class="basket-item-property-custom-name">Доступное количество в выбранной аптеке:</div>
+                                                                            <div class="basket-item-property-custom-value" data-column-property-code="STORE_AVAIL" data-entity="basket-item-property-column-value">
+                                                                                0
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="basket-items-list-item-amount">
+                                                            <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                                <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                                <div class="basket-item-amount-filed-block">
+                                                                    <input type="text" class="basket-item-amount-filed" value="2" data-value="2" data-entity="basket-item-quantity-field" id="basket-item-quantity-714">
+                                                                </div>
+                                                                <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                                <div class="basket-item-amount-field-description">
+                                                                    шт
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="basket-items-list-item-price">
+                                                            <div class="basket-item-block-price">
+
+                                                                <div class="basket-item-price-current">
+                                                                    <span class="basket-item-price-current-text" id="basket-item-sum-price-714">
+                                                                        597.98 руб.
+                                                                    </span>
+                                                                </div>
+
+                                                            </div>
+                                                        </td>
+                                                        <td class="basket-items-list-item-remove hidden-xs">
+                                                            <div class="basket-item-block-actions">
+                                                                <span class="basket-item-actions-remove" data-entity="basket-item-delete"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
-                                    <div class="checkout-buyer-row__title">
-                                        Адрес доставки:
-                                    </div>
-                                    <div class="checkout-buyer-row">
-                                        <label class="checkout-buyer__input">
-                                            <select placeholder="Выберите город">
-												<option value="Архангельск">Архангельск</option>
-												<option value="Северодвинск">Северодвинск</option>
-												<option value="Новодвинск">Новодвинск</option>
-												<option value="Коряжма">Коряжма</option>
-											</select>
-                                            <span>Город</span>
-											<div class="arrow">></div>
-                                        </label>
-                                        <label class="checkout-buyer__input">
-                                            <input class="inp" type="text" name="addresses-street" autocomplete="off" placeholder=" ">
-                                            <span>Улица</span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout-buyer-row">
-                                        <label class="checkout-buyer__input mod-house">
-                                            <input class="inp" type="text" name="addresses-house" autocomplete="off" placeholder=" ">
-                                            <span>Дом</span>
-                                        </label>
-                                        <label class="checkout-buyer__input mod-building">
-                                            <input class="inp" type="text" name="addresses-building" autocomplete="off" placeholder=" ">
-                                            <span>Корпус</span>
-                                        </label>
-                                        <label class="checkout-buyer__input mod-porch">
-                                            <input class="inp" type="text" name="addresses-porch" autocomplete="off" placeholder=" ">
-                                            <span>Подъезд</span>
-                                        </label>
-                                        <label class="checkout-buyer__input mod-floor">
-                                            <input class="inp" type="text" name="addresses-floor" autocomplete="off" placeholder=" ">
-                                            <span>Этаж</span>
-                                        </label>
-                                        <label class="checkout-buyer__input mod-appartment">
-                                            <input class="inp" type="text" name="addresses-appartment" autocomplete="off" placeholder=" ">
-                                            <span>Квартира</span>
-                                        </label>
-                                        <label class="checkout-buyer__input mod-remark">
-                                            <input class="inp" type="text" name="addresses-comment" autocomplete="off" placeholder=" ">
-                                            <span>Примечание</span>
-                                        </label>
-                                    </div>
-                                    <div class="checkout-buyer-row">
-                                        <label class="checkout-buyer__input js-required-input">
-                                            <input class="inp" type="text" name="addresses-adding" autocomplete="off" placeholder=" ">
-                                            <span>Комментарий к заказу</span>
-                                        </label>
-                                    </div>
-							</div>
-							<div class="checkout-categories-item-bottom">
-								<div class="checkout-categories-item-bottom-buttons">
-									<a class="checkout-categories-item-bottom-buttons__btn mod-gray js-order-back">
-										Назад
-									</a>
-								</div>
-							</div>
-							<div class="checkout-attention">
-								<div class="checkout-attention__icon">
-									<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="27px">
-										<path fill-rule="evenodd" fill="#e6007d" d="M23.989,20.710 L25.636,26.309 L19.996,24.722 C17.976,26.014 15.575,26.763 13.000,26.763 C5.820,26.763 -0.000,20.943 -0.000,13.763 C-0.000,6.584 5.820,0.763 13.000,0.763 C20.180,0.763 26.000,6.584 26.000,13.763 C26.000,16.318 25.262,18.700 23.989,20.710 Z"></path>
-										<path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M15.000,6.763 L14.091,16.854 L14.086,16.854 C14.033,17.326 13.578,17.672 13.091,17.672 C12.604,17.672 12.148,17.326 12.096,16.854 L12.091,16.854 L11.182,6.763 L11.184,6.763 C11.183,6.733 11.182,6.703 11.182,6.672 C11.182,5.651 12.069,4.797 13.091,4.797 C14.112,4.797 15.000,5.651 15.000,6.672 C15.000,6.703 14.999,6.733 14.997,6.763 L15.000,6.763 ZM13.091,18.672 C13.995,18.672 14.727,19.405 14.727,20.309 C14.727,21.212 13.995,21.945 13.091,21.945 C12.187,21.945 11.454,21.212 11.454,20.309 C11.454,19.405 12.187,18.672 13.091,18.672 Z"></path>
-									</svg>
-								</div>
-								<div class="checkout-attention__text">
-									<span class="mod-red">ВНИМАНИЕ!</span> Бронирование данной позиции действительно в течение 3-х дней.
-								</div>
-							</div>
-							<div class="checkout-acception">
-								<label class="js-accept">
-									<input type="checkbox" class="checkbox">
-									<span class="checkbox"></span><span>Я принимаю условия пользовательского соглашения</span>
-								</label>
-							</div>
-							<div class="checkout-bottom">
-								<a href="/" class="checkout-bottom-btn mod-gray">Вернуться в каталог</a>
-								<a href="/" class="checkout-bottom-btn mod-rose disabled js-submit-btn">Оформить заказ</a>
-							</div>
-						</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="checkout-bottom">
+						<a href="/" class="checkout-bottom-btn mod-gray">Вернуться в каталог</a>
 					</div>
 				</div>
 			</div>
-			<aside class="checkout-aside">
-				<div class="checkout-aside-content js-aside">
-					<div class="checkout-aside-top">
+			<aside class="cart-aside">
+				<div class="cart-aside-content js-aside">
+					<div class="cart-aside-top">
 						<div class="checkout-aside-text">Товаров в заказе: 25 шт.</div>
 						<div class="checkout-aside-text">Сумма: 6 259 руб.</div>
 					</div>
-					<div class="checkout-aside-bottom">
+					<div class="cart-aside-bottom">
 						<div class="checkout-aside-profit">Ваша выгода: 956 руб.</div>
 						<div class="checkout-aside-price">Итого к оплате:  5 056 руб.</div>
 						<div class="checkout-aside-comment">*Цена с учетом скидки от вашей карты Снегири</div>

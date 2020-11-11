@@ -1,0 +1,34 @@
+.cart{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    @media screen and (max-width: 1140px){
+        flex-direction: column;
+    }
+    &-content{
+        width: calc(100% - 385px);
+        max-width: calc(100% - 385px);
+        flex: 1 1 auto;
+        @media screen and (max-width: 1140px){
+            width: 100%;
+            max-width: 100%;
+        }
+    }
+    &-aside{
+        flex: 0 0 auto;
+        width: 345px;
+        margin-left: 40px; 
+        @media screen and (max-width: 1140px){
+            width: 100%;
+            margin-left: 0; 
+        }
+        &-content{
+
+        }
+        &-top{
+            padding: 10px 0 16px;
+            border-bottom: 1px solid #eaebec;
+            margin-bottom: 20px;
+        }
+    }
+}
