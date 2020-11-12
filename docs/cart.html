@@ -16,6 +16,7 @@
 		<link href="styles_old/main.popup.bundle.min.css" type="text/css" rel="stylesheet"/>
 		<link href="styles_old/popup.min.css" type="text/css" rel="stylesheet"/>
 		<link href="styles_old/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+		<link href="styles_old/page-cart.css" type="text/css" rel="stylesheet"/>
 
 		<link href="styles_old/template.css" type="text/css" data-template-style="true" rel="stylesheet"/>
 
@@ -112,7 +113,7 @@
 		<script type="text/javascript" src="scripts_old/ajax.min.js"></script>
 		<script type="text/javascript" src="scripts_old/main.popup.bundle.min.js"></script>
 		<script type="text/javascript" src="scripts_old/core_currency.min.js"></script>
-
+        <script type="text/javascript" src="scripts_old/page-basket.js"></script>
 		<script type="text/javascript" src="scripts/vendor/masonry.pkgd.min.js"></script>
 
 
@@ -3686,39 +3687,6 @@
 						</div>
 					</div>
                     <div id="basket-root" class="bx-basket bx-blue bx-step-opacity" style="opacity: 1;">
-                        <div class="row">
-                            <div class="col-xs-12" data-entity="basket-total-block" style="">
-                                <div class="basket-checkout-container visible" data-entity="basket-checkout-aligner" style="">
-                                    <div class="basket-checkout-section">
-                                        <div class="basket-checkout-section-inner">
-                                            <div class="basket-checkout-block basket-checkout-block-total">
-                                                <div class="basket-checkout-block-total-inner">
-                                                    <div class="basket-checkout-block-total-title">Итого:</div>
-                                                    <div class="basket-checkout-block-total-description">
-                                                        Сумма НДС: 122.97 руб.
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="basket-checkout-block basket-checkout-block-total-price">
-                                                <div class="basket-checkout-block-total-price-inner">
-
-                                                    <div class="basket-coupon-block-total-price-current" data-entity="basket-total-price">737.85 руб.</div>
-
-                                                </div>
-                                            </div>
-
-                                            <div class="basket-checkout-block basket-checkout-block-btn">
-                                                <button class="btn btn-lg btn-default basket-btn-checkout" data-entity="basket-checkout-button" style="display: none;">
-                                                    Оформить заказ
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
 
                         <div class="row">
                             <div class="col-xs-12">
@@ -3738,8 +3706,8 @@
 
                         <div class="row">
                             <div class="col-xs-12">
-                                <div class="basket-items-list-wrapper basket-items-list-wrapper-height-fixed" id="basket-items-list-wrapper" style="">
-                                    <div class="basket-items-list-header" data-entity="basket-items-list-header" style="">
+                                <div class="basket-items-list-wrapper basket-items-list-wrapper-height-fixed" id="basket-items-list-wrapper">
+                                    <div class="basket-items-list-header" data-entity="basket-items-list-header">
                                         <div class="basket-items-search-field" data-entity="basket-filter" style="display: none">
                                             <div class="form has-feedback">
                                                 <input type="text" class="form-control" placeholder="Фильтр" data-entity="basket-filter-input">
@@ -3747,13 +3715,13 @@
                                             </div>
                                         </div>
                                         <div class="basket-items-list-header-filter">
-                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="all" style="">В корзине 2 товара</a>
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="all" style="">Товары (2)</a>
                                             <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="similar" style="display: none;"></a>
-                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="warning" style="">1 c ошибками</a>
+                                            <a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="warning" style="">2 c ошибками</a>
                                             <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="delayed" style="display: none;"></a>
                                             <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="not-available" style="display: none;"></a>
                                             <div class="top_control basket_sort">
-                                                <span style="opacity:1;" class="delete_all button grey_br transparent remove_all_basket">Очистить</span>
+                                                <span style="opacity:1;" class="delete_all button grey_br transparent remove_all_basket">Удалить все</span>
                                             </div>
                                         </div>
                                     </div>
@@ -3771,30 +3739,11 @@
                                                 <tbody></tbody>
                                                 <tbody></tbody>
                                                 <tbody></tbody>
+                                                <tbody></tbody>
                                                 <tbody>
-                                                    <tr class="basket-items-list-item-container basket-items-list-item-container-expend" id="basket-item-713" data-entity="basket-item" data-id="713">
-                                                        <td class="basket-items-list-item-notification" colspan="5">
-                                                            <div class="basket-items-list-item-notification-inner basket-items-list-item-notification-removed" id="basket-item-height-aligner-713">
-                                                                <div class="basket-items-list-item-overlay"></div>
-                                                                <div class="basket-items-list-item-removed-container">
-                                                                    <div>
-                                                                        Товар
-                                                                        <strong>Алкозинер капс.№12 БАД</strong>
-                                                                        был удален из корзины.
-                                                                    </div>
-                                                                    <div class="basket-items-list-item-removed-block">
-                                                                        <a href="javascript:void(0)" data-entity="basket-item-restore-button">
-                                                                            Восстановить
-                                                                        </a>
-                                                                        <span class="basket-items-list-item-clear-btn" data-entity="basket-item-close-restore-button"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr class="basket-items-list-item-container" id="basket-item-714" data-entity="basket-item" data-id="714">
+                                                    <tr class="basket-items-list-item-container mod-warning" id="basket-item-722" data-entity="basket-item" data-id="722">
                                                         <td class="basket-items-list-item-descriptions">
-                                                            <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-714">
+                                                            <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-722">
                                                                 <div class="basket-item-block-image">
                                                                     <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-image-link">
 
@@ -3804,7 +3753,6 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="basket-item-block-info">
-                                                                    <span class="basket-item-actions-remove visible-xs" data-entity="basket-item-delete"></span>
                                                                     <h2 class="basket-item-info-name">
                                                                         <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-info-name-link">
 
@@ -3822,7 +3770,7 @@
                                                                     </div>
                                                                     <div class="basket-item-block-properties">
                                                                         <div class="basket-item-property-custom basket-item-property-custom-text
-                                                                                                                                    " data-entity="basket-item-property">
+                                                                                                                                                                                    " data-entity="basket-item-property">
                                                                             <div class="basket-item-property-custom-name">Доступное количество в выбранной аптеке:</div>
                                                                             <div class="basket-item-property-custom-value" data-column-property-code="STORE_AVAIL" data-entity="basket-item-property-column-value">
                                                                                 0
@@ -3831,33 +3779,157 @@
 
 
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="basket-items-list-item-amount">
-                                                            <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
-                                                                <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
-                                                                <div class="basket-item-amount-filed-block">
-                                                                    <input type="text" class="basket-item-amount-filed" value="2" data-value="2" data-entity="basket-item-quantity-field" id="basket-item-quantity-714">
-                                                                </div>
-                                                                <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
-                                                                <div class="basket-item-amount-field-description">
-                                                                    шт
-                                                                </div>
-                                                            </div>
-                                                        </td>
-                                                        <td class="basket-items-list-item-price">
-                                                            <div class="basket-item-block-price">
+                                                                    
+                                                                    <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                                        <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                                        <div class="basket-item-amount-filed-block">
+                                                                            <input type="text" class="basket-item-amount-filed" value="59" data-value="59" data-entity="basket-item-quantity-field" id="basket-item-quantity-722">
+                                                                        </div>
+                                                                        <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                                        <div class="basket-item-amount-field-description">
+                                                                            шт
+                                                                        </div>
+                                                                    </div>
 
-                                                                <div class="basket-item-price-current">
-                                                                    <span class="basket-item-price-current-text" id="basket-item-sum-price-714">
-                                                                        597.98 руб.
-                                                                    </span>
-                                                                </div>
+                                                                    
+                                                                    <div class="basket-item-block-price">
 
+                                                                        <div class="basket-item-price-current">
+                                                                            <span class="basket-item-price-current-text" id="basket-item-price-722">
+                                                                                985 руб./
+                                                                            </span>
+                                                                            <span class="basket-item-price-current-text" id="basket-item-sum-price-722">
+                                                                                17&nbsp;640 руб.
+                                                                            </span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="basket-item-block-actions">
+                                                                <span class="basket-item-actions-remove" data-entity="basket-item-delete"></span>
                                                             </div>
                                                         </td>
-                                                        <td class="basket-items-list-item-remove hidden-xs">
+                                                    </tr>
+                                                    <tr class="basket-items-list-item-container" id="basket-item-726" data-entity="basket-item" data-id="726">
+                                                        <td class="basket-items-list-item-descriptions">
+                                                            <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-726">
+                                                                <div class="basket-item-block-image">
+                                                                    <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-image-link">
+
+                                                                        <img class="basket-item-image" alt="Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД" src="/bitrix/templates/aspro_optimus/components/bitrix/sale.basket.basket/basket/images/no_photo.png">
+
+
+                                                                    </a>
+                                                                </div>
+                                                                <div class="basket-item-block-info">
+                                                                    <h2 class="basket-item-info-name">
+                                                                        <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-info-name-link">
+
+                                                                            <span data-entity="basket-item-name">Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД</span>
+
+                                                                        </a>
+                                                                    </h2>
+                                                                    <div class="basket-items-list-item-warning-container">
+                                                                        <div class="alert alert-warning alert-dismissable" data-entity="basket-item-warning-node">
+                                                                            <span class="close" data-entity="basket-item-warning-close">×</span>
+                                                                            <div data-entity="basket-item-warning-text">Извините, заказанное вами количество товара недоступно.
+                                                                                <br>
+                                                                                Установите доступное для заказа количество.</div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="basket-item-block-properties">
+                                                                        <div class="basket-item-property-custom basket-item-property-custom-text
+                                                                                                                                                                                    " data-entity="basket-item-property">
+                                                                            <div class="basket-item-property-custom-name">Доступное количество в выбранной аптеке:</div>
+                                                                            <div class="basket-item-property-custom-value" data-column-property-code="STORE_AVAIL" data-entity="basket-item-property-column-value">
+                                                                                0
+                                                                            </div>
+                                                                        </div>
+
+
+                                                                    </div>
+                                                                    
+                                                                    <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                                        <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                                        <div class="basket-item-amount-filed-block">
+                                                                            <input type="text" class="basket-item-amount-filed" value="2" data-value="2" data-entity="basket-item-quantity-field" id="basket-item-quantity-726">
+                                                                        </div>
+                                                                        <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                                        <div class="basket-item-amount-field-description">
+                                                                            шт
+                                                                        </div>
+                                                                    </div>
+
+                                                                    
+                                                                    <div class="basket-item-block-price">
+
+                                                                        <div class="basket-item-price-current">
+                                                                            <span class="basket-item-price-current-text" id="basket-item-price-722">
+                                                                                985 руб./
+                                                                            </span>
+                                                                            <span class="basket-item-price-current-text" id="basket-item-sum-price-722">
+                                                                                17&nbsp;640 руб.
+                                                                            </span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="basket-item-block-actions">
+                                                                <span class="basket-item-actions-remove" data-entity="basket-item-delete"></span>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="basket-items-list-item-container" id="basket-item-726" data-entity="basket-item" data-id="726">
+                                                        <td class="basket-items-list-item-descriptions">
+                                                            <div class="basket-items-list-item-descriptions-inner" id="basket-item-height-aligner-726">
+                                                                <div class="basket-item-block-image">
+                                                                    <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-image-link">
+
+                                                                        <img class="basket-item-image" alt="Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД" src="/bitrix/templates/aspro_optimus/components/bitrix/sale.basket.basket/basket/images/no_photo.png">
+
+
+                                                                    </a>
+                                                                </div>
+                                                                <div class="basket-item-block-info">
+                                                                    <h2 class="basket-item-info-name">
+                                                                        <a href="/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/" class="basket-item-info-name-link">
+
+                                                                            <span data-entity="basket-item-name">Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД</span>
+
+                                                                        </a>
+                                                                    </h2>
+                                                                    
+                                                                    <div class="basket-item-block-amount" data-entity="basket-item-quantity-block">
+                                                                        <span class="basket-item-amount-btn-minus" data-entity="basket-item-quantity-minus"></span>
+                                                                        <div class="basket-item-amount-filed-block">
+                                                                            <input type="text" class="basket-item-amount-filed" value="2" data-value="2" data-entity="basket-item-quantity-field" id="basket-item-quantity-726">
+                                                                        </div>
+                                                                        <span class="basket-item-amount-btn-plus" data-entity="basket-item-quantity-plus"></span>
+                                                                        <div class="basket-item-amount-field-description">
+                                                                            шт
+                                                                        </div>
+                                                                    </div>
+
+                                                                    
+                                                                    <div class="basket-item-block-price">
+
+                                                                        <div class="basket-item-price-current">
+                                                                            <span class="basket-item-price-current-text" id="basket-item-price-722">
+                                                                                985 руб./
+                                                                            </span>
+                                                                            <span class="basket-item-price-current-text" id="basket-item-sum-price-722">
+                                                                                17&nbsp;640 руб.
+                                                                            </span>
+                                                                        </div>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            
                                                             <div class="basket-item-block-actions">
                                                                 <span class="basket-item-actions-remove" data-entity="basket-item-delete"></span>
                                                             </div>
@@ -3871,6 +3943,8 @@
                                 </div>
                             </div>
                         </div>
+
+
                     </div>
 
 					<div class="checkout-bottom">
@@ -3888,6 +3962,10 @@
 						<div class="checkout-aside-profit">Ваша выгода: 956 руб.</div>
 						<div class="checkout-aside-price">Итого к оплате:  5 056 руб.</div>
 						<div class="checkout-aside-comment">*Цена с учетом скидки от вашей карты Снегири</div>
+						<div class="checkout-aside-btn">
+                            <a href="/" class="checkout-aside-btn__button">Оформить заказ</a>
+                        </div>
+
 					</div>
 
 				</div>
@@ -3896,6 +3974,24 @@
 	</form>
 </div>
 
+                            <script>
+                                BX.Currency.setCurrencies([{'CURRENCY':'BYN','FORMAT':{'FORMAT_STRING':'# руб.','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'EUR','FORMAT':{'FORMAT_STRING':'# &euro;','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'RUB','FORMAT':{'FORMAT_STRING':'# руб.','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'UAH','FORMAT':{'FORMAT_STRING':'# грн.','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'USD','FORMAT':{'FORMAT_STRING':'$#','DEC_POINT':'.','THOUSANDS_SEP':',','DECIMALS':2,'THOUSANDS_VARIANT':'C','HIDE_ZERO':'Y'}}]);
+                            </script>
+                            <script>
+                                BX.message({'SBB_DELETE':'Удалить','SBB_FILTER_EMPTY_RESULT':'По данному запросу товаров не найдено','SBB_BASKET_ITEM_WARNING':'В вашей корзине <a href=\"javascript:void(0)\" data-entity=\"basket-items-warning-count\"><\/a> требует внимания.','SBB_BASKET_FILTER':'Фильтр','SBB_BASKET_ITEMS_WARNING':'Товары c ошибкой','SBB_NOT_AVAILABLE_ITEM':'недоступен','SBB_NOT_AVAILABLE_ITEM_2':'недоступно','SBB_NOT_AVAILABLE_ITEMS':'недоступно','SBB_DELAYED_ITEM':'отложен','SBB_DELAYED_ITEM_2':'отложено','SBB_DELAYED_ITEMS':'отложено','SBB_SIMILAR_ITEM':'похожий','SBB_SIMILAR_ITEM_2':'похожих','SBB_SIMILAR_ITEMS':'похожих','SBB_BASKET_ITEM_NOT_AVAILABLE':'В данный момент этот товар не доступен','SBB_BASKET_ITEM_DELAYED':'Товар отложен','SBB_BASKET_ITEM_REMOVE_DELAYED':'Добавить к заказу?','SBB_BASKET_ITEM_SIMILAR_P1':'Этот товар','SBB_BASKET_ITEM_SIMILAR_P2':'уже есть в корзине в количестве','SBB_BASKET_ITEM_SIMILAR_P3':'Объединить товары в одну позицию c количеством','SBB_BASKET_ITEM_PRICE_FOR':'цена за','SBB_BASKET_ITEM_ECONOMY':'Экономия','SBB_BASKET_ITEM_DELETED':'был удален из корзины','SBB_BASKET_ITEM_RESTORE':'Восстановить','SBB_COUPON_ENTER':'Введите код купона для скидки','SBB_COUPON':'купон','SBB_TOTAL':'Итого','SBB_WEIGHT':'Общий вес','SBB_VAT':'Сумма НДС','SBB_ORDER':'Оформить заказ','SBB_BASKET_ITEM_MAX_COUNT_EXCEEDED':'Перейдите в <a href=#PATH#>корзину<\/a> для редактирования','SBB_WARNING_ITEM':'c ошибками','SBB_IN_BASKET':'Товары','SBB_GOOD_CAP':'Товар','SBB_GOOD':'товар','SBB_GOOD_2':'товара','SBB_GOODS':'товаров','SBB_EMPTY_BASKET_TITLE':'Ваша корзина пуста','SBB_EMPTY_BASKET_HINT':'#A1#Нажмите здесь#A2#, чтобы продолжить покупки','SBB_GIFTS_BLOCK_TITLE':'Выберите один из подарков'});
+                                BX.Sale.BasketComponent.init({
+                                    result: {'GRID':{'HEADERS':[{'id':'NAME','name':''},{'id':'PREVIEW_PICTURE','name':''},{'id':'DISCOUNT','name':'Скидка'},{'id':'DELETE','name':''},{'id':'DELAY','name':''},{'id':'PRICE','name':''},{'id':'SUM','name':''},{'id':'QUANTITY','name':''}],'ROWS':{'722':{'ID':'722','~ID':'722','LID':'s1','~LID':'s1','MODULE':'catalog','~MODULE':'catalog','PRODUCT_ID':'51107','~PRODUCT_ID':'51107','QUANTITY':59,'~QUANTITY':'59.0000','WEIGHT':0,'~WEIGHT':'0.00','DELAY':'N','~DELAY':'N','CAN_BUY':'Y','~CAN_BUY':'Y','PRICE':298.99,'~PRICE':298.99,'CUSTOM_PRICE':'N','~CUSTOM_PRICE':'N','BASE_PRICE':298.99,'~BASE_PRICE':298.99,'PRODUCT_PRICE_ID':'50994','~PRODUCT_PRICE_ID':'50994','PRICE_TYPE_ID':'1','~PRICE_TYPE_ID':'1','CURRENCY':'RUB','~CURRENCY':'RUB','BARCODE_MULTI':'N','~BARCODE_MULTI':'N','RESERVED':'N','~RESERVED':'N','RESERVE_QUANTITY':'','~RESERVE_QUANTITY':'','NAME':'Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД','~NAME':'Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД','CATALOG_XML_ID':'','~CATALOG_XML_ID':'','VAT_RATE':'0.2000','~VAT_RATE':'0.2000','NOTES':'Розничная цена','~NOTES':'Розничная цена','DISCOUNT_PRICE':0,'~DISCOUNT_PRICE':0,'PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','~PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','CALLBACK_FUNC':'','~CALLBACK_FUNC':'','ORDER_CALLBACK_FUNC':'','~ORDER_CALLBACK_FUNC':'','PAY_CALLBACK_FUNC':'','~PAY_CALLBACK_FUNC':'','CANCEL_CALLBACK_FUNC':'','~CANCEL_CALLBACK_FUNC':'','DIMENSIONS':'a:3:{s:5:&quot;WIDTH&quot;;N;s:6:&quot;HEIGHT&quot;;N;s:6:&quot;LENGTH&quot;;N;}','~DIMENSIONS':'a:3:{s:5:\"WIDTH\";N;s:6:\"HEIGHT\";N;s:6:\"LENGTH\";N;}','TYPE':'','~TYPE':'','SET_PARENT_ID':'','~SET_PARENT_ID':'','DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/','~DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/','FUSER_ID':'288','~FUSER_ID':'288','MEASURE_CODE':'796','~MEASURE_CODE':'796','MEASURE_NAME':'шт','~MEASURE_NAME':'шт','ORDER_ID':'','~ORDER_ID':'','DATE_INSERT':'11.11.2020 16:42:19','~DATE_INSERT':'11.11.2020 16:42:19','DATE_UPDATE':'11.11.2020 17:30:26','~DATE_UPDATE':'11.11.2020 17:30:26','PRODUCT_XML_ID':'155596','~PRODUCT_XML_ID':'155596','SUBSCRIBE':'N','~SUBSCRIBE':'N','RECOMMENDATION':'','~RECOMMENDATION':'','VAT_INCLUDED':'Y','~VAT_INCLUDED':'Y','SORT':'100','~SORT':'100','DATE_REFRESH':'','~DATE_REFRESH':'','DISCOUNT_NAME':'','~DISCOUNT_NAME':'','DISCOUNT_VALUE':'','~DISCOUNT_VALUE':'','DISCOUNT_COUPON':'','~DISCOUNT_COUPON':'','XML_ID':'558988d4-794f-4483-90b5-13544b92b72b','~XML_ID':'558988d4-794f-4483-90b5-13544b92b72b','MARKING_CODE_GROUP':'','~MARKING_CODE_GROUP':'','PROPS':[],'PROPS_ALL':{'PRODUCT.XML_ID':{'CODE':'PRODUCT.XML_ID','ID':'790','VALUE':'155596','SORT':'100','NAME':'Product XML_ID'}},'WEIGHT_FORMATED':'0 кг','PRICE_FORMATED':'298.99 руб.','FULL_PRICE':298.99,'FULL_PRICE_FORMATED':'298.99 руб.','DISCOUNT_PRICE_FORMATED':'0 руб.','SUM_VALUE':17640.41,'SUM':'17&nbsp;640.41 руб.','SUM_FULL_PRICE':17640.41,'SUM_FULL_PRICE_FORMATED':'17&nbsp;640.41 руб.','SUM_DISCOUNT_PRICE':0,'SUM_DISCOUNT_PRICE_FORMATED':'0 руб.','VAT_VALUE':49.831666666667,'PRICE_VAT_VALUE':49.831666666667,'DISCOUNT_PRICE_PERCENT':0,'DISCOUNT_PRICE_PERCENT_FORMATED':'0%','HASH':'f17afb20275342206e92a7cc50ce45a0','MEASURE_TEXT':'шт','MEASURE':796,'AVAILABLE_QUANTITY':'5','CHECK_MAX_QUANTITY':'N','PREVIEW_PICTURE_SRC':'','DETAIL_PICTURE_SRC':''},'726':{'ID':'726','~ID':'726','LID':'s1','~LID':'s1','MODULE':'catalog','~MODULE':'catalog','PRODUCT_ID':'51692','~PRODUCT_ID':'51692','QUANTITY':2,'~QUANTITY':'2.0000','WEIGHT':0,'~WEIGHT':'0.00','DELAY':'N','~DELAY':'N','CAN_BUY':'Y','~CAN_BUY':'Y','PRICE':497.87,'~PRICE':497.87,'CUSTOM_PRICE':'N','~CUSTOM_PRICE':'N','BASE_PRICE':497.87,'~BASE_PRICE':497.87,'PRODUCT_PRICE_ID':'51579','~PRODUCT_PRICE_ID':'51579','PRICE_TYPE_ID':'1','~PRICE_TYPE_ID':'1','CURRENCY':'RUB','~CURRENCY':'RUB','BARCODE_MULTI':'N','~BARCODE_MULTI':'N','RESERVED':'N','~RESERVED':'N','RESERVE_QUANTITY':'','~RESERVE_QUANTITY':'','NAME':'Магне В6 таб.п/о №60','~NAME':'Магне В6 таб.п/о №60','CATALOG_XML_ID':'','~CATALOG_XML_ID':'','VAT_RATE':'0.2000','~VAT_RATE':'0.2000','NOTES':'Розничная цена','~NOTES':'Розничная цена','DISCOUNT_PRICE':0,'~DISCOUNT_PRICE':0,'PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','~PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','CALLBACK_FUNC':'','~CALLBACK_FUNC':'','ORDER_CALLBACK_FUNC':'','~ORDER_CALLBACK_FUNC':'','PAY_CALLBACK_FUNC':'','~PAY_CALLBACK_FUNC':'','CANCEL_CALLBACK_FUNC':'','~CANCEL_CALLBACK_FUNC':'','DIMENSIONS':'a:3:{s:5:&quot;WIDTH&quot;;N;s:6:&quot;HEIGHT&quot;;N;s:6:&quot;LENGTH&quot;;N;}','~DIMENSIONS':'a:3:{s:5:\"WIDTH\";N;s:6:\"HEIGHT\";N;s:6:\"LENGTH\";N;}','TYPE':'','~TYPE':'','SET_PARENT_ID':'','~SET_PARENT_ID':'','DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/mineraly/preparaty-magniya/51692/','~DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/mineraly/preparaty-magniya/51692/','FUSER_ID':'288','~FUSER_ID':'288','MEASURE_CODE':'796','~MEASURE_CODE':'796','MEASURE_NAME':'шт','~MEASURE_NAME':'шт','ORDER_ID':'','~ORDER_ID':'','DATE_INSERT':'11.11.2020 17:30:24','~DATE_INSERT':'11.11.2020 17:30:24','DATE_UPDATE':'11.11.2020 17:30:26','~DATE_UPDATE':'11.11.2020 17:30:26','PRODUCT_XML_ID':'139171','~PRODUCT_XML_ID':'139171','SUBSCRIBE':'N','~SUBSCRIBE':'N','RECOMMENDATION':'','~RECOMMENDATION':'','VAT_INCLUDED':'Y','~VAT_INCLUDED':'Y','SORT':'200','~SORT':'200','DATE_REFRESH':'','~DATE_REFRESH':'','DISCOUNT_NAME':'','~DISCOUNT_NAME':'','DISCOUNT_VALUE':'','~DISCOUNT_VALUE':'','DISCOUNT_COUPON':'','~DISCOUNT_COUPON':'','XML_ID':'6f146e76-4462-41a1-9052-061cb671ae67','~XML_ID':'6f146e76-4462-41a1-9052-061cb671ae67','MARKING_CODE_GROUP':'','~MARKING_CODE_GROUP':'','PROPS':[],'PROPS_ALL':{'PRODUCT.XML_ID':{'CODE':'PRODUCT.XML_ID','ID':'794','VALUE':'139171','SORT':'100','NAME':'Product XML_ID'}},'WEIGHT_FORMATED':'0 кг','PRICE_FORMATED':'497.87 руб.','FULL_PRICE':497.87,'FULL_PRICE_FORMATED':'497.87 руб.','DISCOUNT_PRICE_FORMATED':'0 руб.','SUM_VALUE':995.74,'SUM':'995.74 руб.','SUM_FULL_PRICE':995.74,'SUM_FULL_PRICE_FORMATED':'995.74 руб.','SUM_DISCOUNT_PRICE':0,'SUM_DISCOUNT_PRICE_FORMATED':'0 руб.','VAT_VALUE':82.978333333333,'PRICE_VAT_VALUE':82.978333333333,'DISCOUNT_PRICE_PERCENT':0,'DISCOUNT_PRICE_PERCENT_FORMATED':'0%','HASH':'7d299b23ca32fd0f14c1c0256894ead7','MEASURE_TEXT':'шт','MEASURE':796,'AVAILABLE_QUANTITY':'5','CHECK_MAX_QUANTITY':'N','PREVIEW_PICTURE_SRC':'','DETAIL_PICTURE_SRC':''}}},'FULL_DISCOUNT_LIST':[],'APPLIED_DISCOUNT_LIST':[],'CURRENCY':'RUB','allSum':18636.15,'allSum_FORMATED':'18&nbsp;636.15 руб.','allWeight':0,'allWeight_FORMATED':'0 кг','PRICE_WITHOUT_DISCOUNT':'18&nbsp;636.15 руб.','DISCOUNT_PRICE_ALL':0,'DISCOUNT_PRICE_ALL_FORMATED':'0 руб.','DISCOUNT_PRICE_FORMATED':'0 руб.','allVATSum':3106.03,'allVATSum_FORMATED':'3&nbsp;106.03 руб.','allSum_wVAT_FORMATED':'15&nbsp;530.12 руб.','COUPON':'','COUPON_LIST':[],'EMPTY_BASKET':false,'WARNING_MESSAGE':[],'WARNING_MESSAGE_WITH_CODE':{'722':['Извините, заказанное вами количество товара недоступно. <br> Установите доступное для заказа количество.'],'726':['Извините, заказанное вами количество товара недоступно. <br> Установите доступное для заказа количество.']},'ERROR_MESSAGE':'','BASKET_ITEMS_COUNT':2,'ORDERABLE_BASKET_ITEMS_COUNT':2,'NOT_AVAILABLE_BASKET_ITEMS_COUNT':0,'DELAYED_BASKET_ITEMS_COUNT':0,'BASKET_ITEM_MAX_COUNT_EXCEEDED':false,'EVENT_ONCHANGE_ON_START':'N','CURRENCIES':[{'CURRENCY':'BYN','FORMAT':{'FORMAT_STRING':'# руб.','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'EUR','FORMAT':{'FORMAT_STRING':'# &euro;','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'RUB','FORMAT':{'FORMAT_STRING':'# руб.','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'UAH','FORMAT':{'FORMAT_STRING':'# грн.','DEC_POINT':'.','THOUSANDS_SEP':'&nbsp;','DECIMALS':2,'THOUSANDS_VARIANT':'B','HIDE_ZERO':'Y'}},{'CURRENCY':'USD','FORMAT':{'FORMAT_STRING':'$#','DEC_POINT':'.','THOUSANDS_SEP':',','DECIMALS':2,'THOUSANDS_VARIANT':'C','HIDE_ZERO':'Y'}}],'BASKET_ITEM_RENDER_DATA':[{'ID':'722','PRODUCT_ID':'51107','NAME':'Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД','QUANTITY':59,'PROPS':[],'PROPS_ALL':{'PRODUCT.XML_ID':{'CODE':'PRODUCT.XML_ID','ID':'790','VALUE':'155596','SORT':'100','NAME':'Product XML_ID'}},'HASH':'f17afb20275342206e92a7cc50ce45a0','SORT':'100','DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/','CURRENCY':'RUB','DISCOUNT_PRICE_PERCENT':0,'DISCOUNT_PRICE_PERCENT_FORMATED':'0%','SHOW_DISCOUNT_PRICE':false,'PRICE':298.99,'PRICE_FORMATED':'298.99 руб.','FULL_PRICE':298.99,'FULL_PRICE_FORMATED':'298.99 руб.','DISCOUNT_PRICE':0,'DISCOUNT_PRICE_FORMATED':'0 руб.','SUM_PRICE':17640.41,'SUM_PRICE_FORMATED':'17&nbsp;640.41 руб.','SUM_FULL_PRICE':17640.41,'SUM_FULL_PRICE_FORMATED':'17&nbsp;640.41 руб.','SUM_DISCOUNT_PRICE':0,'SUM_DISCOUNT_PRICE_FORMATED':'0 руб.','MEASURE_RATIO':1,'MEASURE_TEXT':'шт','AVAILABLE_QUANTITY':'5','CHECK_MAX_QUANTITY':'N','MODULE':'catalog','PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','NOT_AVAILABLE':false,'DELAYED':false,'SKU_BLOCK_LIST':[],'COLUMN_LIST':[],'SHOW_LABEL':false,'LABEL_VALUES':[],'BRAND':'','SHOW_PRICE_FOR':true,'STORE_AVAIL':0},{'ID':'726','PRODUCT_ID':'51692','NAME':'Магне В6 таб.п/о №60','QUANTITY':2,'PROPS':[],'PROPS_ALL':{'PRODUCT.XML_ID':{'CODE':'PRODUCT.XML_ID','ID':'794','VALUE':'139171','SORT':'100','NAME':'Product XML_ID'}},'HASH':'7d299b23ca32fd0f14c1c0256894ead7','SORT':'200','DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/mineraly/preparaty-magniya/51692/','CURRENCY':'RUB','DISCOUNT_PRICE_PERCENT':0,'DISCOUNT_PRICE_PERCENT_FORMATED':'0%','SHOW_DISCOUNT_PRICE':false,'PRICE':497.87,'PRICE_FORMATED':'497.87 руб.','FULL_PRICE':497.87,'FULL_PRICE_FORMATED':'497.87 руб.','DISCOUNT_PRICE':0,'DISCOUNT_PRICE_FORMATED':'0 руб.','SUM_PRICE':995.74,'SUM_PRICE_FORMATED':'995.74 руб.','SUM_FULL_PRICE':995.74,'SUM_FULL_PRICE_FORMATED':'995.74 руб.','SUM_DISCOUNT_PRICE':0,'SUM_DISCOUNT_PRICE_FORMATED':'0 руб.','MEASURE_RATIO':1,'MEASURE_TEXT':'шт','AVAILABLE_QUANTITY':'5','CHECK_MAX_QUANTITY':'N','MODULE':'catalog','PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','NOT_AVAILABLE':false,'DELAYED':false,'SKU_BLOCK_LIST':[],'COLUMN_LIST':[],'SHOW_LABEL':false,'LABEL_VALUES':[],'BRAND':'','SHOW_PRICE_FOR':true,'STORE_AVAIL':0}],'NOT_AVAIL':true,'TOTAL_RENDER_DATA':{'DISABLE_CHECKOUT':false,'PRICE':18636.15,'PRICE_FORMATED':'18&nbsp;636.15 руб.','PRICE_WITHOUT_DISCOUNT_FORMATED':'18&nbsp;636.15 руб.','CURRENCY':'RUB','SHOW_VAT':true,'VAT_SUM_FORMATED':'3&nbsp;106.03 руб.','SUM_WITHOUT_VAT_FORMATED':'15&nbsp;530.12 руб.'},'ITEMS':{'AnDelCanBuy':[{'ID':'722','~ID':'722','LID':'s1','~LID':'s1','MODULE':'catalog','~MODULE':'catalog','PRODUCT_ID':'51107','~PRODUCT_ID':'51107','QUANTITY':59,'~QUANTITY':'59.0000','WEIGHT':0,'~WEIGHT':'0.00','DELAY':'N','~DELAY':'N','CAN_BUY':'Y','~CAN_BUY':'Y','PRICE':298.99,'~PRICE':298.99,'CUSTOM_PRICE':'N','~CUSTOM_PRICE':'N','BASE_PRICE':298.99,'~BASE_PRICE':298.99,'PRODUCT_PRICE_ID':'50994','~PRODUCT_PRICE_ID':'50994','PRICE_TYPE_ID':'1','~PRICE_TYPE_ID':'1','CURRENCY':'RUB','~CURRENCY':'RUB','BARCODE_MULTI':'N','~BARCODE_MULTI':'N','RESERVED':'N','~RESERVED':'N','RESERVE_QUANTITY':'','~RESERVE_QUANTITY':'','NAME':'Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД','~NAME':'Веторон Иммуно д/дет.таб.жев.№30 /бета-каротин/ БАД','CATALOG_XML_ID':'','~CATALOG_XML_ID':'','VAT_RATE':'0.2000','~VAT_RATE':'0.2000','NOTES':'Розничная цена','~NOTES':'Розничная цена','DISCOUNT_PRICE':0,'~DISCOUNT_PRICE':0,'PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','~PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','CALLBACK_FUNC':'','~CALLBACK_FUNC':'','ORDER_CALLBACK_FUNC':'','~ORDER_CALLBACK_FUNC':'','PAY_CALLBACK_FUNC':'','~PAY_CALLBACK_FUNC':'','CANCEL_CALLBACK_FUNC':'','~CANCEL_CALLBACK_FUNC':'','DIMENSIONS':'a:3:{s:5:&quot;WIDTH&quot;;N;s:6:&quot;HEIGHT&quot;;N;s:6:&quot;LENGTH&quot;;N;}','~DIMENSIONS':'a:3:{s:5:\"WIDTH\";N;s:6:\"HEIGHT\";N;s:6:\"LENGTH\";N;}','TYPE':'','~TYPE':'','SET_PARENT_ID':'','~SET_PARENT_ID':'','DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/','~DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/vitaminy/vitaminy-dlya-detey-i-podrostkov/51107/','FUSER_ID':'288','~FUSER_ID':'288','MEASURE_CODE':'796','~MEASURE_CODE':'796','MEASURE_NAME':'шт','~MEASURE_NAME':'шт','ORDER_ID':'','~ORDER_ID':'','DATE_INSERT':'11.11.2020 16:42:19','~DATE_INSERT':'11.11.2020 16:42:19','DATE_UPDATE':'11.11.2020 17:30:26','~DATE_UPDATE':'11.11.2020 17:30:26','PRODUCT_XML_ID':'155596','~PRODUCT_XML_ID':'155596','SUBSCRIBE':'N','~SUBSCRIBE':'N','RECOMMENDATION':'','~RECOMMENDATION':'','VAT_INCLUDED':'Y','~VAT_INCLUDED':'Y','SORT':'100','~SORT':'100','DATE_REFRESH':'','~DATE_REFRESH':'','DISCOUNT_NAME':'','~DISCOUNT_NAME':'','DISCOUNT_VALUE':'','~DISCOUNT_VALUE':'','DISCOUNT_COUPON':'','~DISCOUNT_COUPON':'','XML_ID':'558988d4-794f-4483-90b5-13544b92b72b','~XML_ID':'558988d4-794f-4483-90b5-13544b92b72b','MARKING_CODE_GROUP':'','~MARKING_CODE_GROUP':'','PROPS':[],'PROPS_ALL':{'PRODUCT.XML_ID':{'CODE':'PRODUCT.XML_ID','ID':'790','VALUE':'155596','SORT':'100','NAME':'Product XML_ID'}},'WEIGHT_FORMATED':'0 кг','PRICE_FORMATED':'298.99 руб.','FULL_PRICE':298.99,'FULL_PRICE_FORMATED':'298.99 руб.','DISCOUNT_PRICE_FORMATED':'0 руб.','SUM_VALUE':17640.41,'SUM':'17&nbsp;640.41 руб.','SUM_FULL_PRICE':17640.41,'SUM_FULL_PRICE_FORMATED':'17&nbsp;640.41 руб.','SUM_DISCOUNT_PRICE':0,'SUM_DISCOUNT_PRICE_FORMATED':'0 руб.','VAT_VALUE':49.831666666667,'PRICE_VAT_VALUE':49.831666666667,'DISCOUNT_PRICE_PERCENT':0,'DISCOUNT_PRICE_PERCENT_FORMATED':'0%','HASH':'f17afb20275342206e92a7cc50ce45a0','MEASURE_TEXT':'шт','MEASURE':796,'AVAILABLE_QUANTITY':'5','CHECK_MAX_QUANTITY':'N','PREVIEW_PICTURE_SRC':'','DETAIL_PICTURE_SRC':''},{'ID':'726','~ID':'726','LID':'s1','~LID':'s1','MODULE':'catalog','~MODULE':'catalog','PRODUCT_ID':'51692','~PRODUCT_ID':'51692','QUANTITY':2,'~QUANTITY':'2.0000','WEIGHT':0,'~WEIGHT':'0.00','DELAY':'N','~DELAY':'N','CAN_BUY':'Y','~CAN_BUY':'Y','PRICE':497.87,'~PRICE':497.87,'CUSTOM_PRICE':'N','~CUSTOM_PRICE':'N','BASE_PRICE':497.87,'~BASE_PRICE':497.87,'PRODUCT_PRICE_ID':'51579','~PRODUCT_PRICE_ID':'51579','PRICE_TYPE_ID':'1','~PRICE_TYPE_ID':'1','CURRENCY':'RUB','~CURRENCY':'RUB','BARCODE_MULTI':'N','~BARCODE_MULTI':'N','RESERVED':'N','~RESERVED':'N','RESERVE_QUANTITY':'','~RESERVE_QUANTITY':'','NAME':'Магне В6 таб.п/о №60','~NAME':'Магне В6 таб.п/о №60','CATALOG_XML_ID':'','~CATALOG_XML_ID':'','VAT_RATE':'0.2000','~VAT_RATE':'0.2000','NOTES':'Розничная цена','~NOTES':'Розничная цена','DISCOUNT_PRICE':0,'~DISCOUNT_PRICE':0,'PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','~PRODUCT_PROVIDER_CLASS':'\\Bitrix\\Catalog\\Product\\CatalogProvider','CALLBACK_FUNC':'','~CALLBACK_FUNC':'','ORDER_CALLBACK_FUNC':'','~ORDER_CALLBACK_FUNC':'','PAY_CALLBACK_FUNC':'','~PAY_CALLBACK_FUNC':'','CANCEL_CALLBACK_FUNC':'','~CANCEL_CALLBACK_FUNC':'','DIMENSIONS':'a:3:{s:5:&quot;WIDTH&quot;;N;s:6:&quot;HEIGHT&quot;;N;s:6:&quot;LENGTH&quot;;N;}','~DIMENSIONS':'a:3:{s:5:\"WIDTH\";N;s:6:\"HEIGHT\";N;s:6:\"LENGTH\";N;}','TYPE':'','~TYPE':'','SET_PARENT_ID':'','~SET_PARENT_ID':'','DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/mineraly/preparaty-magniya/51692/','~DETAIL_PAGE_URL':'/catalog/vitaminy-mineraly-obshchetoniziruyushchie-preparaty/mineraly/preparaty-magniya/51692/','FUSER_ID':'288','~FUSER_ID':'288','MEASURE_CODE':'796','~MEASURE_CODE':'796','MEASURE_NAME':'шт','~MEASURE_NAME':'шт','ORDER_ID':'','~ORDER_ID':'','DATE_INSERT':'11.11.2020 17:30:24','~DATE_INSERT':'11.11.2020 17:30:24','DATE_UPDATE':'11.11.2020 17:30:26','~DATE_UPDATE':'11.11.2020 17:30:26','PRODUCT_XML_ID':'139171','~PRODUCT_XML_ID':'139171','SUBSCRIBE':'N','~SUBSCRIBE':'N','RECOMMENDATION':'','~RECOMMENDATION':'','VAT_INCLUDED':'Y','~VAT_INCLUDED':'Y','SORT':'200','~SORT':'200','DATE_REFRESH':'','~DATE_REFRESH':'','DISCOUNT_NAME':'','~DISCOUNT_NAME':'','DISCOUNT_VALUE':'','~DISCOUNT_VALUE':'','DISCOUNT_COUPON':'','~DISCOUNT_COUPON':'','XML_ID':'6f146e76-4462-41a1-9052-061cb671ae67','~XML_ID':'6f146e76-4462-41a1-9052-061cb671ae67','MARKING_CODE_GROUP':'','~MARKING_CODE_GROUP':'','PROPS':[],'PROPS_ALL':{'PRODUCT.XML_ID':{'CODE':'PRODUCT.XML_ID','ID':'794','VALUE':'139171','SORT':'100','NAME':'Product XML_ID'}},'WEIGHT_FORMATED':'0 кг','PRICE_FORMATED':'497.87 руб.','FULL_PRICE':497.87,'FULL_PRICE_FORMATED':'497.87 руб.','DISCOUNT_PRICE_FORMATED':'0 руб.','SUM_VALUE':995.74,'SUM':'995.74 руб.','SUM_FULL_PRICE':995.74,'SUM_FULL_PRICE_FORMATED':'995.74 руб.','SUM_DISCOUNT_PRICE':0,'SUM_DISCOUNT_PRICE_FORMATED':'0 руб.','VAT_VALUE':82.978333333333,'PRICE_VAT_VALUE':82.978333333333,'DISCOUNT_PRICE_PERCENT':0,'DISCOUNT_PRICE_PERCENT_FORMATED':'0%','HASH':'7d299b23ca32fd0f14c1c0256894ead7','MEASURE_TEXT':'шт','MEASURE':796,'AVAILABLE_QUANTITY':'5','CHECK_MAX_QUANTITY':'N','PREVIEW_PICTURE_SRC':'','DETAIL_PICTURE_SRC':''}],'DelDelCanBuy':[],'nAnCanBuy':[],'ProdSubscribe':[]},'ShowReady':'Y','ShowDelay':'N','ShowSubscribe':'N','ShowNotAvail':'N'},
+                                    params: {'TEMPLATE_THEME':'blue','COLUMNS_LIST':['NAME','PREVIEW_PICTURE','DISCOUNT','DELETE','DELAY','PRICE','SUM','QUANTITY'],'OFFERS_PROPS':['SIZES','COLOR_REF'],'PATH_TO_ORDER':'/order/','HIDE_COUPON':'Y','PRICE_VAT_SHOW_VALUE':'Y','COUNT_DISCOUNT_4_ALL_QUANTITY':'N','USE_PREPAYMENT':'N','SET_TITLE':'N','AJAX_MODE_CUSTOM':'Y','SHOW_MEASURE':'Y','PICTURE_WIDTH':'100','PICTURE_HEIGHT':'100','SHOW_FULL_ORDER_BUTTON':'Y','SHOW_FAST_ORDER_BUTTON':'Y','COMPONENT_TEMPLATE':'basket','QUANTITY_FLOAT':'N','ACTION_VARIABLE':'action','AUTO_CALCULATION':'Y','COMPOSITE_FRAME_MODE':'A','COMPOSITE_FRAME_TYPE':'AUTO','USE_GIFTS':'N','GIFTS_PLACE':'BOTTOM','GIFTS_BLOCK_TITLE':'Выберите один из подарков','GIFTS_HIDE_BLOCK_TITLE':'N','GIFTS_TEXT_LABEL_GIFT':'Подарок','GIFTS_PRODUCT_QUANTITY_VARIABLE':'undefined','GIFTS_PRODUCT_PROPS_VARIABLE':'prop','GIFTS_SHOW_OLD_PRICE':'Y','GIFTS_SHOW_DISCOUNT_PERCENT':'Y','GIFTS_SHOW_NAME':'Y','GIFTS_SHOW_IMAGE':'Y','GIFTS_MESS_BTN_BUY':'Выбрать','GIFTS_MESS_BTN_DETAIL':'Подробнее','GIFTS_PAGE_ELEMENT_COUNT':'10','GIFTS_CONVERT_CURRENCY':'N','GIFTS_HIDE_NOT_AVAILABLE':'N','DEFERRED_REFRESH':'N','USE_DYNAMIC_SCROLL':'Y','SHOW_FILTER':'Y','SHOW_RESTORE':'Y','COLUMNS_LIST_EXT':['NAME','PREVIEW_PICTURE','DISCOUNT','DELETE','DELAY','PRICE','SUM','QUANTITY'],'COLUMNS_LIST_MOBILE':['PREVIEW_PICTURE','DISCOUNT','DELETE','DELAY','SUM'],'TOTAL_BLOCK_DISPLAY':['top'],'DISPLAY_MODE':'extended','PRICE_DISPLAY_MODE':'Y','SHOW_DISCOUNT_PERCENT':'Y','DISCOUNT_PERCENT_POSITION':'bottom-right','PRODUCT_BLOCKS_ORDER':['props','sku','columns'],'USE_PRICE_ANIMATION':'Y','LABEL_PROP':[],'CORRECT_RATIO':'Y','COMPATIBLE_MODE':'Y','EMPTY_BASKET_HINT_PATH':'/','BASKET_IMAGES_SCALING':'adaptive','USE_ENHANCED_ECOMMERCE':'N','CACHE_TYPE':'A','AJAX_PATH':'/bitrix/components/bitrix/sale.basket.basket/ajax.php','PATH_TO_BASKET':'/personal/cart/','WEIGHT_KOEF':'1000','WEIGHT_UNIT':'кг','LABEL_PROP_MOBILE':[],'LABEL_PROP_POSITION':'top-left','BASKET_WITH_ORDER_INTEGRATION':'N','BASKET_MAX_COUNT_TO_SHOW':'5','BASKET_HAS_BEEN_REFRESHED':'N','~COLUMNS_LIST':['NAME','PREVIEW_PICTURE','DISCOUNT','DELETE','DELAY','PRICE','SUM','QUANTITY'],'~OFFERS_PROPS':['SIZES','COLOR_REF'],'~PATH_TO_ORDER':'/order/','~HIDE_COUPON':'Y','~PRICE_VAT_SHOW_VALUE':'Y','~COUNT_DISCOUNT_4_ALL_QUANTITY':'N','~USE_PREPAYMENT':'N','~SET_TITLE':'N','~AJAX_MODE_CUSTOM':'Y','~SHOW_MEASURE':'Y','~PICTURE_WIDTH':'100','~PICTURE_HEIGHT':'100','~SHOW_FULL_ORDER_BUTTON':'Y','~SHOW_FAST_ORDER_BUTTON':'Y','~COMPONENT_TEMPLATE':'basket','~QUANTITY_FLOAT':'N','~ACTION_VARIABLE':'action','~TEMPLATE_THEME':'blue','~AUTO_CALCULATION':'Y','~COMPOSITE_FRAME_MODE':'A','~COMPOSITE_FRAME_TYPE':'AUTO','~USE_GIFTS':'N','~GIFTS_PLACE':'BOTTOM','~GIFTS_BLOCK_TITLE':'Выберите один из подарков','~GIFTS_HIDE_BLOCK_TITLE':'N','~GIFTS_TEXT_LABEL_GIFT':'Подарок','~GIFTS_PRODUCT_QUANTITY_VARIABLE':'undefined','~GIFTS_PRODUCT_PROPS_VARIABLE':'prop','~GIFTS_SHOW_OLD_PRICE':'Y','~GIFTS_SHOW_DISCOUNT_PERCENT':'Y','~GIFTS_SHOW_NAME':'Y','~GIFTS_SHOW_IMAGE':'Y','~GIFTS_MESS_BTN_BUY':'Выбрать','~GIFTS_MESS_BTN_DETAIL':'Подробнее','~GIFTS_PAGE_ELEMENT_COUNT':'10','~GIFTS_CONVERT_CURRENCY':'N','~GIFTS_HIDE_NOT_AVAILABLE':'N','~DEFERRED_REFRESH':'N','~USE_DYNAMIC_SCROLL':'Y','~SHOW_FILTER':'Y','~SHOW_RESTORE':'Y','~COLUMNS_LIST_EXT':['NAME','PREVIEW_PICTURE','DISCOUNT','DELETE','DELAY','PRICE','SUM','QUANTITY'],'~COLUMNS_LIST_MOBILE':['PREVIEW_PICTURE','DISCOUNT','DELETE','DELAY','SUM'],'~TOTAL_BLOCK_DISPLAY':['top'],'~DISPLAY_MODE':'extended','~PRICE_DISPLAY_MODE':'Y','~SHOW_DISCOUNT_PERCENT':'Y','~DISCOUNT_PERCENT_POSITION':'bottom-right','~PRODUCT_BLOCKS_ORDER':'props,sku,columns','~USE_PRICE_ANIMATION':'Y','~LABEL_PROP':[],'~CORRECT_RATIO':'Y','~COMPATIBLE_MODE':'Y','~EMPTY_BASKET_HINT_PATH':'/','~BASKET_IMAGES_SCALING':'adaptive','~USE_ENHANCED_ECOMMERCE':'N','~CACHE_TYPE':'A','~AJAX_PATH':'/bitrix/components/bitrix/sale.basket.basket/ajax.php','~PATH_TO_BASKET':'/personal/cart/','~WEIGHT_KOEF':'1000','~WEIGHT_UNIT':'кг','~LABEL_PROP_MOBILE':[],'~LABEL_PROP_POSITION':'top-left','~BASKET_WITH_ORDER_INTEGRATION':'N','~BASKET_MAX_COUNT_TO_SHOW':'5','~BASKET_HAS_BEEN_REFRESHED':'N','DATA_LAYER_NAME':'dataLayer','BRAND_PROPERTY':''},
+                                    template: 'basket.9f9a111c8ed299839f292efeef6e9131327f9ae6214dd2befe6ce513f6a65584',
+                                    signedParamsString: 'YToxMzQ6e3M6MTQ6IlRFTVBMQVRFX1RIRU1FIjtzOjQ6ImJsdWUiO3M6MTI6IkNPTFVNTlNfTElTVCI7YTo4OntpOjA7czo0OiJOQU1FIjtpOjE7czoxNToiUFJFVklFV19QSUNUVVJFIjtpOjI7czo4OiJESVNDT1VOVCI7aTozO3M6NjoiREVMRVRFIjtpOjQ7czo1OiJERUxBWSI7aTo1O3M6NToiUFJJQ0UiO2k6NjtzOjM6IlNVTSI7aTo3O3M6ODoiUVVBTlRJVFkiO31zOjEyOiJPRkZFUlNfUFJPUFMiO2E6Mjp7aTowO3M6NToiU0laRVMiO2k6MTtzOjk6IkNPTE9SX1JFRiI7fXM6MTM6IlBBVEhfVE9fT1JERVIiO3M6NzoiL29yZGVyLyI7czoxMToiSElERV9DT1VQT04iO3M6MToiWSI7czoyMDoiUFJJQ0VfVkFUX1NIT1dfVkFMVUUiO3M6MToiWSI7czoyOToiQ09VTlRfRElTQ09VTlRfNF9BTExfUVVBTlRJVFkiO3M6MToiTiI7czoxNDoiVVNFX1BSRVBBWU1FTlQiO3M6MToiTiI7czo5OiJTRVRfVElUTEUiO3M6MToiTiI7czoxNjoiQUpBWF9NT0RFX0NVU1RPTSI7czoxOiJZIjtzOjEyOiJTSE9XX01FQVNVUkUiO3M6MToiWSI7czoxMzoiUElDVFVSRV9XSURUSCI7czozOiIxMDAiO3M6MTQ6IlBJQ1RVUkVfSEVJR0hUIjtzOjM6IjEwMCI7czoyMjoiU0hPV19GVUxMX09SREVSX0JVVFRPTiI7czoxOiJZIjtzOjIyOiJTSE9XX0ZBU1RfT1JERVJfQlVUVE9OIjtzOjE6IlkiO3M6MTg6IkNPTVBPTkVOVF9URU1QTEFURSI7czo2OiJiYXNrZXQiO3M6MTQ6IlFVQU5USVRZX0ZMT0FUIjtzOjE6Ik4iO3M6MTU6IkFDVElPTl9WQVJJQUJMRSI7czo2OiJhY3Rpb24iO3M6MTY6IkFVVE9fQ0FMQ1VMQVRJT04iO3M6MToiWSI7czoyMDoiQ09NUE9TSVRFX0ZSQU1FX01PREUiO3M6MToiQSI7czoyMDoiQ09NUE9TSVRFX0ZSQU1FX1RZUEUiO3M6NDoiQVVUTyI7czo5OiJVU0VfR0lGVFMiO3M6MToiTiI7czoxMToiR0lGVFNfUExBQ0UiO3M6NjoiQk9UVE9NIjtzOjE3OiJHSUZUU19CTE9DS19USVRMRSI7czo0Nzoi0JLRi9Cx0LXRgNC40YLQtSDQvtC00LjQvSDQuNC3INC/0L7QtNCw0YDQutC+0LIiO3M6MjI6IkdJRlRTX0hJREVfQkxPQ0tfVElUTEUiO3M6MToiTiI7czoyMToiR0lGVFNfVEVYVF9MQUJFTF9HSUZUIjtzOjE0OiLQn9C+0LTQsNGA0L7QuiI7czozMToiR0lGVFNfUFJPRFVDVF9RVUFOVElUWV9WQVJJQUJMRSI7czo5OiJ1bmRlZmluZWQiO3M6Mjg6IkdJRlRTX1BST0RVQ1RfUFJPUFNfVkFSSUFCTEUiO3M6NDoicHJvcCI7czoyMDoiR0lGVFNfU0hPV19PTERfUFJJQ0UiO3M6MToiWSI7czoyNzoiR0lGVFNfU0hPV19ESVNDT1VOVF9QRVJDRU5UIjtzOjE6IlkiO3M6MTU6IkdJRlRTX1NIT1dfTkFNRSI7czoxOiJZIjtzOjE2OiJHSUZUU19TSE9XX0lNQUdFIjtzOjE6IlkiO3M6MTg6IkdJRlRTX01FU1NfQlROX0JVWSI7czoxNDoi0JLRi9Cx0YDQsNGC0YwiO3M6MjE6IkdJRlRTX01FU1NfQlROX0RFVEFJTCI7czoxODoi0J/QvtC00YDQvtCx0L3QtdC1IjtzOjI0OiJHSUZUU19QQUdFX0VMRU1FTlRfQ09VTlQiO3M6MjoiMTAiO3M6MjI6IkdJRlRTX0NPTlZFUlRfQ1VSUkVOQ1kiO3M6MToiTiI7czoyNDoiR0lGVFNfSElERV9OT1RfQVZBSUxBQkxFIjtzOjE6Ik4iO3M6MTY6IkRFRkVSUkVEX1JFRlJFU0giO3M6MToiTiI7czoxODoiVVNFX0RZTkFNSUNfU0NST0xMIjtzOjE6IlkiO3M6MTE6IlNIT1dfRklMVEVSIjtzOjE6IlkiO3M6MTI6IlNIT1dfUkVTVE9SRSI7czoxOiJZIjtzOjE2OiJDT0xVTU5TX0xJU1RfRVhUIjthOjg6e2k6MDtzOjQ6Ik5BTUUiO2k6MTtzOjE1OiJQUkVWSUVXX1BJQ1RVUkUiO2k6MjtzOjg6IkRJU0NPVU5UIjtpOjM7czo2OiJERUxFVEUiO2k6NDtzOjU6IkRFTEFZIjtpOjU7czo1OiJQUklDRSI7aTo2O3M6MzoiU1VNIjtpOjc7czo4OiJRVUFOVElUWSI7fXM6MTk6IkNPTFVNTlNfTElTVF9NT0JJTEUiO2E6NTp7aTowO3M6MTU6IlBSRVZJRVdfUElDVFVSRSI7aToxO3M6ODoiRElTQ09VTlQiO2k6MjtzOjY6IkRFTEVURSI7aTozO3M6NToiREVMQVkiO2k6NDtzOjM6IlNVTSI7fXM6MTk6IlRPVEFMX0JMT0NLX0RJU1BMQVkiO2E6MTp7aTowO3M6MzoidG9wIjt9czoxMjoiRElTUExBWV9NT0RFIjtzOjg6ImV4dGVuZGVkIjtzOjE4OiJQUklDRV9ESVNQTEFZX01PREUiO3M6MToiWSI7czoyMToiU0hPV19ESVNDT1VOVF9QRVJDRU5UIjtzOjE6IlkiO3M6MjU6IkRJU0NPVU5UX1BFUkNFTlRfUE9TSVRJT04iO3M6MTI6ImJvdHRvbS1yaWdodCI7czoyMDoiUFJPRFVDVF9CTE9DS1NfT1JERVIiO2E6Mzp7aTowO3M6NToicHJvcHMiO2k6MTtzOjM6InNrdSI7aToyO3M6NzoiY29sdW1ucyI7fXM6MTk6IlVTRV9QUklDRV9BTklNQVRJT04iO3M6MToiWSI7czoxMDoiTEFCRUxfUFJPUCI7YTowOnt9czoxMzoiQ09SUkVDVF9SQVRJTyI7czoxOiJZIjtzOjE1OiJDT01QQVRJQkxFX01PREUiO3M6MToiWSI7czoyMjoiRU1QVFlfQkFTS0VUX0hJTlRfUEFUSCI7czoxOiIvIjtzOjIxOiJCQVNLRVRfSU1BR0VTX1NDQUxJTkciO3M6ODoiYWRhcHRpdmUiO3M6MjI6IlVTRV9FTkhBTkNFRF9FQ09NTUVSQ0UiO3M6MToiTiI7czoxMDoiQ0FDSEVfVFlQRSI7czoxOiJBIjtzOjk6IkFKQVhfUEFUSCI7czo1MzoiL2JpdHJpeC9jb21wb25lbnRzL2JpdHJpeC9zYWxlLmJhc2tldC5iYXNrZXQvYWpheC5waHAiO3M6MTQ6IlBBVEhfVE9fQkFTS0VUIjtzOjE1OiIvcGVyc29uYWwvY2FydC8iO3M6MTE6IldFSUdIVF9LT0VGIjtzOjQ6IjEwMDAiO3M6MTE6IldFSUdIVF9VTklUIjtzOjQ6ItC60LMiO3M6MTc6IkxBQkVMX1BST1BfTU9CSUxFIjthOjA6e31zOjE5OiJMQUJFTF9QUk9QX1BPU0lUSU9OIjtzOjg6InRvcC1sZWZ0IjtzOjI5OiJCQVNLRVRfV0lUSF9PUkRFUl9JTlRFR1JBVElPTiI7czoxOiJOIjtzOjI0OiJCQVNLRVRfTUFYX0NPVU5UX1RPX1NIT1ciO2k6NTtzOjI1OiJCQVNLRVRfSEFTX0JFRU5fUkVGUkVTSEVEIjtzOjE6Ik4iO3M6MTM6In5DT0xVTU5TX0xJU1QiO2E6ODp7aTowO3M6NDoiTkFNRSI7aToxO3M6MTU6IlBSRVZJRVdfUElDVFVSRSI7aToyO3M6ODoiRElTQ09VTlQiO2k6MztzOjY6IkRFTEVURSI7aTo0O3M6NToiREVMQVkiO2k6NTtzOjU6IlBSSUNFIjtpOjY7czozOiJTVU0iO2k6NztzOjg6IlFVQU5USVRZIjt9czoxMzoifk9GRkVSU19QUk9QUyI7YToyOntpOjA7czo1OiJTSVpFUyI7aToxO3M6OToiQ09MT1JfUkVGIjt9czoxNDoiflBBVEhfVE9fT1JERVIiO3M6NzoiL29yZGVyLyI7czoxMjoifkhJREVfQ09VUE9OIjtzOjE6IlkiO3M6MjE6In5QUklDRV9WQVRfU0hPV19WQUxVRSI7czoxOiJZIjtzOjMwOiJ+Q09VTlRfRElTQ09VTlRfNF9BTExfUVVBTlRJVFkiO3M6MToiTiI7czoxNToiflVTRV9QUkVQQVlNRU5UIjtzOjE6Ik4iO3M6MTA6In5TRVRfVElUTEUiO3M6MToiTiI7czoxNzoifkFKQVhfTU9ERV9DVVNUT00iO3M6MToiWSI7czoxMzoiflNIT1dfTUVBU1VSRSI7czoxOiJZIjtzOjE0OiJ+UElDVFVSRV9XSURUSCI7czozOiIxMDAiO3M6MTU6In5QSUNUVVJFX0hFSUdIVCI7czozOiIxMDAiO3M6MjM6In5TSE9XX0ZVTExfT1JERVJfQlVUVE9OIjtzOjE6IlkiO3M6MjM6In5TSE9XX0ZBU1RfT1JERVJfQlVUVE9OIjtzOjE6IlkiO3M6MTk6In5DT01QT05FTlRfVEVNUExBVEUiO3M6NjoiYmFza2V0IjtzOjE1OiJ+UVVBTlRJVFlfRkxPQVQiO3M6MToiTiI7czoxNjoifkFDVElPTl9WQVJJQUJMRSI7czo2OiJhY3Rpb24iO3M6MTU6In5URU1QTEFURV9USEVNRSI7czo0OiJibHVlIjtzOjE3OiJ+QVVUT19DQUxDVUxBVElPTiI7czoxOiJZIjtzOjIxOiJ+Q09NUE9TSVRFX0ZSQU1FX01PREUiO3M6MToiQSI7czoyMToifkNPTVBPU0lURV9GUkFNRV9UWVBFIjtzOjQ6IkFVVE8iO3M6MTA6In5VU0VfR0lGVFMiO3M6MToiTiI7czoxMjoifkdJRlRTX1BMQUNFIjtzOjY6IkJPVFRPTSI7czoxODoifkdJRlRTX0JMT0NLX1RJVExFIjtzOjQ3OiLQktGL0LHQtdGA0LjRgtC1INC+0LTQuNC9INC40Lcg0L/QvtC00LDRgNC60L7QsiI7czoyMzoifkdJRlRTX0hJREVfQkxPQ0tfVElUTEUiO3M6MToiTiI7czoyMjoifkdJRlRTX1RFWFRfTEFCRUxfR0lGVCI7czoxNDoi0J/QvtC00LDRgNC+0LoiO3M6MzI6In5HSUZUU19QUk9EVUNUX1FVQU5USVRZX1ZBUklBQkxFIjtzOjk6InVuZGVmaW5lZCI7czoyOToifkdJRlRTX1BST0RVQ1RfUFJPUFNfVkFSSUFCTEUiO3M6NDoicHJvcCI7czoyMToifkdJRlRTX1NIT1dfT0xEX1BSSUNFIjtzOjE6IlkiO3M6Mjg6In5HSUZUU19TSE9XX0RJU0NPVU5UX1BFUkNFTlQiO3M6MToiWSI7czoxNjoifkdJRlRTX1NIT1dfTkFNRSI7czoxOiJZIjtzOjE3OiJ+R0lGVFNfU0hPV19JTUFHRSI7czoxOiJZIjtzOjE5OiJ+R0lGVFNfTUVTU19CVE5fQlVZIjtzOjE0OiLQktGL0LHRgNCw0YLRjCI7czoyMjoifkdJRlRTX01FU1NfQlROX0RFVEFJTCI7czoxODoi0J/QvtC00YDQvtCx0L3QtdC1IjtzOjI1OiJ+R0lGVFNfUEFHRV9FTEVNRU5UX0NPVU5UIjtzOjI6IjEwIjtzOjIzOiJ+R0lGVFNfQ09OVkVSVF9DVVJSRU5DWSI7czoxOiJOIjtzOjI1OiJ+R0lGVFNfSElERV9OT1RfQVZBSUxBQkxFIjtzOjE6Ik4iO3M6MTc6In5ERUZFUlJFRF9SRUZSRVNIIjtzOjE6Ik4iO3M6MTk6In5VU0VfRFlOQU1JQ19TQ1JPTEwiO3M6MToiWSI7czoxMjoiflNIT1dfRklMVEVSIjtzOjE6IlkiO3M6MTM6In5TSE9XX1JFU1RPUkUiO3M6MToiWSI7czoxNzoifkNPTFVNTlNfTElTVF9FWFQiO2E6ODp7aTowO3M6NDoiTkFNRSI7aToxO3M6MTU6IlBSRVZJRVdfUElDVFVSRSI7aToyO3M6ODoiRElTQ09VTlQiO2k6MztzOjY6IkRFTEVURSI7aTo0O3M6NToiREVMQVkiO2k6NTtzOjU6IlBSSUNFIjtpOjY7czozOiJTVU0iO2k6NztzOjg6IlFVQU5USVRZIjt9czoyMDoifkNPTFVNTlNfTElTVF9NT0JJTEUiO2E6NTp7aTowO3M6MTU6IlBSRVZJRVdfUElDVFVSRSI7aToxO3M6ODoiRElTQ09VTlQiO2k6MjtzOjY6IkRFTEVURSI7aTozO3M6NToiREVMQVkiO2k6NDtzOjM6IlNVTSI7fXM6MjA6In5UT1RBTF9CTE9DS19ESVNQTEFZIjthOjE6e2k6MDtzOjM6InRvcCI7fXM6MTM6In5ESVNQTEFZX01PREUiO3M6ODoiZXh0ZW5kZWQiO3M6MTk6In5QUklDRV9ESVNQTEFZX01PREUiO3M6MToiWSI7czoyMjoiflNIT1dfRElTQ09VTlRfUEVSQ0VOVCI7czoxOiJZIjtzOjI2OiJ+RElTQ09VTlRfUEVSQ0VOVF9QT1NJVElPTiI7czoxMjoiYm90dG9tLXJpZ2h0IjtzOjIxOiJ+UFJPRFVDVF9CTE9DS1NfT1JERVIiO3M6MTc6InByb3BzLHNrdSxjb2x1bW5zIjtzOjIwOiJ+VVNFX1BSSUNFX0FOSU1BVElPTiI7czoxOiJZIjtzOjExOiJ+TEFCRUxfUFJPUCI7YTowOnt9czoxNDoifkNPUlJFQ1RfUkFUSU8iO3M6MToiWSI7czoxNjoifkNPTVBBVElCTEVfTU9ERSI7czoxOiJZIjtzOjIzOiJ+RU1QVFlfQkFTS0VUX0hJTlRfUEFUSCI7czoxOiIvIjtzOjIyOiJ+QkFTS0VUX0lNQUdFU19TQ0FMSU5HIjtzOjg6ImFkYXB0aXZlIjtzOjIzOiJ+VVNFX0VOSEFOQ0VEX0VDT01NRVJDRSI7czoxOiJOIjtzOjExOiJ+Q0FDSEVfVFlQRSI7czoxOiJBIjtzOjEwOiJ+QUpBWF9QQVRIIjtzOjUzOiIvYml0cml4L2NvbXBvbmVudHMvYml0cml4L3NhbGUuYmFza2V0LmJhc2tldC9hamF4LnBocCI7czoxNToiflBBVEhfVE9fQkFTS0VUIjtzOjE1OiIvcGVyc29uYWwvY2FydC8iO3M6MTI6In5XRUlHSFRfS09FRiI7czo0OiIxMDAwIjtzOjEyOiJ+V0VJR0hUX1VOSVQiO3M6NDoi0LrQsyI7czoxODoifkxBQkVMX1BST1BfTU9CSUxFIjthOjA6e31zOjIwOiJ+TEFCRUxfUFJPUF9QT1NJVElPTiI7czo4OiJ0b3AtbGVmdCI7czozMDoifkJBU0tFVF9XSVRIX09SREVSX0lOVEVHUkFUSU9OIjtzOjE6Ik4iO3M6MjU6In5CQVNLRVRfTUFYX0NPVU5UX1RPX1NIT1ciO2k6NTtzOjI2OiJ+QkFTS0VUX0hBU19CRUVOX1JFRlJFU0hFRCI7czoxOiJOIjtzOjE1OiJEQVRBX0xBWUVSX05BTUUiO3M6OToiZGF0YUxheWVyIjtzOjE0OiJCUkFORF9QUk9QRVJUWSI7czowOiIiO30=.f301d1d029323c68e2ab024ebc13cb6c067af36a05997c730f70a84c3eaea07e',
+                                    siteId: 's1',
+                                    siteTemplateId: 'aspro_optimus',
+                                    templateFolder: '/bitrix/templates/aspro_optimus/components/bitrix/sale.basket.basket/basket'
+                                });
+                            </script>
+                            <script type="text/javascript">
+                                var basketJSParams = ''
+                            </script>
 						</div>
 					</div>
 				</div>
