@@ -170,7 +170,7 @@ $(document).ready(function() {
         });
     }
     initScrolling();
-
+    cartScroll();
     $(document).on('click','.js-search-mobile', function(e){
         e.preventDefault();
         $('.mobile_menu-search').toggleClass('opened');
