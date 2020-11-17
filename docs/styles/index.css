@@ -500,6 +500,9 @@
             vertical-align: top;
             padding: 4px 3px 5px; }
 
+.basket-items-list-item-container > td {
+  border-top: none; }
+
 .catalog-section-list {
   display: flex;
   flex-direction: column;
