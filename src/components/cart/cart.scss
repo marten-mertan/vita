@@ -473,3 +473,138 @@
 .bx-sbb-empty-cart-text{
     line-height: 1.1;
 }
+
+.basket-items-list-item-extra{    
+    width: 100%;
+    display: flex;
+    margin-bottom: 22px;
+    &-content{
+        width: 100%;
+    }
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 18px;
+    }
+    &-tabs{
+        &__item{
+            display: inline-block;
+            font-size: 16px;
+            line-height: 20px;
+            padding: 0 0 5px 0;
+            font-weight: 500;
+            color: #000;
+            border-bottom: 2px solid #37a2b4;
+            margin-right: 14px;
+            cursor: default;
+
+        }
+    }
+    &-arrows{
+
+    }
+    &-slider{
+        width: 100%;
+        height: 80px;
+        .tabs_slider>li{
+            width: 250px!important;
+            padding: 0;
+            opacity: 0;
+            min-height: 80px;
+            margin-right: 12px;
+        }
+        &-item{
+            display: flex;
+            flex: 0 0 auto;
+            padding: 14px 10px 9px 10px;
+            border: 1px solid #dbe2e9;
+            background-color: #fff;
+            height: 80px;
+            transition: all .2s ease;
+            &:hover{
+                border-color: #37a2b4;
+                .basket-items-list-item-extra-slider-item-info__price{
+                    display: none;
+                }
+                .basket-items-list-item-extra-slider-item-info__name{
+                    color: #37a2b4;
+                }
+                .basket-items-list-item-extra-slider-item-info__quantity{
+                    color: #37a2b4;
+                }
+                .basket-items-list-item-extra-slider-item-info-controls{
+                    display: inline-block;
+                }
+            }
+            &__img{
+                display: block;
+                flex: 0 0 auto;
+                width: 50px;
+                height: 52px;
+                background: url(../assets/img/no-photo-small.png) 50% 50% no-repeat;
+                background-size: contain;
+                margin-right: 9px;
+            }
+            &-info{
+                display: flex;
+                flex-direction: column;
+                flex: 0 0 auto;
+                width: 169px;
+                a{
+                    color: inherit;
+                }
+                &__name{
+                    font-size: 13px;
+                    color: #000;
+                    line-height: 14px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    transition: all .2s ease;
+                }
+                &__quantity{
+                    font-size: 13px;
+                    color: #000;
+                    line-height: 14px;
+                    margin-bottom: auto;
+                    transition: all .2s ease;
+                }
+                &__price{
+                    font-size: 13px;
+                    line-height: 24px;
+                    color: #383838;
+                    font-weight: bold;
+                }
+                &-controls.counter_block{
+                    display: none;
+                    margin: 0;
+                    height: 23px;
+                    .minus{
+                        height: 23px;
+                        &:before{
+                            height: 23px;
+                            vertical-align: top;
+                            background-position: -21px -194px;
+                        }
+
+                    }
+                    .plus{
+                        height: 23px;
+                        &:before{
+                            height: 23px;
+                            vertical-align: top;
+                            background-position: 5px -194px;
+                        }
+
+                    }
+                    input[type=text]{
+                        height: 23px;
+                        vertical-align: top;
+                        padding: 4px 3px 5px;
+                    }
+                }
+            }
+        }
+    }
+}

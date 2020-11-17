@@ -190,5 +190,34 @@ $(document).ready(function() {
 
     $(document).on('mouseenter','.menu_top_block li.full:not(.v_bottom)', function(e){
         $leftMenu.masonry();
-      });
+    });
+
+    $(document).ready(function(){
+        var flexsliderItemWidth = 250;
+        var flexsliderItemMargin = 12;
+
+        var sliderWidth = $('.js-basket-items-slider').outerWidth();
+        var flexsliderMinItems = Math.floor((sliderWidth - flexsliderItemMargin) / (flexsliderItemWidth + flexsliderItemMargin));
+        console.log(flexsliderItemWidth, flexsliderItemMargin, sliderWidth, flexsliderMinItems);
+        $('.basket-items-list-item-extra-slider').each(function(index, element){
+            $(element).flexslider({
+                animation: 'slide',
+                selector: '.tabs_slider .catalog_item',
+                slideshow: false,
+                animationSpeed: 600,
+                directionNav: true,
+                controlNav: false,
+                pauseOnHover: true,
+                animationLoop: true,
+                itemWidth: flexsliderItemWidth,
+                itemMargin: flexsliderItemMargin,
+                minItems: flexsliderMinItems,
+                controlsContainer: $(element).parents('.js-basket-items-slider').find('.basket-items-list-item-extra-arrows'),
+                start: function(slider){
+                    slider.find('li').css('opacity', 1);
+                }
+            });
+
+        });
+    })
 });

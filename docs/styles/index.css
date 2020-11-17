@@ -392,6 +392,109 @@
 .bx-sbb-empty-cart-text {
   line-height: 1.1; }
 
+.basket-items-list-item-extra {
+  width: 100%;
+  display: flex;
+  margin-bottom: 22px; }
+  .basket-items-list-item-extra-content {
+    width: 100%; }
+  .basket-items-list-item-extra-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px; }
+  .basket-items-list-item-extra-tabs__item {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 0 5px 0;
+    font-weight: 500;
+    color: #000;
+    border-bottom: 2px solid #37a2b4;
+    margin-right: 14px;
+    cursor: default; }
+  .basket-items-list-item-extra-slider {
+    width: 100%;
+    height: 80px; }
+    .basket-items-list-item-extra-slider .tabs_slider > li {
+      width: 250px !important;
+      padding: 0;
+      opacity: 0;
+      min-height: 80px;
+      margin-right: 12px; }
+    .basket-items-list-item-extra-slider-item {
+      display: flex;
+      flex: 0 0 auto;
+      padding: 14px 10px 9px 10px;
+      border: 1px solid #dbe2e9;
+      background-color: #fff;
+      height: 80px;
+      transition: all .2s ease; }
+      .basket-items-list-item-extra-slider-item:hover {
+        border-color: #37a2b4; }
+        .basket-items-list-item-extra-slider-item:hover .basket-items-list-item-extra-slider-item-info__price {
+          display: none; }
+        .basket-items-list-item-extra-slider-item:hover .basket-items-list-item-extra-slider-item-info__name {
+          color: #37a2b4; }
+        .basket-items-list-item-extra-slider-item:hover .basket-items-list-item-extra-slider-item-info__quantity {
+          color: #37a2b4; }
+        .basket-items-list-item-extra-slider-item:hover .basket-items-list-item-extra-slider-item-info-controls {
+          display: inline-block; }
+      .basket-items-list-item-extra-slider-item__img {
+        display: block;
+        flex: 0 0 auto;
+        width: 50px;
+        height: 52px;
+        background: url(../assets/img/no-photo-small.png) 50% 50% no-repeat;
+        background-size: contain;
+        margin-right: 9px; }
+      .basket-items-list-item-extra-slider-item-info {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 auto;
+        width: 169px; }
+        .basket-items-list-item-extra-slider-item-info a {
+          color: inherit; }
+        .basket-items-list-item-extra-slider-item-info__name {
+          font-size: 13px;
+          color: #000;
+          line-height: 14px;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          transition: all .2s ease; }
+        .basket-items-list-item-extra-slider-item-info__quantity {
+          font-size: 13px;
+          color: #000;
+          line-height: 14px;
+          margin-bottom: auto;
+          transition: all .2s ease; }
+        .basket-items-list-item-extra-slider-item-info__price {
+          font-size: 13px;
+          line-height: 24px;
+          color: #383838;
+          font-weight: bold; }
+        .basket-items-list-item-extra-slider-item-info-controls.counter_block {
+          display: none;
+          margin: 0;
+          height: 23px; }
+          .basket-items-list-item-extra-slider-item-info-controls.counter_block .minus {
+            height: 23px; }
+            .basket-items-list-item-extra-slider-item-info-controls.counter_block .minus:before {
+              height: 23px;
+              vertical-align: top;
+              background-position: -21px -194px; }
+          .basket-items-list-item-extra-slider-item-info-controls.counter_block .plus {
+            height: 23px; }
+            .basket-items-list-item-extra-slider-item-info-controls.counter_block .plus:before {
+              height: 23px;
+              vertical-align: top;
+              background-position: 5px -194px; }
+          .basket-items-list-item-extra-slider-item-info-controls.counter_block input[type=text] {
+            height: 23px;
+            vertical-align: top;
+            padding: 4px 3px 5px; }
+
 .catalog-section-list {
   display: flex;
   flex-direction: column;
