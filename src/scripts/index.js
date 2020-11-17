@@ -193,7 +193,7 @@ $(document).ready(function() {
     });
 
     $(document).ready(function(){
-        var flexsliderItemWidth = 250;
+        var flexsliderItemWidth = 236;
         var flexsliderItemMargin = 12;
 
         var sliderWidth = $('.js-basket-items-slider').outerWidth();
