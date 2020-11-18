@@ -84,8 +84,16 @@
                                             <a href="javascript:void(0)" class="basket-items-list-header-filter-item active" data-entity="basket-items-count" data-filter="warning" style="">2 c ошибками</a>
                                             <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="delayed" style="display: none;"></a>
                                             <a href="javascript:void(0)" class="basket-items-list-header-filter-item" data-entity="basket-items-count" data-filter="not-available" style="display: none;"></a>
-                                            <div class="top_control basket_sort">
+                                            <div class="top_control basket_sort mod-desktop">
                                                 <span style="opacity:1;" class="delete_all button grey_br transparent remove_all_basket">Удалить все</span>
+                                            </div>
+                                            <div class="top_control basket_sort mod-mobile">
+                                                <span style="opacity:1;" class="delete_all button grey_br transparent remove_all_basket">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="18px" viewBox="0 0 184.3 211.64" >
+                                                        <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"/><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"/><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"/><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"/>
+                                                    </svg>
+
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -127,15 +135,18 @@
                                                                     <div class="basket-items-list-item-warning-container">
                                                                         <div class="alert alert-warning alert-dismissable" data-entity="basket-item-warning-node">
                                                                             <span class="close" data-entity="basket-item-warning-close">×</span>
-                                                                            <div data-entity="basket-item-warning-text">Извините, заказанное вами количество товара недоступно.
-                                                                                <br>
+                                                                            <div data-entity="basket-item-warning-text">
+                                                                                <span class="desktop-only">
+                                                                                    Извините, заказанное вами количество товара недоступно.
+                                                                                    <br>
+                                                                                </span>
                                                                                 Установите доступное для заказа количество.</div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="basket-item-block-properties">
                                                                         <div class="basket-item-property-custom basket-item-property-custom-text
                                                                                                                                                                                     " data-entity="basket-item-property">
-                                                                            <div class="basket-item-property-custom-name">Доступное количество в выбранной аптеке:</div>
+                                                                            <div class="basket-item-property-custom-name">Доступное количество в <span class="desktop-only">выбранной </span>аптеке:</div>
                                                                             <div class="basket-item-property-custom-value" data-column-property-code="STORE_AVAIL" data-entity="basket-item-property-column-value">
                                                                                 0
                                                                             </div>
@@ -467,15 +478,18 @@
                                                                     <div class="basket-items-list-item-warning-container">
                                                                         <div class="alert alert-warning alert-dismissable" data-entity="basket-item-warning-node">
                                                                             <span class="close" data-entity="basket-item-warning-close">×</span>
-                                                                            <div data-entity="basket-item-warning-text">Извините, заказанное вами количество товара недоступно.
-                                                                                <br>
+                                                                            <div data-entity="basket-item-warning-text">
+                                                                                <span class="desktop-only">
+                                                                                    Извините, заказанное вами количество товара недоступно.
+                                                                                    <br>
+                                                                                </span>
                                                                                 Установите доступное для заказа количество.</div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="basket-item-block-properties">
                                                                         <div class="basket-item-property-custom basket-item-property-custom-text
                                                                                                                                                                                     " data-entity="basket-item-property">
-                                                                            <div class="basket-item-property-custom-name">Доступное количество в выбранной аптеке:</div>
+                                                                            <div class="basket-item-property-custom-name">Доступное количество в <span class="desktop-only">выбранной </span>аптеке:</div>
                                                                             <div class="basket-item-property-custom-value" data-column-property-code="STORE_AVAIL" data-entity="basket-item-property-column-value">
                                                                                 0
                                                                             </div>
