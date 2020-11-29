@@ -309,7 +309,31 @@ $(document).ready(function() {
             });
 
         });
-    })
+    });
+
+    
+    // личный кабинет - история заказов
+    $(document).on('click','.js-history-item', function(e){
+        let id = $(this).data('id');
+        $('.js-history').addClass('hide');
+        $('.js-history-more').removeClass('show');
+        $('#'+id+'.js-history-more').addClass('show');
+        $('html').animate({scrollTop: 0}, 300);
+    });
+    $(document).on('click','.js-history-back', function(e){
+        $('.js-history').removeClass('hide');
+        $('.js-history-more').removeClass('show');
+        $('html').animate({scrollTop: 0}, 300);
+    });
+    $(document).on('click','.js-history-delete', function(e){
+        e.stopPropagation();
+    });
+    $(document).on('click','.js-history-repeat', function(e){
+        e.stopPropagation();
+    });
+    $(document).on('click','.js-history-pay', function(e){
+        e.stopPropagation();
+    });
 });
 
 /***/ })
