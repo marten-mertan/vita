@@ -1226,11 +1226,9 @@ header .mobile_menu {
       @media screen and (max-width: 640px) {
         .lk-history-list-item.mod-active .lk-history-list-item-status {
           width: 45%; } }
-      .lk-history-list-item.mod-active .lk-history-list-item-repeat {
-        margin-right: 60px; }
-        @media screen and (max-width: 1170px) {
-          .lk-history-list-item.mod-active .lk-history-list-item-repeat {
-            margin-right: 20px; } }
+      @media screen and (max-width: 1170px) {
+        .lk-history-list-item.mod-active .lk-history-list-item-repeat {
+          margin-right: 20px; } }
       .lk-history-list-item.mod-active .lk-history-list-item-close svg {
         fill: #a4a4a4; }
     .lk-history-list-item-date {
