@@ -22,7 +22,7 @@
             cursor: pointer;
             &:hover {
                 background-color: #f3f3f3;
-                .lk-history-list-item__label {
+                .lk-history-list-item__label:not(.mod-repeat):not(.mod-delete) {
                     opacity: 1;
                     @media screen and (max-width: 640px){
                         opacity: 0;
@@ -61,7 +61,7 @@
                 @media screen and (max-width: 640px){
                     margin-bottom: 0;
                 }
-                .lk-history-list-item__label {
+                .lk-history-list-item__label:not(.mod-repeat):not(.mod-delete) {
                     opacity: 1;
                     @media screen and (max-width: 640px){
                         top: -12px;
@@ -284,6 +284,12 @@
                     svg {
                         fill: #232833;
                     }
+                    .mod-repeat{
+                        opacity: 1;
+                        @media screen and (max-width: 640px){
+                            opacity: 0;
+                        }
+                    }
                 }
 
             }
@@ -307,6 +313,12 @@
                 &:hover {
                     svg {
                         fill: #232833;
+                    }
+                    .mod-delete{
+                        opacity: 1;
+                        @media screen and (max-width: 640px){
+                            opacity: 0;
+                        }
                     }
                 }
             }
@@ -534,14 +546,18 @@
     }
 
     .mod-repeat {
-        left: -16px;
+        opacity: 0;
+        left: -20px;
+        transition: all .2s ease;
     }
 
     .mod-center {
         text-align: center;
     }
     .mod-delete {
-        left: -14px;
+        opacity: 0;
+        left: -12px;
+        transition: all .2s ease;
     }
 
     .mod-repeat-btn {
