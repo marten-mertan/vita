@@ -6,12 +6,16 @@
             display: none;
         }
         &-item {
+            position: relative;
             display: flex;
             flex-direction: row;
             align-items: center;
-            padding: 29px 42px 23px 24px;
+            padding: 29px 202px 23px 24px;
             background-color: white;
             transition: all 0.2s ease;
+            @media screen and (max-width: 1170px){
+                padding-right: 142px;
+            }
             @media screen and (max-width: 980px){
                 flex-wrap: wrap;
                 justify-content: flex-end;
@@ -22,10 +26,12 @@
             cursor: pointer;
             &:hover {
                 background-color: #f3f3f3;
-                .lk-history-list-item__label:not(.mod-repeat):not(.mod-delete) {
+                .lk-history-list-item__label:not(.mod-repeat):not(.mod-delete):not(.mod-center) {
                     opacity: 1;
+                    visibility: visible;
                     @media screen and (max-width: 640px){
                         opacity: 0;
+                        visibility: hidden;
                     }
                 }
                 .lk-history-list-item-repeat {
@@ -61,14 +67,14 @@
                 @media screen and (max-width: 640px){
                     margin-bottom: 0;
                 }
-                .lk-history-list-item__label:not(.mod-repeat):not(.mod-delete) {
+                .lk-history-list-item__label:not(.mod-repeat):not(.mod-delete):not(.mod-center) {
                     opacity: 1;
+                    visibility: visible;
                     @media screen and (max-width: 640px){
                         top: -12px;
                     }
                 }
                 .lk-history-list-item-status{
-                    margin-right: 60px;
                     @media screen and (max-width: 1170px){
                         margin-right: 20px;
                     }
@@ -76,6 +82,9 @@
                         margin-right: auto;
                     }
                     .lk-history-list-item__label{
+                        &.mod-center{
+                            background-color: #fff;
+                        }
                         @media screen and (max-width: 640px){
                             display: none;
                         }
@@ -102,10 +111,16 @@
                     }
                 }
                 .lk-history-list-item-pay{
+                    margin-right: 86px;
+                    @media screen and (max-width: 980px){
+                        margin-right: 40px;
+                    }
                     @media screen and (max-width: 640px){
+                        margin-right: auto;
                         width: 45%;
                     }
                     & + .lk-history-list-item-status{
+                        margin-left: 0;
                         @media screen and (max-width: 640px){
                             width: 100%;
                         }
@@ -114,11 +129,6 @@
                 .lk-history-list-item-status{
                     @media screen and (max-width: 640px){
                         width: 45%;
-                    }
-                }
-                .lk-history-list-item-repeat{
-                    @media screen and (max-width: 1170px){
-                        margin-right: 20px;
                     }
                 }
                 .lk-history-list-item-close svg {
@@ -175,7 +185,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                height: 28px;
+                min-height: 28px;
                 position: relative;
                 font-size: 16px;
                 line-height: 18px;
@@ -197,7 +207,7 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                height: 28px;
+                min-height: 28px;
                 position: relative;
                 font-size: 16px;
                 line-height: 18px;
@@ -221,9 +231,10 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                height: 28px;
+                min-height: 28px;
                 position: relative;
-                margin-right: 10px;
+                margin-right: 40px;
+                margin-left: auto;
                 @media screen and (max-width: 1170px){
                     margin-right: 20px;
                 }
@@ -242,12 +253,18 @@
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                height: 28px;
+                min-height: 28px;
                 position: relative;
-                margin-right: 80px;
                 margin-left: auto;
-                @media screen and (max-width: 1170px){
-                    margin-right: 20px;
+                &:hover {
+                    .mod-center{
+                        opacity: 1;
+                        visibility: visible;
+                        @media screen and (max-width: 640px){
+                            opacity: 0;
+                            visibility: hidden;
+                        }
+                    }
                 }
                 @media screen and (max-width: 980px){
                     margin-left: 20px;
@@ -260,18 +277,20 @@
                 }
             }
             &-repeat {
+                position: absolute;
+                right: 102px;
+                top: calc(50% - 11px);
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 height: 28px;
-                position: relative;
-                margin-right: 42px;
                 @media screen and (max-width: 1170px){
-                    margin-right: 20px;
+                    right: 62px;
                 }
                 @media screen and (max-width: 640px){
                     order: 7;
-                    margin-top: 10px;
+                    top: auto;
+                    bottom: 1rem;
                 }
                 svg {
                     width: 19px;
@@ -285,23 +304,31 @@
                     }
                     .mod-repeat{
                         opacity: 1;
+                        visibility: visible;
                         @media screen and (max-width: 640px){
                             opacity: 0;
+                            visibility: hidden;
                         }
                     }
                 }
 
             }
             &-close {
-                position: relative;
+                position: absolute;
+                right: 42px;
+                top: calc(50% - 11px);
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 width: 18px;
                 height: 28px;
+                @media screen and (max-width: 1170px){
+                    right: 22px;
+                }
                 @media screen and (max-width: 640px){
                     order: 8;
-                    margin-top: 10px;
+                    top: auto;
+                    bottom: 1rem;
                 }
                 svg {
                     width: 18px;
@@ -315,8 +342,10 @@
                     }
                     .mod-delete{
                         opacity: 1;
+                        visibility: visible;
                         @media screen and (max-width: 640px){
                             opacity: 0;
+                            visibility: hidden;
                         }
                     }
                 }
@@ -325,9 +354,10 @@
                 position: absolute;
                 display: block;
                 opacity: 0;
+                visibility: hidden;
                 left: 0;
                 right: 0;
-                top: -19px;
+                bottom: 100%;
                 font-size: 12px;
                 line-height: 14px;
                 color: #232833;
@@ -546,15 +576,20 @@
 
     .mod-repeat {
         opacity: 0;
+        visibility: hidden;
         left: -20px;
         transition: all .2s ease;
     }
 
     .mod-center {
         text-align: center;
+        padding: 4px 6px;
+        border-radius: 5px;
+        background-color: #f3f3f3
     }
     .mod-delete {
         opacity: 0;
+        visibility: hidden;
         left: -12px;
         transition: all .2s ease;
     }

@@ -243,5 +243,6 @@ $(document).ready(function() {
     });
     $(document).on('click','.js-history-pay', function(e){
         e.stopPropagation();
+        e.preventDefault();
     });
 });
