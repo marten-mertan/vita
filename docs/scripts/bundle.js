@@ -314,6 +314,8 @@ $(document).ready(function() {
     
     // личный кабинет - история заказов
     $(document).on('click','.js-history-item', function(e){
+        e.stopPropagation();
+        e.preventDefault();
         let id = $(this).data('id');
         $('.js-history').addClass('hide');
         $('.js-history-more').removeClass('show');

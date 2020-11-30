@@ -235,6 +235,7 @@
                 position: relative;
                 margin-right: 40px;
                 margin-left: auto;
+                z-index: 2;
                 @media screen and (max-width: 1170px){
                     margin-right: 20px;
                 }
@@ -256,6 +257,7 @@
                 min-height: 28px;
                 position: relative;
                 margin-left: auto;
+                z-index: 2;
                 &:hover {
                     .mod-center{
                         opacity: 1;
@@ -284,6 +286,7 @@
                 flex-direction: row;
                 align-items: center;
                 height: 28px;
+                z-index: 2;
                 @media screen and (max-width: 1170px){
                     right: 62px;
                 }
@@ -322,6 +325,7 @@
                 align-items: center;
                 width: 18px;
                 height: 28px;
+                z-index: 2;
                 @media screen and (max-width: 1170px){
                     right: 22px;
                 }
@@ -611,6 +615,15 @@
         &:hover{
             background-color: #6a6f7b;
         }
+    }
+    &-link{
+        position: absolute;
+        display: block;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
     }
 
 }

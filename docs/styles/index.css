@@ -1338,7 +1338,8 @@ header .mobile_menu {
       min-height: 28px;
       position: relative;
       margin-right: 40px;
-      margin-left: auto; }
+      margin-left: auto;
+      z-index: 2; }
       @media screen and (max-width: 1170px) {
         .lk-history-list-item-pay {
           margin-right: 20px; } }
@@ -1357,7 +1358,8 @@ header .mobile_menu {
       align-items: center;
       min-height: 28px;
       position: relative;
-      margin-left: auto; }
+      margin-left: auto;
+      z-index: 2; }
       .lk-history-list-item-status:hover .mod-center {
         opacity: 1;
         visibility: visible; }
@@ -1381,7 +1383,8 @@ header .mobile_menu {
       display: flex;
       flex-direction: row;
       align-items: center;
-      height: 28px; }
+      height: 28px;
+      z-index: 2; }
       @media screen and (max-width: 1170px) {
         .lk-history-list-item-repeat {
           right: 62px; } }
@@ -1412,7 +1415,8 @@ header .mobile_menu {
       flex-direction: row;
       align-items: center;
       width: 18px;
-      height: 28px; }
+      height: 28px;
+      z-index: 2; }
       @media screen and (max-width: 1170px) {
         .lk-history-list-item-close {
           right: 22px; } }
@@ -1655,6 +1659,14 @@ header .mobile_menu {
     transition: all 0.2s ease; }
     .lk-history .mod-repeat-btn:hover {
       background-color: #6a6f7b; }
+  .lk-history-link {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; }
 
 .lk-snegiri {
   width: 100%; }
