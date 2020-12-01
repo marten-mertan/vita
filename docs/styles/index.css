@@ -1547,11 +1547,17 @@ header .mobile_menu {
       align-items: center;
       justify-content: flex-end;
       padding: 20px 0; }
+      @media screen and (max-width: 768px) {
+        .lk-history-list-more-confirm {
+          flex-direction: column; } }
       .lk-history-list-more-confirm.show {
         display: flex; }
       .lk-history-list-more-confirm__text {
         font-size: 16px;
         color: #232833; }
+        @media screen and (max-width: 768px) {
+          .lk-history-list-more-confirm__text {
+            text-align: center; } }
       .lk-history-list-more-confirm__btn {
         margin-left: 25px;
         border-radius: 4px;
@@ -1560,6 +1566,9 @@ header .mobile_menu {
         font-size: 14px;
         color: white;
         font-weight: 300; }
+        @media screen and (max-width: 768px) {
+          .lk-history-list-more-confirm__btn {
+            margin: 12px 0 0 0; } }
         .lk-history-list-more-confirm__btn:hover {
           color: white;
           background-color: #cb0a73; }

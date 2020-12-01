@@ -489,12 +489,18 @@
                 align-items: center;
                 justify-content: flex-end;
                 padding: 20px 0;
+                @media screen and (max-width: 768px){
+                    flex-direction: column;
+                }
                 &.show{
                     display: flex;
                 }
                 &__text{
                     font-size: 16px;
                     color: #232833;
+                    @media screen and (max-width: 768px){
+                        text-align: center;
+                    }
                 }
                 &__btn{
                     margin-left: 25px;
@@ -504,6 +510,9 @@
                     font-size: 14px;
                     color: white;
                     font-weight: 300;
+                    @media screen and (max-width: 768px){
+                        margin: 12px 0 0 0;
+                    }
                     &:hover{
                         color: white;
                         background-color: #cb0a73;
