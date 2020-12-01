@@ -337,6 +337,20 @@ $(document).ready(function() {
         e.stopPropagation();
         e.preventDefault();
     });
+    $(document).on('click','.js-lk-message-close', function(e){
+        $(this).parents('.js-lk-message').addClass('hidden');
+    });
+    $(document).on('click','.js-history-product-edit', function(e){
+        $(this).parents('.js-history-product').addClass('editing');
+        $(this).parents('.js-history-more').find('.js-history-confirm').addClass('show');
+    });
+    $(document).on('click','.js-history-product-save', function(e){
+        $(this).parents('.js-history-product').removeClass('editing');
+    });
+    $(document).on('click','.js-history-confirm-btn', function(e){
+        $(this).parents('.js-history-confirm').removeClass('show');
+        $(this).parents('.js-history-more').find('.js-history-product').removeClass('editing');
+    });
 });
 
 /***/ })

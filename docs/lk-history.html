@@ -3713,8 +3713,8 @@
                     </svg>
                 </div>
             </div>
-            <div class="lk-history-list-item">
-                <a href="/" class="lk-history-link js-history-item" data-id="124"></a>
+            <div class="lk-history-list-item js-history-item" data-id="124">
+                
                 <div class="lk-history-list-item-date">
                     <span class="lk-history-list-item__label">Дата</span>
                     <span>12.03.19г</span>
@@ -3751,8 +3751,8 @@
                     </svg>
                 </div>
             </div>
-            <div class="lk-history-list-item">
-                <a href="/" class="lk-history-link js-history-item" data-id="125"></a>
+            <div class="lk-history-list-item js-history-item" data-id="125">
+                
                 <div class="lk-history-list-item-date">
                     <span class="lk-history-list-item__label">Дата</span>
                     <span>12.03.19г</span>
@@ -3844,6 +3844,12 @@
                     <span>#5556894221</span>
                 </div>
             </div>
+            <div class="lk-history-list-more-message js-lk-message">
+                <span class="lk-history-list-more-message__close js-lk-message-close">×</span>
+                <p class="lk-history-list-more-message__text">Ваш заказ бы отредактирован аптекой. Вы можете согласиться с изменениями или отредактировать заказ</p>
+                <p class="lk-history-list-more-message__item">Товар 22 заменен на Товар 33</p>
+                <p class="lk-history-list-more-message__item">Товар 44 заменен на Товар 2454</p>
+            </div>
             <div class="lk-history-list-item mod-active">
                 <div class="lk-history-list-item-date">
                     <span class="lk-history-list-item__label">Дата</span>
@@ -3886,7 +3892,7 @@
                     <div class="lk-history-list-more__profit">Выгода заказа: 758 руб</div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -3898,10 +3904,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -3913,10 +3981,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -3928,10 +4058,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -3943,8 +4135,78 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="lk-history-list-more-confirm js-history-confirm">
+                <div class="lk-history-list-more-confirm__text">
+                    Заказ был отредактирован. Подтвердить изменения?
+                </div>
+                <a class="lk-history-list-more-confirm__btn js-history-confirm-btn">
+                    Подтвердить изменения
+                </a>
             </div>
             <div class="lk-history-list-more__bottom js-history-back">
                 <div class="lk-history-list-more-item__back">
@@ -3982,6 +4244,12 @@
                     </div>
                     <span>#5556894222</span>
                 </div>
+            </div>
+            <div class="lk-history-list-more-message js-lk-message">
+                <span class="lk-history-list-more-message__close js-lk-message-close">×</span>
+                <p class="lk-history-list-more-message__text">Ваш заказ бы отредактирован аптекой. Вы можете согласиться с изменениями или отредактировать заказ</p>
+                <p class="lk-history-list-more-message__item">Товар 22 заменен на Товар 33</p>
+                <p class="lk-history-list-more-message__item">Товар 44 заменен на Товар 2454</p>
             </div>
             <div class="lk-history-list-item mod-active">
                 <div class="lk-history-list-item-date">
@@ -4022,7 +4290,7 @@
                     <div class="lk-history-list-more__profit">Выгода заказа: 758 руб</div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4034,10 +4302,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4049,10 +4379,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4064,10 +4456,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4079,8 +4533,78 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="lk-history-list-more-confirm js-history-confirm">
+                <div class="lk-history-list-more-confirm__text">
+                    Заказ был отредактирован. Подтвердить изменения?
+                </div>
+                <a class="lk-history-list-more-confirm__btn js-history-confirm-btn">
+                    Подтвердить изменения
+                </a>
             </div>
             <div class="lk-history-list-more__bottom js-history-back">
                 <div class="lk-history-list-more-item__back">
@@ -4118,6 +4642,12 @@
                     </div>
                     <span>#5556894223</span>
                 </div>
+            </div>
+            <div class="lk-history-list-more-message js-lk-message">
+                <span class="lk-history-list-more-message__close js-lk-message-close">×</span>
+                <p class="lk-history-list-more-message__text">Ваш заказ бы отредактирован аптекой. Вы можете согласиться с изменениями или отредактировать заказ</p>
+                <p class="lk-history-list-more-message__item">Товар 22 заменен на Товар 33</p>
+                <p class="lk-history-list-more-message__item">Товар 44 заменен на Товар 2454</p>
             </div>
             <div class="lk-history-list-item mod-active">
                 <div class="lk-history-list-item-date">
@@ -4161,7 +4691,7 @@
                     <div class="lk-history-list-more__profit">Выгода заказа: 758 руб</div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4173,10 +4703,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4188,10 +4780,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4203,10 +4857,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4218,8 +4934,78 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="lk-history-list-more-confirm js-history-confirm">
+                <div class="lk-history-list-more-confirm__text">
+                    Заказ был отредактирован. Подтвердить изменения?
+                </div>
+                <a class="lk-history-list-more-confirm__btn js-history-confirm-btn">
+                    Подтвердить изменения
+                </a>
             </div>
             <div class="lk-history-list-more__bottom js-history-back">
                 <div class="lk-history-list-more-item__back">
@@ -4258,6 +5044,12 @@
                     <span>#5556894224</span>
                 </div>
             </div>
+            <div class="lk-history-list-more-message js-lk-message">
+                <span class="lk-history-list-more-message__close js-lk-message-close">×</span>
+                <p class="lk-history-list-more-message__text">Ваш заказ бы отредактирован аптекой. Вы можете согласиться с изменениями или отредактировать заказ</p>
+                <p class="lk-history-list-more-message__item">Товар 22 заменен на Товар 33</p>
+                <p class="lk-history-list-more-message__item">Товар 44 заменен на Товар 2454</p>
+            </div>
             <div class="lk-history-list-item mod-active">
                 <div class="lk-history-list-item-date">
                     <span class="lk-history-list-item__label">Дата</span>
@@ -4297,7 +5089,7 @@
                     <div class="lk-history-list-more__profit">Выгода заказа: 758 руб</div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4309,10 +5101,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4324,10 +5178,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4339,10 +5255,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4354,8 +5332,78 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="lk-history-list-more-confirm js-history-confirm">
+                <div class="lk-history-list-more-confirm__text">
+                    Заказ был отредактирован. Подтвердить изменения?
+                </div>
+                <a class="lk-history-list-more-confirm__btn js-history-confirm-btn">
+                    Подтвердить изменения
+                </a>
             </div>
             <div class="lk-history-list-more__bottom js-history-back">
                 <div class="lk-history-list-more-item__back">
@@ -4394,6 +5442,12 @@
                     <span>#5556894224</span>
                 </div>
             </div>
+            <div class="lk-history-list-more-message js-lk-message">
+                <span class="lk-history-list-more-message__close js-lk-message-close">×</span>
+                <p class="lk-history-list-more-message__text">Ваш заказ бы отредактирован аптекой. Вы можете согласиться с изменениями или отредактировать заказ</p>
+                <p class="lk-history-list-more-message__item">Товар 22 заменен на Товар 33</p>
+                <p class="lk-history-list-more-message__item">Товар 44 заменен на Товар 2454</p>
+            </div>
             <div class="lk-history-list-item mod-active">
                 <div class="lk-history-list-item-date">
                     <span class="lk-history-list-item__label">Дата</span>
@@ -4433,7 +5487,7 @@
                     <div class="lk-history-list-more__profit">Выгода заказа: 758 руб</div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4445,10 +5499,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4460,10 +5576,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-1.png);">
                     
@@ -4475,10 +5653,72 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="lk-history-list-more-row">
+            <div class="lk-history-list-more-row js-history-product">
                 <div class="lk-history-list-more-left">
                     <div class="lk-history-list-more__img" style="background-image: url(assets/img/history-mini-2.png);">
                     
@@ -4490,8 +5730,78 @@
                     </div>
                 </div>
                 <div class="lk-history-list-more-right">
-                    <div class="lk-history-list-more__price"><span class="mod-amount">3 шт</span> ; <span class="mod-price">500 р</span></div>
+                    <div class="lk-history-list-more-options">
+                        <div class="lk-history-list-more__price">
+                            <span class="mod-amount">3 шт</span>
+                            <span class="mod-delimeter"> ; </span>
+                            <span class="mod-price">500 р</span>
+                        </div>
+                        <div class="lk-history-list-more-amount">
+                            <span class="lk-history-list-more-amount-btn-minus"></span>
+                            <div class="lk-history-list-more-amount-filed-block">
+                                <input type="text" class="lk-history-list-more-amount-filed" value="2">
+                            </div>
+                            <span class="lk-history-list-more-amount-btn-plus"></span>
+                        </div>
+                        <div class="lk-history-list-more-icons">
+                            <div class="lk-history-list-more__save js-history-product-save">
+                                <span class="lk-history-list-item__label mod-repeat">Сохранить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 469.333 469.333" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M466.208,88.458L380.875,3.125c-2-2-4.708-3.125-7.542-3.125H42.667C19.146,0,0,19.135,0,42.667v384
+                                                                    c0,23.531,19.146,42.667,42.667,42.667h384c23.521,0,42.667-19.135,42.667-42.667V96
+                                                                    C469.333,93.167,468.208,90.458,466.208,88.458z M106.667,21.333h234.667v128c0,11.76-9.563,21.333-21.333,21.333H128
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333V21.333z M384,448H85.333V256H384V448z M448,426.667c0,11.76-9.563,21.333-21.333,21.333
+                                                                    h-21.333V245.333c0-5.896-4.771-10.667-10.667-10.667h-320c-5.896,0-10.667,4.771-10.667,10.667V448H42.667
+                                                                    c-11.771,0-21.333-9.573-21.333-21.333v-384c0-11.76,9.563-21.333,21.333-21.333h42.667v128C85.333,172.865,104.479,192,128,192
+                                                                    h192c23.521,0,42.667-19.135,42.667-42.667v-128h6.25L448,100.417V426.667z"/>
+                                                <path d="M266.667,149.333h42.667c5.896,0,10.667-4.771,10.667-10.667V53.333c0-5.896-4.771-10.667-10.667-10.667h-42.667
+                                                                c-5.896,0-10.667,4.771-10.667,10.667v85.333C256,144.562,260.771,149.333,266.667,149.333z M277.333,64h21.333v64h-21.333V64z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__edit js-history-product-edit">
+                                <span class="lk-history-list-item__label mod-delete">Изменить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 386.615 386.615" xml:space="preserve">
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <path d="M36.573,309.292h2.09l100.833-21.943c1.964-0.327,3.784-1.237,5.224-2.612L315.56,113.896
+                                                                    c12.48-12.453,19.443-29.391,19.331-47.02c0.023-17.766-6.917-34.833-19.331-47.543C303.108,6.853,286.17-0.11,268.54,0.003
+                                                                    c-17.742-0.157-34.76,7.028-47.02,19.853L51.201,190.696c-1.502,1.209-2.597,2.85-3.135,4.702L26.124,296.231
+                                                                    c-0.599,3.62,0.565,7.308,3.135,9.927C31.188,308.126,33.817,309.253,36.573,309.292z M268.54,20.901
+                                                                    c25.103-0.002,45.454,20.347,45.456,45.45c0,0.175-0.001,0.35-0.003,0.525c0.171,11.959-4.547,23.47-13.061,31.869
+                                                                    l-64.261-64.784C245.137,25.548,256.604,20.848,268.54,20.901z M222.042,49.113l64.261,64.261L137.405,261.749l-64.261-63.739
+                                                                    L222.042,49.113z M64.785,218.909l51.722,51.722L50.156,285.26L64.785,218.909z"/>
+                                                <path d="M368.328,365.717H18.287c-5.771,0-10.449,4.678-10.449,10.449s4.678,10.449,10.449,10.449h350.041
+                                                                c5.771,0,10.449-4.678,10.449-10.449S374.099,365.717,368.328,365.717z"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div class="lk-history-list-more__delete">
+                                <span class="lk-history-list-item__label mod-delete">Удалить</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 184.3 211.64">
+                                    <path d="M15,38.65c-2.46,0-4.6.09-6.72,0-5.14-.26-8.4-3.5-8.24-8.1.14-4.38,3.3-7.36,8.36-7.4C22.2,23,36,23.06,49.87,23.06q61,0,122,0c8.5,0,12.17,2.15,12.42,7.45.26,5.49-3.35,7.91-12.2,8.16-.8,0-1.61.14-3,.26v138c0,21.74-13.07,34.71-34.95,34.72q-42.5,0-85,0c-20.71,0-34-13.43-34-34.19q0-66.75,0-133.49C15.2,42.32,15.07,40.7,15,38.65Zm16,.24c-.11,2-.26,3.48-.26,5q0,67.44,0,134.88c0,11,6.42,17.23,17.55,17.26q43.71.09,87.42,0c11.66,0,17.9-6.24,17.9-17.89q0-66.94,0-133.88c0-1.75-.16-3.5-.24-5.35Z"></path><path d="M92.14,15.6c-9.64,0-19.29,0-28.93,0-6,0-9.48-3-9.4-7.89C53.89,3,57.24.06,63,0Q92.15,0,121.32.05c5.68,0,9.09,3,9.17,7.63.08,4.83-3.45,7.87-9.42,7.9C111.43,15.64,101.78,15.6,92.14,15.6Z"></path><path d="M126.87,119.56c0,12.14,0,24.29,0,36.43,0,4-1.13,7.25-5.06,8.89-5.38,2.24-10.5-1.92-10.53-8.7-.07-16.13,0-32.27,0-48.4,0-8.16,0-16.31,0-24.46,0-6.49,2.83-10.12,7.69-10.21s7.84,3.6,7.86,10c0,12.14,0,24.28,0,36.43Z"></path><path d="M57.48,119.07c0-12,0-23.94,0-35.91,0-6.38,3-10.1,7.84-10S73.06,77,73.06,83.29q0,36.17,0,72.32c0,5.87-2.58,9.34-7.08,9.76-4.76.46-8.38-3.2-8.43-8.89C57.42,144,57.49,131.54,57.48,119.07Z"></path>
+                                </svg>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="lk-history-list-more-confirm js-history-confirm">
+                <div class="lk-history-list-more-confirm__text">
+                    Заказ был отредактирован. Подтвердить изменения?
+                </div>
+                <a class="lk-history-list-more-confirm__btn js-history-confirm-btn">
+                    Подтвердить изменения
+                </a>
             </div>
             <div class="lk-history-list-more__bottom js-history-back">
                 <div class="lk-history-list-more-item__back">
