@@ -742,6 +742,199 @@
   font-family: "HelveticaNeueCyr";
   line-height: 21px; }
 
+.header-2021 {
+  position: relative; }
+  .header-2021 .header-decor {
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .header-2021-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    padding: 0 24px;
+    max-width: 1208px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-color: #f0f3f8;
+    background-image: url(../assets/img/header-decor-black.png);
+    background-repeat: repeat;
+    height: 41px; }
+  .header-2021-wrap {
+    position: relative;
+    z-index: 2;
+    padding: 0 24px;
+    max-width: 1208px;
+    margin: 0 auto;
+    background: #fff;
+    box-sizing: border-box; }
+  .header-2021-address {
+    font-size: 14px;
+    color: #323232;
+    margin-right: 30px; }
+    .header-2021-address__link {
+      color: #009cb4;
+      border-bottom: 1px solid #009cb4; }
+      .header-2021-address__link:hover {
+        color: #009cb4;
+        border-bottom: 1px solid #009cb4; }
+  .header-2021-delivery {
+    font-size: 14px;
+    color: #323232;
+    margin-right: 30px; }
+    .header-2021-delivery__link {
+      color: #009cb4;
+      border-bottom: 1px solid #009cb4; }
+      .header-2021-delivery__link:hover {
+        color: #009cb4;
+        border-bottom: 1px solid #009cb4; }
+  .header-2021-phone {
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: 12px; }
+    .header-2021-phone__link {
+      color: #009cb4; }
+      .header-2021-phone__link:hover {
+        color: #009cb4; }
+  .header-2021-schedule {
+    font-size: 14px;
+    color: #383838;
+    font-style: italic; }
+  .header-2021-notification {
+    position: relative;
+    padding: 8px 0px 0px 11px;
+    margin-left: 30px;
+    margin-right: 13px;
+    cursor: pointer; }
+    .header-2021-notification:hover .header-2021-notification-popup {
+      opacity: 1;
+      visibility: visible;
+      top: 48px;
+      transition: all .3s ease; }
+    .header-2021-notification__number {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 12px;
+      top: 4px;
+      left: 0;
+      width: 15px;
+      height: 15px;
+      background: #ff47a5;
+      border-radius: 50%; }
+    .header-2021-notification-popup {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      right: -21px;
+      top: 54px;
+      width: 422px;
+      padding: 26px 40px;
+      background-color: #fff;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.22);
+      box-sizing: border-box;
+      transition: all 0.5s cubic-bezier(0.32, 0, 0.67, 0); }
+      .header-2021-notification-popup__tail {
+        position: absolute;
+        top: -6px;
+        right: 31px;
+        width: 13px;
+        height: 13px;
+        background-color: #fff;
+        transform: rotate(45deg); }
+      .header-2021-notification-popup__close {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        top: 24px;
+        right: 24px;
+        cursor: pointer; }
+        .header-2021-notification-popup__close:hover:after {
+          background: #222; }
+        .header-2021-notification-popup__close:hover:before {
+          background: #222; }
+        .header-2021-notification-popup__close:before {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1px;
+          height: 14px;
+          background: #5f6269;
+          content: '';
+          transform: translate3d(-50%, -50%, 0) rotate(-45deg);
+          transition: 300ms background-color ease; }
+        .header-2021-notification-popup__close:after {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1px;
+          height: 14px;
+          background: #5f6269;
+          content: '';
+          transform: translate3d(-50%, -50%, 0) rotate(45deg);
+          transition: 300ms background-color ease; }
+      .header-2021-notification-popup__text {
+        font-size: 14px;
+        color: #039db5;
+        line-height: 1;
+        margin-bottom: 12px;
+        padding-right: 30px; }
+      .header-2021-notification-popup-input {
+        display: block;
+        margin-bottom: 10px; }
+        .header-2021-notification-popup-input__text {
+          margin-bottom: 6px; }
+          .header-2021-notification-popup-input__text .mod-attention {
+            color: #ff47a5; }
+      .header-2021-notification-popup-checkbox {
+        display: inline-block;
+        padding: 12px 0 5px;
+        margin-bottom: 16px;
+        cursor: pointer; }
+        .header-2021-notification-popup-checkbox input {
+          vertical-align: top;
+          cursor: pointer; }
+        .header-2021-notification-popup-checkbox .text {
+          margin-left: 6px;
+          font-size: 13px;
+          line-height: 14px;
+          vertical-align: top; }
+      .header-2021-notification-popup__btn {
+        display: inline-block;
+        flex: 0 0 auto;
+        font-size: 13px;
+        line-height: 1;
+        padding: 11px 12px 12px;
+        background: #fff;
+        border: 1px solid #00a1b4;
+        color: #00a1b4;
+        margin-right: 14px;
+        max-width: 215px;
+        text-align: center;
+        border-radius: 2px;
+        transition: all .3s ease; }
+        .header-2021-notification-popup__btn:hover {
+          background: #3ea6b6;
+          color: #fff; }
+        .header-2021-notification-popup__btn.mod-blue {
+          background: #00a1b4;
+          border: 1px solid #00a1b4;
+          color: #fff; }
+          .header-2021-notification-popup__btn.mod-blue:hover {
+            background: #3ea6b6;
+            color: #fff; }
+
+.icon-notification {
+  width: 18px;
+  height: 21px;
+  transform: rotate(20deg);
+  fill: #039db5; }
+
 .header-address {
   white-space: nowrap;
   overflow-x: scroll; }
