@@ -1,3 +1,11 @@
+.cart-section {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  @media screen and (max-width: 1140px) {
+    .cart-section {
+      flex-direction: column; } }
+
 .cart-content {
   width: calc(100% - 385px);
   max-width: calc(100% - 385px);
