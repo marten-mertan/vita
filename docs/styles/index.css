@@ -839,7 +839,8 @@
       visibility: hidden;
       box-sizing: border-box;
       transition: all 0.2s cubic-bezier(0.32, 0, 0.67, 0);
-      list-style: none; }
+      list-style: none;
+      z-index: 1; }
       .header-2021-menu-sublist__tail {
         position: absolute;
         top: -6px;

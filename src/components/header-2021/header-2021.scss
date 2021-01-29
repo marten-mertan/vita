@@ -112,6 +112,7 @@
             box-sizing: border-box;
             transition: all .2s cubic-bezier(0.32, 0, 0.67, 0);
             list-style: none;
+            z-index: 1;
             &__tail{
                 position: absolute;
                 top: -6px;
