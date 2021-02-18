@@ -806,7 +806,7 @@
         position: relative;
         list-style: none; }
         .header-2021-menu-list-item:not(:last-child) {
-          margin-right: 23px; }
+          margin-right: 17px; }
         .header-2021-menu-list-item:before {
           display: none; }
         .header-2021-menu-list-item.active .header-2021-menu-list-item__link {
