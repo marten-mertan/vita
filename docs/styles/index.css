@@ -1565,6 +1565,10 @@ table.title-search-result td.controls {
 
 table.title-search-result .counter_block {
   margin-left: auto; }
+  table.title-search-result .counter_block .minus {
+    background-color: #fff; }
+  table.title-search-result .counter_block .plus {
+    background-color: #fff; }
 
 .header-address {
   white-space: nowrap;
