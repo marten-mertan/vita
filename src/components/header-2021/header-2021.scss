@@ -41,7 +41,7 @@
         display: flex;
         align-items: center;
         position: relative;
-        z-index: 101;
+        z-index: 102;
         padding: 0 24px 0;
         max-width: 1208px;
         margin: 0 auto;
@@ -502,6 +502,7 @@
         }
     }
     &-search{
+        position: relative;
         display: flex;
         margin-right: 19px;
         flex: 1 1 auto;
@@ -1024,4 +1025,17 @@
 
 .mod-overflow{
     overflow: hidden;
+}
+
+// кнопки результатов поиска
+table.title-search-result td.controls{
+    padding-right: 20px;
+    padding-left: 4px;
+    width: 90px;
+    overflow: hidden;
+    text-align: right;
+}
+
+table.title-search-result .counter_block{
+    margin-left: auto;
 }
