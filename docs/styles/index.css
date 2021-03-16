@@ -2085,6 +2085,13 @@ header .mobile_menu {
 .header_wrap #header > .wrapper_inner {
   z-index: 4; }
 
+.img_wrapper .checkout-attention__text {
+  flex: 0 0 auto; }
+
+@media (max-width: 768px) {
+  .img_wrapper .checkout-attention {
+    margin-left: -34px; } }
+
 .lk-history {
   width: 100%;
   flex: 1 1 auto; }

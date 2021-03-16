@@ -1,0 +1,12 @@
+// fix "внешний вид товара может отличаться.."
+.img_wrapper {
+    .checkout-attention__text {
+        flex: 0 0 auto;
+    }
+
+    .checkout-attention {
+        @media (max-width: 768px) {
+            margin-left: -34px;
+        }
+    }
+}
