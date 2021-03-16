@@ -2086,11 +2086,10 @@ header .mobile_menu {
   z-index: 4; }
 
 .img_wrapper .checkout-attention__text {
-  flex: 0 0 auto; }
+  text-align: left; }
 
-@media (max-width: 768px) {
-  .img_wrapper .checkout-attention {
-    margin-left: -34px; } }
+.img_wrapper .checkout-attention {
+  margin: 0 -30px 20px -30px; }
 
 .lk-history {
   width: 100%;
