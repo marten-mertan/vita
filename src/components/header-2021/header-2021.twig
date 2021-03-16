@@ -2,19 +2,73 @@
 	<div class="header-2021">
     	<div class="header-decor"></div>
 		<div class="header-2021-top">
-			<div class="header-2021-address">
-				Аптека: 
-				<a class="header-2021-address__link" href="/">Архангельск, ул. Адм. Кузнецова, д. 2</a>
+			<div class="header-2021-top-left">
+				<div class="header-2021-address">
+					Аптека: 
+					<a class="header-2021-address__link" href="/">Архангельск, ул. Адм. Кузнецова, д. 2</a>
+				</div>
+				<div class="header-2021-delivery">
+					Способ доставки: 
+					<a class="header-2021-delivery__link" href="/">Самовывоз</a>
+				</div>
 			</div>
-			<div class="header-2021-delivery">
-				Способ доставки: 
-				<a class="header-2021-delivery__link" href="/">Самовывоз</a>
-			</div>
-			<div class="header-2021-phone">
-				<a class="header-2021-phone__link" href="tel:+78001007272">8 800 100 72 72</a>
-			</div>
-			<div class="header-2021-schedule">
-				Ежедневно с 9:00 до 17:00
+			<ul class="header-2021-top-menu">
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-help">
+								<use xlink:href="icons/all.svg#icon-header-help"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Как заказать
+						</div>
+					</a>
+				</li>
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-truck">
+								<use xlink:href="icons/all.svg#icon-header-truck"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Доставка и оплата
+						</div>
+					</a>
+				</li>
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-pharmacy">
+								<use xlink:href="icons/all.svg#icon-header-pharmacy"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Аптеки
+						</div>
+					</a>
+				</li>
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-contact">
+								<use xlink:href="icons/all.svg#icon-header-contact"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Контакты
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="header-2021-top-right">
+				<div class="header-2021-phone">
+					<a class="header-2021-phone__link" href="tel:+78001007272">8 800 100 72 72</a>
+				</div>
+				<div class="header-2021-schedule">
+					Ежедневно с 9:00 до 17:00
+				</div>
 			</div>
 			<div class="header-2021-notification">
 				<svg class="icon-notification">
@@ -196,7 +250,7 @@
 					<input type="text" placeholder="Поиск по названию, производителю или действующему веществу" maxlength="50" autocomplete="off" class="header-2021-search-input" value="">
 					<button type="submit" class="header-2021-search-btn">Найти товар</button>
 				</form>
-				<div class="title-search-result" style="display: block; position: absolute; top: 46px; left: 0px; width: 100%;">
+				<div class="title-search-result" style="display: none; position: absolute; top: 46px; left: 0px; width: 100%;">
 					<table class="title-search-result">
 						<tbody>
 							<tr id="row_0" class="">
@@ -359,7 +413,7 @@
 		<div class="header-2021-menu">
 			<ul class="header-2021-menu-list">
 				<li class="header-2021-menu-list-item active">
-					<a href="/" class="header-2021-menu-list-item__link">лекарства</a>
+					<a href="/" class="header-2021-menu-list-item__link">лекарственные препараты и бад</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -414,7 +468,7 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">бад</a>
+					<a href="/" class="header-2021-menu-list-item__link">Красота</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -469,7 +523,7 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">мед. изделия</a>
+					<a href="/" class="header-2021-menu-list-item__link">Техника и самодиагностика</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -524,7 +578,7 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">медтехника</a>
+					<a href="/" class="header-2021-menu-list-item__link">Гигиена</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -579,7 +633,7 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">гигиена</a>
+					<a href="/" class="header-2021-menu-list-item__link">Пищевые продукты</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -634,7 +688,7 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">мама и малыш</a>
+					<a href="/" class="header-2021-menu-list-item__link">Медицинские изделия</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -689,7 +743,37 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">косметика</a>
+					<a href="/" class="header-2021-menu-list-item__link">Планирование семьи </a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Мама и малыш </a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Ортопедия</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -744,7 +828,7 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">здоровое питание</a>
+					<a href="/" class="header-2021-menu-list-item__link">Оптика</a>
 					<ul class="header-2021-menu-sublist">
 						<div class="header-2021-menu-sublist__tail"></div>
 						<li class="header-2021-menu-sublist-item">
@@ -799,114 +883,10 @@
 					</ul>
 				</li>
 				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">акции</a>
-					<ul class="header-2021-menu-sublist">
-						<div class="header-2021-menu-sublist__tail"></div>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
-						</li>
-						<li class="header-2021-menu-sublist-item active">
-							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
-						</li>
-						
-					</ul>
+					<a href="/" class="header-2021-menu-list-item__link">Сезон</a>
 				</li>
-				<li class="header-2021-menu-list-item">
-					<a href="/" class="header-2021-menu-list-item__link">%скидки </a>
-					<ul class="header-2021-menu-sublist">
-						<div class="header-2021-menu-sublist__tail"></div>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
-						</li>
-						<li class="header-2021-menu-sublist-item active">
-							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
-						</li>
-						<li class="header-2021-menu-sublist-item">
-							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
-						</li>
-						
-					</ul>
+				<li class="header-2021-menu-list-item mod-cyan">
+					<a href="/" class="header-2021-menu-list-item__link">Акции</a>
 				</li>
 			</ul>
 		</div>

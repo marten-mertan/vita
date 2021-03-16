@@ -1,0 +1,58 @@
+.container .breadcrumbs-2021 a span, .container .breadcrumbs-2021 span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #039db5;
+}
+
+.breadcrumbs-2021 .drop a span {
+    border-bottom: 1px dotted #039db5;
+}
+
+.breadcrumbs-2021 .dropdown>a {
+    font-size: 13px;
+}
+
+.breadcrumbs-2021 {
+    display: flex;
+    margin: 0 0 26px 0;
+    @media (max-width: 768px){
+        display: none;
+    }
+
+    .breadcrumbs {
+        margin: 0;
+    }
+    a {
+        display: inline-block;
+    }
+    .separator {
+        width: 5px;
+        height: 5px;
+        border-top: 1px solid #039db5 !important;
+        border-right: 1px solid #039db5 !important;
+        transform: rotate(45deg);
+        bottom: 2px;
+        margin: 0 12px 0 8px;
+    }
+
+    &-back {
+        margin-right: 60px;
+        span {
+            border-bottom: 1px dotted #039db5;
+        }
+        &>a:before {
+            display: inline-block;
+            content: '\2190';
+            margin-right: 8px;
+            font-size: 18px;
+            line-height: 16px;
+            color: #039db5;
+        }
+
+        &:hover {
+            span {
+                border-color: transparent;
+            }
+        }
+    }
+}

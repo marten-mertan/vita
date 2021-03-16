@@ -13,7 +13,7 @@
         position: relative;
         display: flex;
         align-items: center;
-        z-index: 103;
+        z-index: 104;
         padding: 0 24px;
         max-width: 1208px;
         margin: 0 auto;
@@ -23,14 +23,69 @@
         background-color: #f0f3f8;
         background-image: url(../assets/img/header-decor-black.png);
         background-repeat: repeat;
-        height: 41px;
+        height: 48px;
+
+        &-left {
+            margin: 0 auto 0 0;
+        }
+
+        &-right {
+            margin: 0 0 0 auto;
+        }
+
+        &-menu {
+            display: flex;
+            margin: 0 20px;
+
+            @media screen and (max-width: 1040px){
+                display: none;
+            }
+            &__item {
+                display: flex;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+                &:before {
+                    display: none;
+                }
+
+            }
+
+            &__link {
+                display: flex;
+                align-items: center;
+
+                &:hover {
+                    .header-2021-top-menu__text {
+                        border-color: #009cb4;
+                    }
+                }
+
+            }
+
+            &__icon {
+                flex: 0 0 auto;
+                display: flex;
+                margin-right: 8px;
+            }
+
+            &__text {
+                font-size: 14px;
+                line-height: 15px;
+                color: #009cb4;
+                border-bottom: 1px solid transparent;
+                transition: all .2s ease;
+            }
+        }
         
     }
     &-wrap{
         display: flex;
         align-items: center;
         position: relative;
-        z-index: 102;
+        z-index: 103;
         padding: 16px 24px 22px;
         max-width: 1208px;
         margin: 0 auto;
@@ -62,6 +117,7 @@
             flex-wrap: wrap;
             padding: 20px 0 10px;
             list-style: none;
+            border-bottom: 1px solid #eff2f7;
             &-item{
                 position: relative;
                 list-style: none;
@@ -82,13 +138,34 @@
                         visibility: visible;
                     }
                 }
+
+                &.mod-cyan {
+                    .header-2021-menu-list-item__link {
+                        background-color: #039db5;
+                        color: white;
+                        padding: 15px;
+                        border-radius: 2px;
+                        &:after {
+                            position: absolute;
+                            content: '';
+                            display: block;
+                            top: calc(100% - 6px);
+                            left: calc(50% - 6px);
+                            width: 12px;
+                            height: 12px;
+                            background-color: #039db5;
+                            transform: rotate(45deg);
+                        }
+                    }
+
+                }
                 &__link{
                     display: block;
-                    padding: 12px 0px;
+                    padding: 15px 0px;
                     font-size: 15px;
                     color: #000;
                     text-transform: uppercase;
-                    line-height: 17px;
+                    line-height: 15px;
                     font-weight: bold;
                     transition: all .2s ease;
                     &:hover{
@@ -154,7 +231,6 @@
     &-address{
         font-size: 14px;
         color: #323232;
-        margin-right: 30px;
         max-width: 300px;
         white-space: nowrap;
         overflow: hidden;
@@ -174,7 +250,6 @@
     &-delivery{
         font-size: 14px;
         color: #323232;
-        margin-right: 30px;
         max-width: 300px;
         white-space: nowrap;
         overflow: hidden;
@@ -196,6 +271,7 @@
         font-size: 14px;
         margin-left: auto;
         margin-right: 12px;
+        font-weight: bold;
         white-space: nowrap;
         &__link{
             color: #009cb4;
@@ -215,7 +291,7 @@
     &-notification{
         position: relative;
         padding: 8px 0px 0px 11px;
-        margin-left: 30px;
+        margin-left: 20px;
         margin-right: 13px;
         cursor: pointer;
         &:hover{
@@ -1020,6 +1096,30 @@
 .icon-header-burger{
     width: 21px;
     height: 17px;
+    fill: #383838;
+}
+.icon-header-help{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #383838;
+}
+.icon-header-truck{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #383838;
+}
+.icon-header-pharmacy{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    fill: #383838;
+}
+.icon-header-contact{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
     fill: #383838;
 }
 
