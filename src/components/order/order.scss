@@ -380,6 +380,11 @@
                 font-weight: normal;
                 width: 100%;
                 background-color: #faf9fc;
+
+                @media screen and (max-width: 640px) {
+                    margin-bottom: 0;
+
+                }
             }
             .arrow{
                 position: absolute;

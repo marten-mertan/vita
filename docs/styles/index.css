@@ -3339,6 +3339,9 @@ header .mobile_menu {
       font-weight: normal;
       width: 100%;
       background-color: #faf9fc; }
+      @media screen and (max-width: 640px) {
+        .checkout-delivery__input input {
+          margin-bottom: 0; } }
     .checkout-delivery__input .arrow {
       position: absolute;
       top: 10px;
