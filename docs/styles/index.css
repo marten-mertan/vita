@@ -3798,6 +3798,78 @@ header .mobile_menu {
       left: -99999px; }
       .checkout-acception input.checkbox:checked ~ .checkbox {
         background-position: 0 -35px; }
+  .checkout-about-time {
+    margin-bottom: 10px; }
+    .checkout-about-time-head {
+      margin-bottom: 12px; }
+      .checkout-about-time-head__text {
+        display: inline-block;
+        font-size: 14px;
+        font-family: "HelveticaNeueCyr";
+        line-height: 16px;
+        color: #383838;
+        margin-right: 12px; }
+        @media screen and (max-width: 640px) {
+          .checkout-about-time-head__text {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 4px; } }
+      .checkout-about-time-head__option {
+        display: inline-block;
+        font-size: 14px;
+        font-family: "HelveticaNeueCyr";
+        line-height: 16px;
+        color: #383838;
+        border-bottom: 1px solid #383838;
+        cursor: pointer; }
+        @media screen and (max-width: 640px) {
+          .checkout-about-time-head__option {
+            margin-bottom: 4px; } }
+        .checkout-about-time-head__option:hover {
+          color: #00a1b4;
+          border-bottom: 1px solid; }
+        .checkout-about-time-head__option.active {
+          color: #00a1b4;
+          border-bottom: 1px solid #00a1b4; }
+        .checkout-about-time-head__option:not(:last-child) {
+          margin-right: 14px; }
+    .checkout-about-time-table {
+      display: none;
+      margin: 0 -7px; }
+      .checkout-about-time-table.active {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap; }
+    .checkout-about-time-option {
+      position: relative;
+      margin-bottom: 10px; }
+      .checkout-about-time-option input {
+        position: absolute;
+        height: 0;
+        width: 0;
+        opacity: 0; }
+        .checkout-about-time-option input:checked + span {
+          background-color: #00a1b4;
+          color: white; }
+        .checkout-about-time-option input:disabled + span {
+          opacity: .5;
+          text-decoration: line-through; }
+      .checkout-about-time-option span {
+        display: block;
+        font-size: 14px;
+        line-height: 14px;
+        color: #525a5f;
+        background-color: #ececec;
+        padding: 7px 16px 8px 16px;
+        border-radius: 4px;
+        margin: 0 6px;
+        transition: all .2s ease;
+        text-align: center;
+        cursor: pointer; }
+        @media screen and (max-width: 640px) {
+          .checkout-about-time-option span {
+            padding: 14px 19px 14px 19px; } }
   .checkout-bottom {
     display: flex;
     flex-direction: row;

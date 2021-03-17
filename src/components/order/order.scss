@@ -788,6 +788,102 @@
             }
         }
     }
+
+    &-about-time {
+        margin-bottom: 10px;
+        &-head{
+            margin-bottom: 12px;
+            &__text{
+                display: inline-block;
+                font-size: 14px;
+                font-family: "HelveticaNeueCyr";
+                line-height: 16px;
+                color: #383838;
+                margin-right: 12px;
+
+                @media screen and (max-width: 640px){
+                    width: 100%;
+                    margin-right: 0;
+                    margin-bottom: 4px;
+                }
+            }
+            &__option{
+                display: inline-block;
+                font-size: 14px;
+                font-family: "HelveticaNeueCyr";
+                line-height: 16px;
+                color: #383838;
+                border-bottom: 1px solid #383838;
+                cursor: pointer;
+                @media screen and (max-width: 640px){
+                    margin-bottom: 4px;
+                }
+                &:hover{
+                    color: #00a1b4;
+                    border-bottom: 1px solid ;
+                }
+                &.active{
+                    color: #00a1b4;
+                    border-bottom: 1px solid #00a1b4;
+                }
+
+                &:not(:last-child) {
+                    margin-right: 14px;
+                }
+            }
+        }
+        &-table{
+            display: none;
+            margin: 0 -7px;
+            &.active{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+        }
+        &-option{
+            position: relative;
+            margin-bottom: 10px;
+            input{
+                position: absolute;
+                height: 0;
+                width: 0;
+                opacity: 0;
+                &:checked{
+                    & + span{
+                        background-color: #00a1b4;
+                        color: white;
+
+                    }
+                }
+                &:disabled{
+                    & + span{
+                        opacity: .5;
+                        text-decoration: line-through;
+                    }
+                }
+            }
+            span{
+                display: block;
+                font-size: 14px;
+                line-height: 14px;
+                color: #525a5f;
+                background-color: #ececec;
+                padding: 7px 16px 8px 16px;
+                border-radius: 4px;
+                margin: 0 6px;
+                transition: all .2s ease;
+                text-align: center;
+                cursor: pointer;
+
+                @media screen and (max-width: 640px){
+                    padding: 14px 19px 14px 19px;
+                }
+            }
+        }
+    }
     &-bottom{
         display: flex;
         flex-direction: row;

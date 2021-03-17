@@ -421,6 +421,18 @@ $(document).ready(function() {
     $(window).resize(function() {
         initSublists('.header-2021-menu-sublist', '.header-2021-menu-list-item', '.header-2021-menu');
     });
+    
+    $(document).on('click','.js-about-time', function(e){
+        let index = Number($(this).data('index'));
+        $('.js-about-time').removeClass('active');
+        $(this).addClass('active');
+        $('.js-about-time-tab').removeClass('active');
+        $('.js-about-time-tab').addClass(function (i){
+            if (i==index){
+                return 'active';
+            }
+        });
+    });
 });
 
 /***/ })
