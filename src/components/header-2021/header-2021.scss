@@ -838,7 +838,10 @@
                     fill: #ff47a5;
                 }
             }
-
+        }
+        &-sale{
+            margin-right: 36px;
+            position: relative;
         }
         &-cart{
             position: relative;
@@ -1120,6 +1123,12 @@
     display: inline-block;
     width: 16px;
     height: 16px;
+    fill: #383838;
+}
+.icon-header-sale{
+    display: inline-block;
+    width: 17px;
+    height: 17px;
     fill: #383838;
 }
 

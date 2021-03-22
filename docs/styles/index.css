@@ -1433,6 +1433,9 @@
         font-size: 11px; }
       .header-2021-mobile-fav.active .icon-header-heart-mobile {
         fill: #ff47a5; }
+    .header-2021-mobile-sale {
+      margin-right: 36px;
+      position: relative; }
     .header-2021-mobile-cart {
       position: relative; }
       .header-2021-mobile-cart__number {
@@ -1664,6 +1667,12 @@
   display: inline-block;
   width: 16px;
   height: 16px;
+  fill: #383838; }
+
+.icon-header-sale {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
   fill: #383838; }
 
 .mod-overflow {
