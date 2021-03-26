@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+	<head>
+		<title>Аптека Вита</title>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+		<meta name="HandheldFriendly" content="true"/>
+		<meta name="yes" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<meta name="keywords" content="интернет-магазин, заказать, купить"/>
+		<meta name="description" content="Оптимальный интернет-магазин"/>
+
+		<link href="styles_old/core.min.css" type="text/css" rel="stylesheet"/>
+		<link href="styles_old/ui.font.opensans.min.css" type="text/css" rel="stylesheet"/>
+		<link href="styles_old/main.popup.bundle.min.css" type="text/css" rel="stylesheet"/>
+		<link href="styles_old/popup.min.css" type="text/css" rel="stylesheet"/>
+		<link href="styles_old/template.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+
+		<link href="fonts/gilroy/gilroy.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+		<link href="fonts/helvetica_neue/stylesheet.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+		<link href="fonts/cyrillic_old/stylesheet.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+		<link href="fonts/ubuntu/stylesheet.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+		<link href="styles/index.css" type="text/css" data-template-style="true" rel="stylesheet"/>
+
+		<script type="text/javascript">
+			if (!window.BX) 
+            window.BX = {};
+
+            if (!window.BX.message) 
+            window.BX.message = function (mess) {
+            if (typeof mess == 'object') 
+            for (var i in mess) 
+            BX.message[i] = mess[i];
+
+
+            return true;
+            };
+            ;
+		</script>
+		<script type="text/javascript">
+			(window.BX || top.BX).message({
+            'JS_CORE_LOADING': 'Загрузка...',
+            'JS_CORE_NO_DATA': '- Нет данных -',
+            'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+            'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+            'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+            'JS_CORE_WINDOW_SAVE': 'Сохранить',
+            'JS_CORE_WINDOW_CANCEL': 'Отменить',
+            'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+            'JS_CORE_H': 'ч',
+            'JS_CORE_M': 'м',
+            'JS_CORE_S': 'с',
+            'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+            'JSADM_AI_ALL_NOTIF': 'Показать все',
+            'JSADM_AUTH_REQ': 'Требуется авторизация!',
+            'JS_CORE_WINDOW_AUTH': 'Войти',
+            'JS_CORE_IMAGE_FULL': 'Полный размер'
+            });
+		</script>
+
+		<script type="text/javascript" src="scripts_old/core.min.js"></script>
+
+		<script>
+			BX.setJSList([
+            '/bitrix/js/main/core/core_ajax.js',
+            '/bitrix/js/main/core/core_promise.js',
+            '/bitrix/js/main/polyfill/promise/js/promise.js',
+            '/bitrix/js/main/loadext/loadext.js',
+            '/bitrix/js/main/loadext/extension.js',
+            '/bitrix/js/main/polyfill/promise/js/promise.js',
+            '/bitrix/js/main/polyfill/find/js/find.js',
+            '/bitrix/js/main/polyfill/includes/js/includes.js',
+            '/bitrix/js/main/polyfill/matches/js/matches.js',
+            '/bitrix/js/ui/polyfill/closest/js/closest.js',
+            '/bitrix/js/main/polyfill/fill/main.polyfill.fill.js',
+            '/bitrix/js/main/polyfill/find/js/find.js',
+            '/bitrix/js/main/polyfill/matches/js/matches.js',
+            '/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js',
+            '/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js',
+            '/bitrix/js/main/lazyload/dist/lazyload.bundle.js',
+            '/bitrix/js/main/polyfill/core/dist/polyfill.bundle.js',
+            '/bitrix/js/main/parambag/dist/parambag.bundle.js'
+            ]);
+            BX.setCSSList(['/bitrix/js/main/lazyload/dist/lazyload.bundle.css', '/bitrix/js/main/parambag/dist/parambag.bundle.css']);
+                    </script>
+                    <script type="text/javascript">
+                        (window.BX || top.BX).message({
+            'LANGUAGE_ID': 'ru',
+            'FORMAT_DATE': 'DD.MM.YYYY',
+            'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+            'COOKIE_PREFIX': 'BITRIX_SM',
+            'SERVER_TZ_OFFSET': '10800',
+            'SITE_ID': 's1',
+            'SITE_DIR': '/',
+            'USER_ID': '',
+            'SERVER_TIME': '1595846421',
+            'USER_TZ_OFFSET': '0',
+            'USER_TZ_AUTO': 'Y',
+            'bitrix_sessid': '5f1c95856a20aeb267a2e0ebb51316e2'
+            });
+		</script>
+
+
+		<script type="text/javascript" src="scripts_old/kernel_main_v1.js"></script>
+		<script type="text/javascript" src="scripts_old/kernel_main_polyfill_customevent_v1.js"></script>
+		<script type="text/javascript" src="scripts_old/dexie.bitrix.bundle.min.js"></script>
+		<script type="text/javascript" src="scripts_old/core_ls.min.js"></script>
+		<script type="text/javascript" src="scripts_old/core_frame_cache.min.js"></script>
+		<script type="text/javascript" src="scripts_old/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="scripts_old/ajax.min.js"></script>
+		<script type="text/javascript" src="scripts_old/main.popup.bundle.min.js"></script>
+		<script type="text/javascript" src="scripts_old/core_currency.min.js"></script>
+
+		<script type="text/javascript" src="scripts/vendor/masonry.pkgd.min.js"></script>
+
+		<script type="text/javascript">
+			BX.setJSList([
+            '/bitrix/js/main/core/core_fx.js',
+            '/bitrix/js/main/session.js',
+            '/bitrix/js/main/core/core_window.js',
+            '/bitrix/js/main/date/main.date.js',
+            '/bitrix/js/main/core/core_date.js',
+            '/bitrix/js/main/utils.js',
+            '/bitrix/js/main/polyfill/customevent/main.polyfill.customevent.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.actual.min.js',
+            '/bitrix/templates/aspro_optimus/js/jqModal.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.fancybox.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.history.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.flexslider.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.validate.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.inputmask.bundle.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.easing.1.3.js',
+            '/bitrix/templates/aspro_optimus/js/equalize.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.alphanumeric.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.cookie.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.plugin.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.countdown.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.countdown-ru.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.ikSelect.js',
+            '/bitrix/templates/aspro_optimus/js/sly.js',
+            '/bitrix/templates/aspro_optimus/js/equalize_ext.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.mousewheel-3.0.6.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.mCustomScrollbar.min.js',
+            '/bitrix/templates/aspro_optimus/js/jquery.dotdotdot.js',
+            '/bitrix/templates/aspro_optimus/js/velocity.js',
+            '/bitrix/templates/aspro_optimus/js/velocity.ui.js',
+            '/bitrix/templates/aspro_optimus/js/main.js',
+            '/bitrix/components/bitrix/search.title/script.js',
+            '/bitrix/templates/aspro_optimus/js/custom.js'
+            ]);
+		</script>
+		<script type="text/javascript">
+			BX.setCSSList([
+            '/bitrix/templates/aspro_optimus/css/jquery.fancybox.css',
+            '/bitrix/templates/aspro_optimus/css/styles.css',
+            '/bitrix/templates/aspro_optimus/css/animation/animation_ext.css',
+            '/bitrix/templates/aspro_optimus/css/jquery.mCustomScrollbar.min.css',
+            '/bitrix/templates/aspro_optimus/ajax/ajax.css',
+            '/bitrix/templates/aspro_optimus/styles.css',
+            '/bitrix/templates/aspro_optimus/template_styles.css',
+            '/bitrix/templates/aspro_optimus/themes/custom_s1/theme.css',
+            '/bitrix/templates/aspro_optimus/bg_color/custom_s1/bgcolors.css',
+            '/bitrix/templates/aspro_optimus/css/media.css',
+            '/bitrix/templates/aspro_optimus/css/fonts/font-awesome/css/font-awesome.min.css',
+            '/bitrix/templates/aspro_optimus/css/print.css',
+            '/bitrix/templates/aspro_optimus/css/custom.css'
+            ]);
+        </script>
+		
+		<script>
+			BX.message({
+            'PHONE': 'Телефон',
+            'SOCIAL': 'Социальные сети',
+            'DESCRIPTION': 'Описание магазина',
+            'ITEMS': 'Товары',
+            'LOGO': 'Логотип',
+            'REGISTER_INCLUDE_AREA': 'Текст о регистрации',
+            'AUTH_INCLUDE_AREA': 'Текст об авторизации',
+            'FRONT_IMG': 'Изображение компании',
+            'EMPTY_CART': 'пуста',
+            'CATALOG_VIEW_MORE': '... Показать все',
+            'CATALOG_VIEW_LESS': '... Свернуть',
+            'JS_REQUIRED': 'Заполните это поле!',
+            'JS_FORMAT': 'Неверный формат!',
+            'JS_FILE_EXT': 'Недопустимое расширение файла!',
+            'JS_PASSWORD_COPY': 'Пароли не совпадают!',
+            'JS_PASSWORD_LENGTH': 'Минимум 6 символов!',
+            'JS_ERROR': 'Неверно заполнено поле!',
+            'JS_FILE_SIZE': 'Максимальный размер 5мб!',
+            'JS_FILE_BUTTON_NAME': 'Выберите файл',
+            'JS_FILE_DEFAULT': 'Файл не найден',
+            'JS_DATE': 'Некорректная дата!',
+            'JS_RECAPTCHA_ERROR': 'Пройдите проверку',
+            'JS_REQUIRED_LICENSES': 'Согласитесь с условиями!',
+            'FANCY_CLOSE': 'Закрыть',
+            'FANCY_NEXT': 'Следующий',
+            'FANCY_PREV': 'Предыдущий',
+            'TOP_AUTH_REGISTER': 'Регистрация',
+            'CALLBACK': 'Заказать звонок',
+            'UNTIL_AKC': 'До конца акции',
+            'TITLE_QUANTITY_BLOCK': 'Остаток',
+            'TITLE_QUANTITY': 'штук',
+            'TOTAL_SUMM_ITEM': 'Общая стоимость ',
+            'RECAPTCHA_TEXT': 'Подтвердите, что вы не робот',
+            'SUBSCRIBE_SUCCESS': 'Вы успешно подписались',
+            'COUNTDOWN_SEC': 'сек.',
+            'COUNTDOWN_MIN': 'мин.',
+            'COUNTDOWN_HOUR': 'час.',
+            'COUNTDOWN_DAY0': 'дней',
+            'COUNTDOWN_DAY1': 'день',
+            'COUNTDOWN_DAY2': 'дня',
+            'COUNTDOWN_WEAK0': 'Недель',
+            'COUNTDOWN_WEAK1': 'Неделя',
+            'COUNTDOWN_WEAK2': 'Недели',
+            'COUNTDOWN_MONTH0': 'Месяцев',
+            'COUNTDOWN_MONTH1': 'Месяц',
+            'COUNTDOWN_MONTH2': 'Месяца',
+            'COUNTDOWN_YEAR0': 'Лет',
+            'COUNTDOWN_YEAR1': 'Год',
+            'COUNTDOWN_YEAR2': 'Года',
+            'CATALOG_PARTIAL_BASKET_PROPERTIES_ERROR': 'Заполнены не все свойства у добавляемого товара',
+            'CATALOG_EMPTY_BASKET_PROPERTIES_ERROR': 'Выберите свойства товара, добавляемые в корзину в параметрах компонента',
+            'CATALOG_ELEMENT_NOT_FOUND': 'Элемент не найден',
+            'ERROR_ADD2BASKET': 'Ошибка добавления товара в корзину',
+            'CATALOG_SUCCESSFUL_ADD_TO_BASKET': 'Успешное добавление товара в корзину',
+            'ERROR_BASKET_TITLE': 'Ошибка корзины',
+            'ERROR_BASKET_PROP_TITLE': 'Выберите свойства, добавляемые в корзину',
+            'ERROR_BASKET_BUTTON': 'Выбрать',
+            'BASKET_TOP': 'Корзина в шапке',
+            'ERROR_ADD_DELAY_ITEM': 'Ошибка отложенной корзины',
+            'VIEWED_TITLE': 'Ранее вы смотрели',
+            'VIEWED_BEFORE': 'Ранее вы смотрели',
+            'BEST_TITLE': 'Лучшие предложения',
+            'CT_BST_SEARCH_BUTTON': 'Поиск',
+            'CT_BST_SEARCH2_BUTTON': 'Найти',
+            'BASKET_PRINT_BUTTON': 'Распечатать',
+            'BASKET_CLEAR_ALL_BUTTON': 'Очистить',
+            'BASKET_QUICK_ORDER_BUTTON': 'Быстрый заказ',
+            'BASKET_CONTINUE_BUTTON': 'Продолжить покупки',
+            'BASKET_ORDER_BUTTON': 'Оформить заказ',
+            'SHARE_BUTTON': 'Поделиться',
+            'BASKET_CHANGE_TITLE': 'Ваш заказ',
+            'BASKET_CHANGE_LINK': 'Изменить',
+            'FROM': 'от',
+            'TITLE_BLOCK_VIEWED_NAME': 'Ранее вы смотрели',
+            'T_BASKET': 'Корзина заказа',
+            'FILTER_EXPAND_VALUES': 'Показать все',
+            'FILTER_HIDE_VALUES': 'Свернуть',
+            'FULL_ORDER': 'Полный заказ',
+            'ITEM_ECONOMY': 'Экономия',
+            'JS_FORMAT_ORDER': 'имеет неверный формат'
+            })
+		</script>
+		<script>
+			$(document).ready(function () {
+            $('body').append("<span class='bg_image_site opacity' style='background-image:url(assets/img/bg.png);'></span>");
+            })
+		</script>
+
+		<meta property="og:title" content="Сайт по умолчанию"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="http://vita.leeft.ru:80/upload/aspro.optimus/f01/f01c061552f7418a8bcfce914e073e33.png"/>
+		<link rel="image_src" href="http://vita.leeft.ru:80/upload/aspro.optimus/f01/f01c061552f7418a8bcfce914e073e33.png"/>
+		<meta property="og:url" content="http://vita.leeft.ru:80/"/>
+		<meta property="og:description" content="Оптимальный интернет-магазин"/>
+
+		<script type="text/javascript" src="scripts_old/template_1bf93ed8bb4dbd88bdee9ffeb67e01b3_v1.js"></script>
+		<script type="text/javascript">
+			var _ba = _ba || [];
+            _ba.push(["aid", "10999ccbd3c3943a492e1304aeeb8161"]);
+            _ba.push(["host", "vita.leeft.ru"]);
+            (function () {
+            var ba = document.createElement("script");
+            ba.type = "text/javascript";
+            ba.async = true;
+            ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(ba, s);
+            })();
+		</script>
+		
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+		</script>
+		<script type="text/javascript" src="scripts/vendor/baron.js"></script>
+		<script type="text/javascript" src="scripts/bundle.js"></script>
+
+		<!--[if gte IE 9]>
+		        <style type="text/css">.basket_button, .button30, .icon {
+		            filter: none;
+		        }</style><![endif]-->
+		<link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+	</head>
+	<body class='' id="main">
+		<div id="panel"></div>
+		<script type="text/javascript">
+			BX.message({'MIN_ORDER_PRICE_TEXT': '<b>Минимальная сумма заказа #PRICE#<\/b><br/>Пожалуйста, добавьте еще товаров в корзину', 'LICENSES_TEXT': 'Я согласен на <a href=\"/include/licenses_detail.php\" target=\"_blank\">обработку персональных данных<\/a>'});
+
+            var arOptimusOptions = ({
+            "SITE_DIR": "/",
+            "SITE_ID": "s1",
+            "FORM": (
+            {
+            "ASK_FORM_ID": "ASK",
+            "SERVICES_FORM_ID": "SERVICES",
+            "FEEDBACK_FORM_ID": "FEEDBACK",
+            "CALLBACK_FORM_ID": "CALLBACK",
+            "RESUME_FORM_ID": "RESUME",
+            "TOORDER_FORM_ID": "TOORDER",
+            "CHEAPER_FORM_ID": "CHEAPER"
+            }
+            ),
+            "PAGES": (
+            {
+            "FRONT_PAGE": "1",
+            "BASKET_PAGE": "",
+            "ORDER_PAGE": "",
+            "PERSONAL_PAGE": "",
+            "CATALOG_PAGE": "",
+            "CATALOG_PAGE_URL": "/catalog/"
+            }
+            ),
+            "PRICES": (
+            {"MIN_PRICE": "0"}
+            ),
+            "THEME": (
+            {
+            "THEME_SWITCHER": "n",
+            "COLOR_THEME": "custom",
+            "CUSTOM_COLOR_THEME": "0cadc0",
+            "LOGO_IMAGE": "/upload/aspro.optimus/f01/f01c061552f7418a8bcfce914e073e33.png",
+            "FAVICON_IMAGE": "/include/favicon.ico?1589805549",
+            "APPLE_TOUCH_ICON_IMAGE": "/include/apple-touch-icon.png",
+            "BANNER_WIDTH": "",
+            "BANNER_ANIMATIONTYPE": "SLIDE_HORIZONTAL",
+            "BANNER_SLIDESSHOWSPEED": "5000",
+            "BANNER_ANIMATIONSPEED": "600",
+            "HEAD": (
+            {"VALUE": "", "MENU": "", "MENU_COLOR": "", "HEAD_COLOR": ""}
+            ),
+            "BASKET": "fly",
+            "STORES": "",
+            "STORES_SOURCE": "stores",
+            "TYPE_SKU": "type_2",
+            "TYPE_VIEW_FILTER": "horizontal",
+            "SHOW_BASKET_ONADDTOCART": "Y",
+            "SHOW_BASKET_PRINT": "Y",
+            "SHOW_ONECLICKBUY_ON_BASKET_PAGE": "N",
+            "PHONE_MASK": "+7 (999) 999-99-99",
+            "VALIDATE_PHONE_MASK": "^[+][7] [(][0-9]{3}[)] [0-9]{3}[-][0-9]{2}[-][0-9]{2}$",
+            "SCROLLTOTOP_TYPE": "ROUND_COLOR",
+            "SCROLLTOTOP_POSITION": "PADDING",
+            "MENU_POSITION": "line",
+            "MENU_TYPE_VIEW": "hover",
+            "SHOW_LICENCE": "Y",
+            "LICENCE_CHECKED": "N",
+            "DISCOUNT_PRICE": "",
+            "DETAIL_PICTURE_MODE": "POPUP",
+            "SHOW_TOTAL_SUMM": "N",
+            "CHANGE_TITLE_ITEM": "N",
+            "ONE_CLICK_BUY_CAPTCHA": "N",
+            "EMPTY_PRICE_TEXT": ""
+            }
+            ),
+            "COUNTERS": (
+            {
+            "YANDEX_COUNTER": "0",
+            "YANDEX_ECOMERCE": "N",
+            "USE_YA_COUNTER": "N",
+            "YA_COUNTER_ID": "",
+            "USE_FORMS_GOALS": "COMMON",
+            "USE_BASKET_GOALS": "Y",
+            "USE_1CLICK_GOALS": "Y",
+            "USE_FASTORDER_GOALS": "Y",
+            "USE_FULLORDER_GOALS": "Y",
+            "USE_DEBUG_GOALS": "N",
+            "GOOGLE_COUNTER": "0",
+            "GOOGLE_ECOMERCE": "N",
+            "TYPE": {
+            "ONE_CLICK": "Покупка в 1 клик",
+            "QUICK_ORDER": "Быстрый заказ"
+            },
+            "GOOGLE_EVENTS": {
+            "ADD2BASKET": "addToCart",
+            "REMOVE_BASKET": "removeFromCart",
+            "CHECKOUT_ORDER": "checkout",
+            "PURCHASE": "gtm.dom"
+            }
+            }
+            ),
+            "JS_ITEM_CLICK": (
+            {
+            "precision": 6,
+            "precisionFactor": Math.pow(10, 6)
+            }
+            )
+            });
+
+            $(document).ready(function () {
+            $.extend($.validator.messages, {
+            required: BX.message('JS_REQUIRED'),
+            email: BX.message('JS_FORMAT'),
+            equalTo: BX.message('JS_PASSWORD_COPY'),
+            minlength: BX.message('JS_PASSWORD_LENGTH'),
+            remote: BX.message('JS_ERROR')
+            });
+
+            $.validator.addMethod('regexp', function (value, element, regexp) {
+            var re = new RegExp(regexp);
+            return this.optional(element) || re.test(value);
+            }, BX.message('JS_FORMAT'));
+
+            $.validator.addMethod('filesize', function (value, element, param) {
+            return this.optional(element) || (element.files[0].size <= param)
+            }, BX.message('JS_FILE_SIZE'));
+
+            $.validator.addMethod('date', function (value, element, param) {
+            var status = false;
+            if (! value || value.length <= 0) {
+            status = false;
+            } else {
+            // html5 date allways yyyy-mm-dd
+            var re = new RegExp('^([0-9]{4})(.)([0-9]{2})(.)([0-9]{2})$');
+            var matches = re.exec(value);
+            if (matches) {
+            var composedDate = new Date(matches[1], (matches[3] - 1), matches[5]);
+            status = ((composedDate.getMonth() == (matches[3] - 1)) && (composedDate.getDate() == matches[5]) && (composedDate.getFullYear() == matches[1]));
+            } else {
+            // firefox
+            var re = new RegExp('^([0-9]{2})(.)([0-9]{2})(.)([0-9]{4})$');
+            var matches = re.exec(value);
+            if (matches) {
+            var composedDate = new Date(matches[5], (matches[3] - 1), matches[1]);
+            status = ((composedDate.getMonth() == (matches[3] - 1)) && (composedDate.getDate() == matches[1]) && (composedDate.getFullYear() == matches[5]));
+            }
+            }
+            }
+            return status;
+            }, BX.message('JS_DATE'));
+
+            $.validator.addMethod('extension', function (value, element, param) {
+            param = typeof param === 'string' ? param.replace(/,/g, '|') : 'png|jpe?g|gif';
+            return this.optional(element) || value.match(new RegExp('.(' + param + ')$', 'i'));
+            }, BX.message('JS_FILE_EXT'));
+
+            $.validator.addMethod('captcha', function (value, element, params) {
+            return $.validator.methods.remote.call(this, value, element, {
+            url: arOptimusOptions['SITE_DIR'] + 'ajax/check-captcha.php',
+            type: 'post',
+            data: {
+            captcha_word: value,
+            captcha_sid: function () {
+            return $(element).closest('form').find('input[name="captcha_sid"]').val();
+            }
+            }
+            });
+            }, BX.message('JS_ERROR'));
+
+            $.validator.addMethod('recaptcha', function (value, element, param) {
+            var id = $(element).closest('form').find('.g-recaptcha').attr('data-widgetid');
+            if (typeof id !== 'undefined') {
+            return grecaptcha.getResponse(id) != '';
+            } else {
+            return true;
+            }
+            }, BX.message('JS_RECAPTCHA_ERROR'));
+
+            $.validator.addClassRules({
+            'phone': {
+            regexp: arOptimusOptions['THEME']['VALIDATE_PHONE_MASK']
+            },
+            'confirm_password': {
+            equalTo: 'input[name="REGISTER\[PASSWORD\]"]',
+            minlength: 6
+            },
+            'password': {
+            minlength: 6
+            },
+            'inputfile': {
+            extension: arOptimusOptions['THEME']['VALIDATE_FILE_EXT'],
+            filesize: 5000000
+            },
+            'captcha': {
+            captcha: ''
+            },
+            'recaptcha': {
+            recaptcha: ''
+            }
+            });
+
+            if (arOptimusOptions['THEME']['PHONE_MASK']) {
+            $('input.phone').inputmask('mask', {'mask': arOptimusOptions['THEME']['PHONE_MASK']
+            });
+            }
+
+            jqmEd('feedback', arOptimusOptions['FORM']['FEEDBACK_FORM_ID']);
+            jqmEd('ask', arOptimusOptions['FORM']['ASK_FORM_ID'], '.ask_btn');
+            jqmEd('services', arOptimusOptions['FORM']['SERVICES_FORM_ID'], '.services_btn', '', '.services_btn');
+            if ($('.resume_send').length) {
+            $('.resume_send').live('click', function (e) {
+            $("body").append("<span class='resume_send_wr' style='display:none;'></span>");
+            jqmEd('resume', arOptimusOptions['FORM']['RESUME_FORM_ID'], '.resume_send_wr', '', this);
+            $("body .resume_send_wr").click();
+            $("body .resume_send_wr").remove();
+            })
+            }
+            jqmEd('callback', arOptimusOptions['FORM']['CALLBACK_FORM_ID'], '.callback_btn');
+            // jqmEd('cheaper', arOptimusOptions['FORM']['CHEAPER_FORM_ID'], '.cheaper');
+
+            });
+		</script>
+		<div class="wrapper front_page colored banner_auto">
+			<div class="header_wrap js-header-wrap">
+			
+				<header id="header" class="js-header">
+	<div class="header-2021">
+    	<div class="header-decor"></div>
+		<div class="header-2021-top">
+			<div class="header-2021-top-left">
+				<div class="header-2021-address">
+					Аптека: 
+					<a class="header-2021-address__link" href="/">Архангельск, ул. Адм. Кузнецова, д. 2</a>
+				</div>
+				<div class="header-2021-delivery">
+					Способ доставки: 
+					<a class="header-2021-delivery__link" href="/">Самовывоз</a>
+				</div>
+			</div>
+			<ul class="header-2021-top-menu">
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-help">
+								<use xlink:href="icons/all.svg#icon-header-help"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Как заказать
+						</div>
+					</a>
+				</li>
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-truck">
+								<use xlink:href="icons/all.svg#icon-header-truck"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Доставка и оплата
+						</div>
+					</a>
+				</li>
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-pharmacy">
+								<use xlink:href="icons/all.svg#icon-header-pharmacy"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Аптеки
+						</div>
+					</a>
+				</li>
+				<li class="header-2021-top-menu__item">
+					<a href="/" class="header-2021-top-menu__link">
+						<div class="header-2021-top-menu__icon">
+							<svg class="icon-header-contact">
+								<use xlink:href="icons/all.svg#icon-header-contact"></use>
+							</svg>
+						</div>
+						<div class="header-2021-top-menu__text">
+							Контакты
+						</div>
+					</a>
+				</li>
+			</ul>
+			<div class="header-2021-top-right">
+				<div class="header-2021-phone">
+					<a class="header-2021-phone__link" href="tel:+78001007272">8 800 100 72 72</a>
+				</div>
+				<div class="header-2021-schedule">
+					Ежедневно с 9:00 до 17:00
+				</div>
+			</div>
+			<div class="header-2021-notification">
+				<svg class="icon-notification">
+					<use xlink:href="icons/all.svg#icon-notification"></use>
+				</svg>
+				<div class="header-2021-notification__number">
+					1
+				</div>
+				<div class="header-2021-notification-popup">
+					<div class="header-2021-notification-popup__tail">
+						
+					</div>
+					<div class="header-2021-notification-popup__close">
+						
+					</div>
+					<div class="header-2021-notification-popup__text">
+						Если вы не нашли нужного вам препарата
+						в каталоге интернет аптеки - пожалуйста,
+						заполните форму ниже - доставим со склада.
+					</div>
+					<label class="header-2021-notification-popup-input">
+						<div class="header-2021-notification-popup-input__text">Название проекта</div>
+						<input class="inp" type="text" name="notification-project" placeholder=" ">
+					</label>
+					<label class="header-2021-notification-popup-input">
+						<div class="header-2021-notification-popup-input__text">Ваше имя <span class="mod-attention">*</span></div>
+						<input class="inp" type="text" name="notification-name" placeholder=" ">
+					</label>
+					<label class="header-2021-notification-popup-input">
+						<div class="header-2021-notification-popup-input__text">Телефон <span class="mod-attention">*</span></div>
+						<input class="inp" type="text" name="notification-phone" placeholder=" ">
+					</label>
+					<div class="header-2021-notification-popup-checkbox licence_block filter label_block">
+						<input type="checkbox" id="licenses_popup_FEEDBACK" name="licenses_popup" required="" value="Y" aria-required="true">
+						<label for="licenses_popup_FEEDBACK">
+							Я согласен на <a href="/include/licenses_detail.php" target="_blank">обработку персональных данных</a>
+						</label>
+					</div>
+					<div class="header-2021-notification-popup-buttons">
+						<a href="/" class="header-2021-notification-popup__btn mod-blue">Отправить</a>
+						<a href="/" class="header-2021-notification-popup__btn">Закрыть</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-2021-wrap">
+			<div class="header-2021-logo">
+				<a href="/">
+					<img src="assets/img/logo.svg" alt="Аптека Вита" title="Аптека Вита">
+				</a>
+			</div>
+			<div class="header-2021-slogan">
+				<span class="header-2021-slogan__text">Для Северян!</span>
+			</div>
+			<div class="header-2021-panel">
+				<div class="header-2021-panel-item">
+					<a href="tel:+78001007272" class="header-2021-panel-item__link">
+						<div class="header-2021-panel-item__icon">
+							<svg class="icon-header-phone">
+								<use xlink:href="icons/all.svg#icon-header-phone"></use>
+							</svg>
+						</div>
+						<div class="header-2021-panel-item-info">
+							<div class="header-2021-panel-item__text">
+								заказать
+							</div>
+							<div class="header-2021-panel-item__text">
+								звонок
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="header-2021-panel-item">
+					<a href="/" class="header-2021-panel-item__link">
+						<div class="header-2021-panel-item__icon">
+							<svg class="icon-header-clock">
+								<use xlink:href="icons/all.svg#icon-header-clock"></use>
+							</svg>
+						</div>
+						<div class="header-2021-panel-item-info">
+							<div class="header-2021-panel-item__text">
+								статус
+							</div>
+							<div class="header-2021-panel-item__text">
+								заказа
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="header-2021-panel-item active">
+					<a href="/" class="header-2021-panel-item__link">
+						<div class="header-2021-panel-item__icon">
+							<svg class="icon-header-heart">
+								<use xlink:href="icons/all.svg#icon-header-heart"></use>
+							</svg>
+						</div>
+						<div class="header-2021-panel-item-info">
+							<div class="header-2021-panel-item__text">
+								избранное
+							</div>
+							<div class="header-2021-panel-item__quantity">
+								(5)
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="header-2021-panel-item">
+					<a href="/" class="header-2021-panel-item__link">
+						<div class="header-2021-panel-item__icon">
+							<svg class="icon-header-user">
+								<use xlink:href="icons/all.svg#icon-header-user"></use>
+							</svg>
+						</div>
+						<div class="header-2021-panel-item-info">
+							<div class="header-2021-panel-item__text">
+								Фамилия
+							</div>
+							<div class="header-2021-panel-item__text">
+								И.О.
+							</div>
+						</div>
+					</a>
+					<div class="header-2021-panel-item-popup">
+						<div class="header-2021-panel-item-popup__tail">
+							
+						</div>
+						<div class="header-2021-panel-item-popup-content">
+							<a href="/" class="header-2021-panel-item-popup-row">
+								<div class="header-2021-panel-item-popup__icon">
+									<svg class="icon-header-user">
+										<use xlink:href="icons/all.svg#icon-header-user"></use>
+									</svg>
+									
+								</div>
+								<div class="header-2021-panel-item-popup__text mod-upper">
+									Фамилия И.О.
+								</div>
+							</a>
+							<a href="/" class="header-2021-panel-item-popup-row">
+								<div class="header-2021-panel-item-popup__text">
+									Личные данные
+								</div>
+							</a>
+							<a href="/" class="header-2021-panel-item-popup-row">
+								<div class="header-2021-panel-item-popup__text">
+									Избранное
+								</div>
+							</a>
+							<a href="/" class="header-2021-panel-item-popup-row">
+								<div class="header-2021-panel-item-popup__text">
+									История заказов
+								</div>
+							</a>
+							<a href="/" class="header-2021-panel-item-popup-row">
+								<div class="header-2021-panel-item-popup__text">
+									Карта снегири
+								</div>
+							</a>
+							<a href="/" class="header-2021-panel-item-popup-row">
+								<div class="header-2021-panel-item-popup__icon">
+									<svg class="icon-header-logout">
+										<use xlink:href="icons/all.svg#icon-header-logout"></use>
+									</svg>
+									
+								</div>
+								<div class="header-2021-panel-item-popup__text">
+									Выход
+								</div>
+							</a>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-2021-bottom">
+			<div class="header-2021-search">
+				<form action="">
+					<input type="text" placeholder="Поиск по названию, производителю или действующему веществу" maxlength="50" autocomplete="off" class="header-2021-search-input" value="">
+					<button type="submit" class="header-2021-search-btn">Найти товар</button>
+				</form>
+				<div class="title-search-result" style="display: none; position: absolute; top: 46px; left: 0px; width: 100%;">
+					<table class="title-search-result">
+						<tbody>
+							<tr id="row_0" class="">
+								<td class="picture">
+									<img class="item_preview" align="left" src="assets/img/no_photo_small.png" width="38" height="38">
+								</td>
+								<td class="main">
+									<div class="item-text">
+										<a href="/catalog/lekarstvennye-preparaty-i-bad/profilaktika-tromboobrazovaniya/64447/">
+											<b>Вар</b>фарин Никомед 2,5мг таб.№100</a>
+									</div>
+									<div class="price cost prices">
+										<div class="title-search-price">
+											<div class="price">150.51 руб.</div>
+										</div>
+										<div class="item-stock">
+											<span class="icon stock"></span>
+											<span class="value">В наличии</span>
+										</div>
+									</div>
+								</td>
+								<td class="controls">
+									<div class="counter_block">
+										<span class="minus">-</span>
+										<input type="text" class="text" name="quantity" value="0">
+										<span class="plus">+</span>
+									</div>
+								</td>
+							</tr>
+							<tr id="row_1" class="">
+								<td class="picture">
+									<img class="item_preview" align="left" src="assets/img/no_photo_small.png" width="38" height="38">
+								</td>
+								<td class="main">
+									<div class="item-text">
+										<a href="/catalog/meditsinskie-izdeliya/predmety-d-massazha-relaksatsii/predmety-dlya-massazha/97615/">Массажер чудо
+											<b>вар</b>ежка мод.1</a>
+									</div>
+									<div class="price cost prices">
+										<div class="title-search-price">
+											<div class="price">69.98 руб.</div>
+										</div>
+										<div class="item-stock">
+											<span class="icon stock"></span>
+											<span class="value">В наличии</span>
+										</div>
+									</div>
+								</td>
+								<td class="controls">
+									<div class="counter_block">
+										<span class="minus">-</span>
+										<input type="text" class="text" name="quantity" value="0">
+										<span class="plus">+</span>
+									</div>
+								</td>
+							</tr>
+							<tr id="row_2" class="">
+								<td class="picture">
+									<img class="item_preview" align="left" src="assets/img/no_photo_small.png" width="38" height="38">
+								</td>
+								<td class="main">
+									<div class="item-text">
+										<a href="/catalog/ortopediya/trikotazh-antivarikoznyy/kolgotki-antivarikoznye/109935/">Колготки а/<b>вар</b>ик.(1кл) р.4/L тел.арт.112 Эргоформа</a>
+									</div>
+									<div class="price cost prices">
+										<div class="title-search-price">
+											<div class="price">778.98 руб.</div>
+										</div>
+										<div class="item-stock">
+											<span class="icon stock"></span>
+											<span class="value">В наличии</span>
+										</div>
+									</div>
+								</td>
+								<td class="controls">
+									<div class="counter_block">
+										<span class="minus">-</span>
+										<input type="text" class="text" name="quantity" value="0">
+										<span class="plus">+</span>
+									</div>
+								</td>
+							</tr>
+							<tr id="row_3" class="">
+								<td class="picture">
+									<img class="item_preview" align="left" src="assets/img/no_photo_small.png" width="38" height="38">
+								</td>
+								<td class="main">
+									<div class="item-text">
+										<a href="/catalog/ortopediya/trikotazh-antivarikoznyy/kolgotki-antivarikoznye/110039/">Колготки а/<b>вар</b>ик.(2кл) р.5/ХL тел.арт.121 Эргоформа</a>
+									</div>
+									<div class="price cost prices">
+										<div class="title-search-price">
+											<div class="price">899.98 руб.</div>
+										</div>
+										<div class="item-stock">
+											<span class="icon stock"></span>
+											<span class="value">В наличии</span>
+										</div>
+									</div>
+								</td>
+								<td class="controls">
+									<div class="counter_block">
+										<span class="minus">-</span>
+										<input type="text" class="text" name="quantity" value="0">
+										<span class="plus">+</span>
+									</div>
+								</td>
+							</tr>
+							<tr id="row_4" class="">
+								<td class="picture">
+									<img class="item_preview" align="left" src="assets/img/no_photo_small.png" width="38" height="38">
+								</td>
+								<td class="main">
+									<div class="item-text">
+										<a href="/catalog/ortopediya/trikotazh-antivarikoznyy/kolgotki-antivarikoznye/110148/">Колготки а/<b>вар</b>ик.70den черн.Артемис</a>
+									</div>
+									<div class="price cost prices">
+										<div class="title-search-price">
+											<div class="price">237.98 руб.</div>
+										</div>
+										<div class="item-stock">
+											<span class="icon stock"></span>
+											<span class="value">В наличии</span>
+										</div>
+									</div>
+								</td>
+								<td class="controls">
+									<div class="counter_block">
+										<span class="minus">-</span>
+										<input type="text" class="text" name="quantity" value="0">
+										<span class="plus">+</span>
+									</div>
+								</td>
+							</tr>
+							<tr id="row_5" class=""></tr>
+							<tr id="row_6" class="">
+								<td class="title-search-all" colspan="3">
+									<a href="/catalog/?q=%D0%B2%D0%B0%D1%80">
+										<span class="text">Все результаты</span>
+										<span class="icon">
+											<i></i>
+										</span>
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="header-2021-cart">
+				<a href="/" class="header-2021-cart-btn">
+					<svg class="icon-header-basket">
+						<use xlink:href="icons/all.svg#icon-header-basket"></use>
+					</svg>
+					<span class="header-2021-cart-btn__text">0 шт.</span>
+					<span class="header-2021-cart-btn__text">0.00 руб.</span>
+				</a>
+			</div>
+		</div>
+		<div class="header-2021-menu">
+			<ul class="header-2021-menu-list">
+				<li class="header-2021-menu-list-item active">
+					<a href="/" class="header-2021-menu-list-item__link">лекарственные препараты и бад</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Красота</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Техника и самодиагностика</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Гигиена</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Пищевые продукты</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Медицинские изделия</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Планирование семьи </a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Мама и малыш </a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Ортопедия</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Оптика</a>
+					<ul class="header-2021-menu-sublist">
+						<div class="header-2021-menu-sublist__tail"></div>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аптечки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Уход за больными</a>
+						</li>
+						<li class="header-2021-menu-sublist-item active">
+							<a href="/" class="header-2021-menu-sublist-item__link">Протезно-ортопедические изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Шприцы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Перевязочные материалы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Иглы инъекционные</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Резиновые изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Тесты диагностические</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Презервативы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Линзы, уход за контактными линзами</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Гели смазки</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Прочие медицинские изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Маски</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Аппликаторы, иппликаторы</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Расходные изделия</a>
+						</li>
+						<li class="header-2021-menu-sublist-item">
+							<a href="/" class="header-2021-menu-sublist-item__link">Компрессионное белье</a>
+						</li>
+						
+					</ul>
+				</li>
+				<li class="header-2021-menu-list-item">
+					<a href="/" class="header-2021-menu-list-item__link">Сезон</a>
+				</li>
+				<li class="header-2021-menu-list-item mod-cyan">
+					<a href="/" class="header-2021-menu-list-item__link">Акции</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="header-2021-mobile">
+		<a href="/" class="header-2021-mobile-top js-mobile-top">
+			<div class="header-2021-mobile-top__close js-mobile-top-close">
+				
+			</div>
+			<div class="header-2021-mobile-top__text">
+				Проверить статус заказа
+			</div>
+			
+		</a>
+		<div class="header-2021-mobile-wrap">
+			<div class="header-2021-mobile-logo">
+				<a href="/">
+					<img src="assets/img/logo.svg" alt="Аптека Вита" title="Аптека Вита">
+				</a>
+			</div>
+			<div class="header-2021-mobile-content">
+				<div class="header-2021-mobile-content-top">
+					<div class="header-2021-mobile-phone">
+						<a class="header-2021-mobile-phone__link" href="tel:+78001007272">8 800 100 72 72</a>
+					</div>
+					<div class="header-2021-mobile-lk js-mobile-lk">
+						<div class="header-2021-mobile-lk__icon">
+							<svg class="icon-header-user-mobile">
+								<use xlink:href="icons/all.svg#icon-header-user"></use>
+							</svg>
+							
+						</div>
+						<div class="header-2021-mobile-lk-popup">
+							<div class="header-2021-mobile-lk-popup__tail">
+								
+							</div>
+							<div class="header-2021-mobile-lk-popup-content">
+								<a href="/" class="header-2021-mobile-lk-popup-row">
+									<div class="header-2021-mobile-lk-popup__icon">
+										<svg class="icon-header-user">
+											<use xlink:href="icons/all.svg#icon-header-user"></use>
+										</svg>
+										
+									</div>
+									<div class="header-2021-mobile-lk-popup__text mod-upper">
+										Фамилия И.О.
+									</div>
+								</a>
+								<a href="/" class="header-2021-mobile-lk-popup-row">
+									<div class="header-2021-mobile-lk-popup__text">
+										Личные данные
+									</div>
+								</a>
+								<a href="/" class="header-2021-mobile-lk-popup-row">
+									<div class="header-2021-mobile-lk-popup__text">
+										Избранное
+									</div>
+								</a>
+								<a href="/" class="header-2021-mobile-lk-popup-row">
+									<div class="header-2021-mobile-lk-popup__text">
+										История заказов
+									</div>
+								</a>
+								<a href="/" class="header-2021-mobile-lk-popup-row">
+									<div class="header-2021-mobile-lk-popup__text">
+										Карта снегири
+									</div>
+								</a>
+								<a href="/" class="header-2021-mobile-lk-popup-row">
+									<div class="header-2021-mobile-lk-popup__icon">
+										<svg class="icon-header-logout">
+											<use xlink:href="icons/all.svg#icon-header-logout"></use>
+										</svg>
+										
+									</div>
+									<div class="header-2021-mobile-lk-popup__text">
+										Выход
+									</div>
+								</a>
+
+							</div>
+						</div>
+
+					</div>
+
+					
+				</div>
+				<div class="header-2021-mobile-content-bottom">
+					<div class="header-2021-mobile-burger js-header-burger-open">
+						<svg class="icon-header-burger">
+							<use xlink:href="icons/all.svg#icon-header-burger"></use>
+						</svg>
+					</div>
+					<div class="header-2021-mobile-contact">
+							<svg class="icon-header-phone-mobile">
+								<use xlink:href="icons/all.svg#icon-header-phone"></use>
+							</svg>
+
+					</div>
+					
+
+					<a href="/" class="header-2021-mobile-sale">
+						<svg class="icon-header-sale">
+							<use xlink:href="icons/all.svg#icon-header-sale"></use>
+						</svg>
+					</a>
+
+					<a href="/" class="header-2021-mobile-cart">
+						<svg class="icon-header-basket-mobile">
+							<use xlink:href="icons/all.svg#icon-header-basket-mobile"></use>
+						</svg>
+						<div class="header-2021-mobile-cart__number">0</div>
+					</a>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<div class="header-2021-mobile-menu js-header-burger">
+			<div class="header-2021-mobile-menu-bg js-header-burger-close"></div>
+			<div class="header-2021-mobile-menu-wrap">
+				<div class="header-2021-mobile-menu__close js-header-burger-close"></div>
+				<div class="header-2021-mobile-menu-row">
+					<a href="/" class="header-2021-mobile-menu__link">Архангельск, ул. Адм. Кузнецова, д. 2 две строки</a>
+					<a href="/" class="header-2021-mobile-menu__link">Самовывоз</a>
+				</div>
+				<div class="header-2021-mobile-menu-row">
+					<a href="/" class="header-2021-mobile-menu-catalog">Каталог товаров</a>
+				</div>
+				<div class="header-2021-mobile-menu-row">
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__icon">
+							<svg class="icon-header-clock">
+								<use xlink:href="icons/all.svg#icon-header-clock"></use>
+							</svg>
+						</div>
+						<div class="header-2021-mobile-menu-item__text mod-status">Проверить статус заказа</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Как сделать заказ</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Задать вопрос</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Помощь</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Магазины</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Контакты</div>
+					</a>
+				</div>
+				<div class="header-2021-mobile-menu-row">
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Остальные менее важные ссылки</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Ссылка 1</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Ссылка 2</div>
+					</a>
+					<a href="/" class="header-2021-mobile-menu-item">
+						<div class="header-2021-mobile-menu-item__text">Ссылка 3</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</header>
+
+
+			</div>
+			
+			<div class="wraps" id="content" style="min-height: 571px;">
+				<div class="wrapper_inner  wide_page">
+					<div class="middle">
+						<div class="container">
+							<div class="breadcrumbs" id="navigation" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+								<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a href="/" title="Главная" itemprop="item">
+										<span itemprop="name">Главная</span><meta itemprop="position" content="1"></a>
+								</div>
+								<span class="separator">-</span>
+								<span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<span itemprop="item">
+										<span itemprop="name">Регистрация</span><meta itemprop="position" content="2"></span>
+								</span>
+							</div>
+                            <h1 id="pagetitle">Регистрация</h1>
+
+							<div class="registration">
+    <div class="registration-content">
+        <div class="registration__title">Уважаемый пользователь,</div>
+        <div class="registration__text">Вы впервые зашли на сайт «Аптека-Вита». Для начала работы нам нужна дополнительная информация:</div>
+        <ul class="registration-list">
+            <li class="registration-list-item">
+                <div class="registration-list-item__title">ФИО</div>
+                <div class="registration-list-item__text">Чтобы оператор или курьер при доставке знал, как к вам обращаться</div>
+                <label class="registration-list-item-input">
+                    <input class="inp" type="text" name="reg-name" autocomplete="off" placeholder="Введите ФИО">
+                </label>
+            </li>
+            <li class="registration-list-item">
+                <div class="registration-list-item__title">Ваш день рождения</div>
+                <div class="registration-list-item__text">Ваша дата рождения, для того, чтобы поздравить и предложить вам дополнительную скидку для праздника</div>
+                <label class="registration-list-item-input">
+                    <input class="inp" type="text" name="reg-name" autocomplete="off" placeholder="Введите дату вашего рождения">
+                </label>
+            </li>
+            <li class="registration-list-item">
+                <div class="registration-list-item__title">Ваш номер карты Снегири</div>
+                <div class="registration-list-item__text">Для того, чтобы порадовать вас нашими ценами</div>
+                <label class="registration-list-item-input">
+                    <input class="inp" type="text" name="reg-name" autocomplete="off" placeholder="Введите номер карты Снегири">
+                </label>
+            </li>
+        </ul>
+        <div class="registration__after">
+            Спасибо вам, приятных покупок!
+        </div>
+        <div class="checkout-acception">
+            <label class="js-accept">
+                <input type="checkbox" class="checkbox">
+                <span class="checkbox"></span><span>Я принимаю условия пользовательского соглашения</span>
+            </label>
+        </div>
+        <div class="registration-buttons">
+            <a href="/" class="registration-buttons__btn">Сохранить изменения</a>
+        </div>
+    </div>
+    <div class="registration-decor"></div>
+</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<footer id="footer">
+	<div class="footer_inner no_fill">
+		<div class="wrapper_inner">
+			<div class="footer_bottom_inner">
+				<div class="footer-top">
+					<div class="rows_block">
+						<div class="item_block col-75 menus">
+							<div class="submenu_top rows_block">
+								<div class="item_block col-3">
+									<div class="menu_item">
+										<a href="/company/" class="dark_link">Компания</a>
+									</div>
+								</div>
+								<div class="item_block col-3">
+									<div class="menu_item">
+										<a href="/help/" class="dark_link">Помощь</a>
+									</div>
+								</div>
+								<div class="item_block col-3">
+									<div class="menu_item">
+										<a href="/info/" class="dark_link">Информация</a>
+									</div>
+								</div>
+							</div>
+							<div class="rows_block">
+								<div class="item_block col-3">
+									<ul class="submenu">
+										<li class="menu_item">
+											<a href="/company/" class="dark_link">О компании</a>
+										</li>
+										<li class="menu_item">
+											<a href="/company/news/" class="dark_link">Петромост ONLINE</a>
+										</li>
+										<li class="menu_item">
+											<a href="/contacts/stores/" class="dark_link">Партнерам</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item_block col-3">
+									<ul class="submenu">
+										<li class="menu_item">
+											<a href="/help/" class="dark_link">Доставка и оплата </a>
+										</li>
+										<li class="menu_item">
+											<a href="/help/payment/" class="dark_link">Пользовательское соглашение</a>
+										</li>
+									</ul>
+								</div>
+								<div class="item_block col-3">
+									<ul class="submenu">
+										<li class="menu_item">
+											<a href="/info/articles/" class="dark_link">Статьи</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="item_block col-4 soc">
+							<div class="soc_wrapper">
+								<div class="phones">
+									<div class="phone_block">
+										<span class="phone_wrap">
+											<span>
+												<a href="tel:+78001007272" rel="nofollow">8 800 100 72 72</a>
+											</span>
+										</span>
+										
+										<span class="phone_wrap">
+											<span class="icons fa fa-phone"></span>
+											<span>
+												<a href="tel:88182202138" rel="nofollow">20 22 12</a>
+												<a href="tel:88182271416" rel="nofollow">27 14 16</a>
+											</span>
+										</span>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+
+				</div>
+				<div class="footer-bottom">
+					<div class="rows_block">
+						<div class="item_block col-75 mod-vert-align">
+							<div class="copyright">
+								2020 &copy; Vita. Интернет-аптека</div>
+							<span class="pay_system_icons"></span>
+						</div>
+						<div class="item_block col-4 soc">
+							<div class="social_wrapper">
+								<div class="social">
+									<div class="links rows_block soc_icons">
+										<div class="item_block">
+											<a href="https://vk.com/vitanord" target="_blank" title="ВКонтакте" class="vk"></a>
+										</div>
+										<div class="item_block">
+											<a href="https://www.instagram.com/aptekavitanord/" target="_blank" title="Instagram" class="inst"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="mobile_copy">
+				<div class="copyright">
+					2020 &copy; Vita. Интернет-аптека</div>
+				<span class="pay_system_icons"></span>
+			</div>
+		</div>
+		<div class="footer-decor">
+		
+		</div>
+	</div>
+</footer>
+
+
+		<!--'start_frame_cache_basketitems-block'-->
+		<script type="text/javascript">
+			function jsPriceFormat(_number) {
+            BX.Currency.setCurrencyFormat('RUB', {
+            'CURRENCY': 'RUB',
+            'LID': 'ru',
+            'FORMAT_STRING': '# руб.',
+            'FULL_NAME': 'Российский рубль',
+            'DEC_POINT': '.',
+            'THOUSANDS_SEP': '&nbsp;',
+            'DECIMALS': '2',
+            'THOUSANDS_VARIANT': 'B',
+            'HIDE_ZERO': 'Y',
+            'CREATED_BY': '',
+            'DATE_CREATE': '2020-05-18 15:29:35',
+            'MODIFIED_BY': '1',
+            'TIMESTAMP_X': '2020-05-18 15:42:27'
+            });
+            return BX.Currency.currencyFormat(_number, 'RUB', true);
+            }
+                    </script>
+                    <script type="text/javascript">
+                        var arBasketAspro = {
+            'BASKET': [],
+            'DELAY': [],
+            'SUBSCRIBE': [],
+            'NOT_AVAILABLE': [],
+            'COMPARE': []
+            };
+            $(document).ready(function () {});
+		</script>
+		<!--'end_frame_cache_basketitems-block'-->
+		<script src="scripts_old/catalog.js"></script>
+		<script>
+			$(document).ready(function () {
+            window.catalog = new CCatalog({'siteId': 's1'});
+            })
+		</script>
+	</body>
+</html>
