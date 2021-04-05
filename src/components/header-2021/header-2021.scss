@@ -37,14 +37,14 @@
             display: flex;
             margin: 0 20px;
 
-            @media screen and (max-width: 1040px){
+            @media screen and (max-width: 1222px){
                 display: none;
             }
             &__item {
                 display: flex;
 
                 &:not(:last-child) {
-                    margin-right: 20px;
+                    margin-right: 12px;
                 }
 
                 &:before {
@@ -68,12 +68,12 @@
             &__icon {
                 flex: 0 0 auto;
                 display: flex;
-                margin-right: 8px;
+                margin-right: 7px;
             }
 
             &__text {
                 font-size: 14px;
-                line-height: 15px;
+                line-height: 14px;
                 color: #009cb4;
                 border-bottom: 1px solid transparent;
                 transition: all .2s ease;
@@ -1129,6 +1129,12 @@
     display: inline-block;
     width: 17px;
     height: 17px;
+    fill: #383838;
+}
+.icon-header-review {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
     fill: #383838;
 }
 
