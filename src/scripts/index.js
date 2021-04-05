@@ -302,34 +302,47 @@ $(document).ready(function() {
             let $container = $this.parents(container);
             let $tail = $this.find('.header-2021-menu-sublist__tail');
             let position = $parent.position();
-            let parentContainerWidth = $container.width();
-            if (position.left < parentContainerWidth / 2){
+            if (position.left < $this.width() / 2){
                 $this.css({
                     'left': '0',
-                    'right': 'auto'
+                    'right': 'auto',
+                    'transform': 'translateX('+(24-position.left)+'px)'
                 });
                 $tail.css({
-                    'left': '28px',
+                    'left': (position.left - 24 + $parent.width() / 2) + 'px',
                     'right': 'auto'
                 });
-            } else{
-                $this.css({
-                    'left': 'auto',
-                    'right': '0'
-                });
-                $tail.css({
-                    'left': 'auto',
-                    'right': '28px'
-                });
+            } else {
+                if (position.left +  $this.width() / 2 + $parent.width() / 2 > $container.width()) {
+                    $this.css({
+                        'left': 'auto',
+                        'right': '0',
+                        'transform': 'translateX('+($container.width() - position.left - $parent.width())+'px)'
+                    });
+                    $tail.css({
+                        'left': 'auto',
+                        'right': ($container.width() - position.left - $parent.width() / 2 )+'px'
+                    });
+                } else {
+                    $this.css({
+                        'left': '50%',
+                        'right': 'auto',
+                        'transform': 'translateX(-50%)'
+                    });
+                    $tail.css({
+                        'left': '50%',
+                        'right': 'auto'
+                    });
 
+                }
             }
         });
     }
 
-    initSublists('.header-2021-menu-sublist', '.header-2021-menu-list-item', '.header-2021-menu');
+    initSublists('.header-2021-menu-list-item-popup', '.header-2021-menu-list-item', '.header-2021-menu');
 
     $(window).resize(function() {
-        initSublists('.header-2021-menu-sublist', '.header-2021-menu-list-item', '.header-2021-menu');
+        initSublists('.header-2021-menu-list-item-popup', '.header-2021-menu-list-item', '.header-2021-menu');
     });
     
     $(document).on('click','.js-about-time', function(e){

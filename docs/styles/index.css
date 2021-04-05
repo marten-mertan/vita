@@ -886,7 +886,7 @@
           display: none; }
         .header-2021-menu-list-item.active .header-2021-menu-list-item__link {
           color: #039db5; }
-        .header-2021-menu-list-item:hover .header-2021-menu-sublist {
+        .header-2021-menu-list-item:hover .header-2021-menu-list-item-popup {
           opacity: 1;
           visibility: visible; }
         .header-2021-menu-list-item.mod-cyan .header-2021-menu-list-item__link {
@@ -915,22 +915,87 @@
           transition: all .2s ease; }
           .header-2021-menu-list-item__link:hover {
             color: #039db5; }
+        .header-2021-menu-list-item-popup {
+          position: absolute;
+          background-color: #fff;
+          box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.22);
+          z-index: 1;
+          box-sizing: border-box;
+          max-width: calc(100vw - 48px);
+          top: calc(100% + 4px);
+          left: 0;
+          opacity: 0;
+          visibility: hidden;
+          transition: all 0.2s cubic-bezier(0.32, 0, 0.67, 0); }
+          .header-2021-menu-list-item-popup-wrap {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start; }
+    .header-2021-menu-product {
+      flex: 0 0 auto;
+      width: 294px;
+      padding: 20px 30px 30px 46px;
+      border-left: 1px solid #eff2f7;
+      box-sizing: border-box; }
+      .header-2021-menu-product__title {
+        font-size: 16px;
+        font-family: "Gilroy";
+        font-weight: bold;
+        color: #383838;
+        line-height: 20px;
+        margin-bottom: 14px; }
+      .header-2021-menu-product__img {
+        width: 111px;
+        height: 64px;
+        background: none 50% 50% no-repeat;
+        background-color: white;
+        background-size: contain;
+        margin: 0 25px 14px;
+        margin-left: 25px;
+        margin-bottom: 14px; }
+      .header-2021-menu-product__name {
+        font-size: 14px;
+        font-family: "HelveticaNeueCyr";
+        color: #383838;
+        line-height: 18px;
+        margin-bottom: 12px; }
+      .header-2021-menu-product-rating {
+        margin-bottom: 20px; }
+      .header-2021-menu-product__price {
+        font-size: 14px;
+        font-family: "Gilroy";
+        color: #383838;
+        font-weight: bold;
+        letter-spacing: 0.1em;
+        line-height: 1;
+        margin-bottom: 18px; }
+      .header-2021-menu-product-cart-btn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 20px 11px;
+        border-radius: 2px;
+        background-color: #ff47a5;
+        cursor: pointer;
+        transition: all .3s ease; }
+        .header-2021-menu-product-cart-btn:hover {
+          background-color: #e4378f; }
+        .header-2021-menu-product-cart-btn svg {
+          margin-right: 10px; }
+        .header-2021-menu-product-cart-btn__text {
+          font-size: 14px;
+          color: #fff;
+          line-height: 23px; }
     .header-2021-menu-sublist {
-      position: absolute;
+      flex: 1 1 auto;
       display: flex;
       flex-wrap: wrap;
-      width: 503px;
-      padding: 24px 29px;
-      background-color: #fff;
-      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.22);
-      top: calc(100% + 4px);
-      left: 0;
-      opacity: 0;
-      visibility: hidden;
       box-sizing: border-box;
-      transition: all 0.2s cubic-bezier(0.32, 0, 0.67, 0);
       list-style: none;
-      z-index: 1; }
+      width: 503px;
+      padding: 20px 29px;
+      margin-bottom: auto; }
       .header-2021-menu-sublist__tail {
         position: absolute;
         top: -6px;
@@ -940,12 +1005,12 @@
         background-color: #fff;
         transform: rotate(45deg); }
       .header-2021-menu-sublist-item {
-        width: calc(50% - 18px);
-        margin-bottom: 14px; }
+        width: calc(50% - 15px);
+        margin-bottom: 10px; }
         .header-2021-menu-sublist-item:before {
           display: none; }
-        .header-2021-menu-sublist-item:nth-child(2n+1) {
-          margin-left: 36px; }
+        .header-2021-menu-sublist-item:nth-child(2n) {
+          margin-left: 30px; }
         .header-2021-menu-sublist-item.active .header-2021-menu-sublist-item__link {
           color: #039db5;
           text-decoration: underline !important; }
